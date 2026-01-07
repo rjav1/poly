@@ -83,8 +83,8 @@ class FastOrchestrator:
         self.logger = setup_logger("fast_orchestrator", level=log_level)
         self.logger.info(f"FastOrchestrator initialized for: {self.assets}")
         
-        # Fast PM collector (uses aiohttp)
-        self.pm_collector = FastPolymarketCollector(timeout=5.0)
+        # Fast PM collector (uses aiohttp) - 2s timeout for faster recovery
+        self.pm_collector = FastPolymarketCollector(timeout=2.0)
         
         # Market states
         self.market_states: Dict[str, FastMarketState] = {
@@ -103,6 +103,10 @@ class FastOrchestrator:
         self._written_seconds: Dict[str, set] = {asset: set() for asset in self.assets}
         self._pending_data: Dict[str, Optional[Dict]] = {asset: None for asset in self.assets}
         self._last_written_second: Dict[str, Optional[datetime]] = {asset: None for asset in self.assets}
+        
+        # Market transition check interval (to avoid blocking every iteration)
+        self._last_transition_check = 0
+        self._transition_check_interval = 5  # Check every 5 seconds instead of every iteration
     
     def _init_output_files(self):
         """Initialize CSV output files."""
@@ -528,8 +532,11 @@ class FastOrchestrator:
                 
                 loop_start = time.time()
                 
-                # Check market transitions (infrequent, minimal overhead)
-                self._check_market_transitions()
+                # Check market transitions only every N seconds (not every iteration)
+                # This prevents blocking the event loop with sync requests
+                if loop_start - self._last_transition_check >= self._transition_check_interval:
+                    self._check_market_transitions()
+                    self._last_transition_check = loop_start
                 
                 # Collect from all assets in PARALLEL
                 tasks = [self._collect_asset(asset) for asset in self.assets]
