@@ -428,10 +428,10 @@ class DataCollectionCLI:
                         log_level=30,  # WARNING level
                         sequential_cl=True  # More reliable for CL
                     )
-                    self.logger.info("Using FastCollector (wall-clock anchored, async HTTP)")
+                    # FastCollector is now active
                 except ImportError as e:
                     # Fallback to RawCollector if aiohttp not installed
-                    self.logger.warning(f"FastCollector not available ({e}), using RawCollector")
+                    print(f"[WARN] FastCollector not available ({e}), using RawCollector")
                     from src.raw_collector import RawCollector
                     collector = RawCollector(
                         assets=assets,
