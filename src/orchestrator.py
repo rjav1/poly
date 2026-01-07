@@ -197,49 +197,8 @@ class MarketOrchestrator:
     
     def _write_data(self, asset: str, data: Dict, market_id: str):
         """Write data row to CSV file, deduplicating by second (keep most recent)."""
-        # #region agent log
-        import json
-        from pathlib import Path
-        log_path = Path(__file__).parent.parent / ".cursor" / "debug.log"
-        try:
-            with open(log_path, 'a', encoding='utf-8') as f:
-                f.write(json.dumps({
-                    "sessionId": "debug-session",
-                    "runId": "pm-write-debug",
-                    "hypothesisId": "A",
-                    "location": "orchestrator.py:_write_data",
-                    "message": "_write_data called",
-                    "data": {
-                        "asset": asset,
-                        "has_writer": asset in self.csv_writers,
-                        "data_keys": list(data.keys()) if data else [],
-                        "has_timestamp": 'timestamp' in data if data else False,
-                        "has_collected_at": 'collected_at' in data if data else False,
-                        "market_id": market_id
-                    },
-                    "timestamp": pd.Timestamp.now().timestamp() * 1000
-                }) + "\n")
-        except:
-            pass
-        # #endregion
-        
         writer = self.csv_writers.get(asset)
         if not writer:
-            # #region agent log
-            try:
-                with open(log_path, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({
-                        "sessionId": "debug-session",
-                        "runId": "pm-write-debug",
-                        "hypothesisId": "A",
-                        "location": "orchestrator.py:_write_data",
-                        "message": "No writer found - early return",
-                        "data": {"asset": asset, "available_writers": list(self.csv_writers.keys())},
-                        "timestamp": pd.Timestamp.now().timestamp() * 1000
-                    }) + "\n")
-            except:
-                pass
-            # #endregion
             return
         
         # Use the API timestamp (from /book endpoint) as the data timestamp
@@ -262,27 +221,6 @@ class MarketOrchestrator:
         ts_second = ts.replace(microsecond=0)  # Floor to second
         ts_second_str = ts_second.isoformat()
         
-        # #region agent log
-        try:
-            with open(log_path, 'a', encoding='utf-8') as f:
-                f.write(json.dumps({
-                    "sessionId": "debug-session",
-                    "runId": "pm-write-debug",
-                    "hypothesisId": "B",
-                    "location": "orchestrator.py:_write_data",
-                    "message": "Timestamp extracted",
-                    "data": {
-                        "asset": asset,
-                        "timestamp_str": ts_second_str,
-                        "timestamp_iso": ts.isoformat() if hasattr(ts, 'isoformat') else str(ts),
-                        "already_written": ts_second_str in self._written_seconds.get(asset, set())
-                    },
-                    "timestamp": pd.Timestamp.now().timestamp() * 1000
-                }) + "\n")
-        except:
-            pass
-        # #endregion
-        
         # Initialize written_seconds set for this asset if needed
         if asset not in self._written_seconds:
             self._written_seconds[asset] = set()
@@ -291,21 +229,6 @@ class MarketOrchestrator:
         if ts_second_str in self._written_seconds[asset]:
             # Update pending in case we want to overwrite, but don't write yet
             self._pending_data[asset] = {**data, 'market_id': market_id}
-            # #region agent log
-            try:
-                with open(log_path, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({
-                        "sessionId": "debug-session",
-                        "runId": "pm-write-debug",
-                        "hypothesisId": "C",
-                        "location": "orchestrator.py:_write_data",
-                        "message": "Skipped - already written this second",
-                        "data": {"asset": asset, "timestamp_str": ts_second_str},
-                        "timestamp": pd.Timestamp.now().timestamp() * 1000
-                    }) + "\n")
-            except:
-                pass
-            # #endregion
             return
         
         last_second_str = self._last_written_second[asset].isoformat() if self._last_written_second.get(asset) else None
@@ -406,52 +329,10 @@ class MarketOrchestrator:
                 writer.writerow(row)
                 self.file_handles[asset].flush()
                 self._written_seconds[asset].add(pending_second_str)
-                
-                # #region agent log
-                try:
-                    with open(log_path, 'a', encoding='utf-8') as f:
-                        f.write(json.dumps({
-                            "sessionId": "debug-session",
-                            "runId": "pm-write-debug",
-                            "hypothesisId": "D",
-                            "location": "orchestrator.py:_write_data",
-                            "message": "Row written to file",
-                            "data": {
-                                "asset": asset,
-                                "timestamp_str": pending_second_str,
-                                "market_id": row.get('market_id'),
-                                "up_mid": row.get('up_mid'),
-                                "file_handle_valid": self.file_handles.get(asset) is not None
-                            },
-                            "timestamp": pd.Timestamp.now().timestamp() * 1000
-                        }) + "\n")
-                except:
-                    pass
-                # #endregion
         
         # Store current data as pending for this new second
         self._pending_data[asset] = {**data, 'market_id': market_id}
         self._last_written_second[asset] = ts_second
-        
-        # #region agent log
-        try:
-            with open(log_path, 'a', encoding='utf-8') as f:
-                f.write(json.dumps({
-                    "sessionId": "debug-session",
-                    "runId": "pm-write-debug",
-                    "hypothesisId": "E",
-                    "location": "orchestrator.py:_write_data",
-                    "message": "Data stored as pending",
-                    "data": {
-                        "asset": asset,
-                        "timestamp_str": ts_second_str,
-                        "pending_count": len(self._pending_data)
-                    },
-                    "timestamp": pd.Timestamp.now().timestamp() * 1000
-                }) + "\n")
-        except:
-            pass
-        # #endregion
     
     def _write_missing_data(self, asset: str, market_id: str, last_data: Optional[Dict] = None):
         """Write a row indicating missing data (forward-fill placeholder)."""
@@ -635,115 +516,20 @@ class MarketOrchestrator:
                 state.token_id_down
             )
             
-            # #region agent log
-            import json
-            from pathlib import Path
-            log_path = Path(__file__).parent.parent.parent / ".cursor" / "debug.log"
-            try:
-                with open(log_path, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({
-                        "sessionId": "debug-session",
-                        "runId": "pm-collection-test",
-                        "hypothesisId": "A",
-                        "location": "orchestrator.py:_collect_asset",
-                        "message": "PM collection attempt",
-                        "data": {
-                            "asset": asset,
-                            "market_id": state.market_id,
-                            "has_data": data is not None,
-                            "collected_count": state.collected_count,
-                            "is_active": state.is_active,
-                            "has_tokens": state.token_id_up is not None and state.token_id_down is not None
-                        },
-                        "timestamp": pd.Timestamp.now().timestamp() * 1000
-                    }) + "\n")
-            except:
-                pass
-            # #endregion
-            
             if data:
                 state.collected_count += 1
                 state.last_data = data
                 self._write_data(asset, data, state.market_id)
-                
-                # #region agent log
-                try:
-                    with open(log_path, 'a', encoding='utf-8') as f:
-                        f.write(json.dumps({
-                            "sessionId": "debug-session",
-                            "runId": "pm-collection-test",
-                            "hypothesisId": "A",
-                            "location": "orchestrator.py:_collect_asset",
-                            "message": "PM data collected successfully",
-                            "data": {
-                                "asset": asset,
-                                "market_id": state.market_id,
-                                "has_timestamp": 'timestamp' in data or 'source_timestamp' in data,
-                                "timestamp": data.get('timestamp') or data.get('source_timestamp'),
-                                "has_up_mid": 'up_mid' in data,
-                                "up_mid": data.get('up_mid'),
-                                "collected_count": state.collected_count
-                            },
-                            "timestamp": pd.Timestamp.now().timestamp() * 1000
-                        }) + "\n")
-                except:
-                    pass
-                # #endregion
-                
                 return data
             else:
                 state.error_count += 1
                 self._write_missing_data(asset, state.market_id, state.last_data)
-                
-                # #region agent log
-                try:
-                    with open(log_path, 'a', encoding='utf-8') as f:
-                        f.write(json.dumps({
-                            "sessionId": "debug-session",
-                            "runId": "pm-collection-test",
-                            "hypothesisId": "A",
-                            "location": "orchestrator.py:_collect_asset",
-                            "message": "PM collection returned None",
-                            "data": {
-                                "asset": asset,
-                                "error_count": state.error_count
-                            },
-                            "timestamp": pd.Timestamp.now().timestamp() * 1000
-                        }) + "\n")
-                except:
-                    pass
-                # #endregion
-                
                 return None
                 
         except Exception as e:
             self.logger.error(f"Error collecting {asset}: {e}")
             state.error_count += 1
             self._write_missing_data(asset, state.market_id, state.last_data)
-            
-            # #region agent log
-            try:
-                import json
-                from pathlib import Path
-                log_path = Path(__file__).parent.parent.parent / ".cursor" / "debug.log"
-                with open(log_path, 'a', encoding='utf-8') as f:
-                    f.write(json.dumps({
-                        "sessionId": "debug-session",
-                        "runId": "pm-collection-test",
-                        "hypothesisId": "A",
-                        "location": "orchestrator.py:_collect_asset",
-                        "message": "PM collection exception",
-                        "data": {
-                            "asset": asset,
-                            "error": str(e),
-                            "error_count": state.error_count
-                        },
-                        "timestamp": pd.Timestamp.now().timestamp() * 1000
-                    }) + "\n")
-            except:
-                pass
-            # #endregion
-            
             return None
     
     def _check_market_transitions(self):

@@ -165,28 +165,36 @@ class FastOrchestrator:
             self.logger.info(f"Output: {filepath}")
     
     def _discover_market(self, asset: str) -> bool:
-        """Discover current active market for an asset."""
+        """Discover current active market for an asset using slug-based API."""
         import requests
+        import json as json_module
         
         try:
             slug_prefix = get_polymarket_slug_prefix(asset)
-            url = f"https://gamma-api.polymarket.com/events?slug={slug_prefix}"
-            
-            response = requests.get(url, timeout=10)
-            if response.status_code != 200:
-                return False
-            
-            events = response.json()
-            if not events:
-                return False
-            
-            event = events[0]
-            markets = event.get('markets', [])
-            
             now = datetime.now(timezone.utc)
+            now_timestamp = int(now.timestamp())
             
-            for market in markets:
-                end_str = market.get('endDate') or market.get('end_date_iso')
+            # 15-min markets start at 15-minute intervals
+            market_start_timestamp = (now_timestamp // 900) * 900
+            
+            # Try current market first, then previous and next
+            slugs_to_try = [
+                f"{slug_prefix}-{market_start_timestamp}",
+                f"{slug_prefix}-{market_start_timestamp - 900}",
+                f"{slug_prefix}-{market_start_timestamp + 900}",
+            ]
+            
+            for slug in slugs_to_try:
+                url = f"https://gamma-api.polymarket.com/markets/slug/{slug}"
+                response = requests.get(url, timeout=10)
+                
+                if response.status_code != 200:
+                    continue
+                
+                data = response.json()
+                
+                # Parse end time
+                end_str = data.get('endDate')
                 if not end_str:
                     continue
                 
@@ -194,26 +202,35 @@ class FastOrchestrator:
                 if end_time.tzinfo is None:
                     end_time = end_time.replace(tzinfo=timezone.utc)
                 
-                # Find active market (not ended yet)
-                if end_time > now:
+                # Check if market is active (ends in future, not closed)
+                if end_time <= now:
+                    continue
+                if data.get('closed'):
+                    continue
+                
+                # Parse token IDs using the proven method from working collector
+                outcomes = json_module.loads(data.get("outcomes", "[]"))
+                clob_token_ids = json_module.loads(data.get("clobTokenIds", "[]"))
+                
+                token_up = None
+                token_down = None
+                for i, outcome in enumerate(outcomes):
+                    if outcome.lower() in ("up", "yes") and i < len(clob_token_ids):
+                        token_up = clob_token_ids[i]
+                    elif outcome.lower() in ("down", "no") and i < len(clob_token_ids):
+                        token_down = clob_token_ids[i]
+                
+                if token_up and token_down:
                     state = self.market_states[asset]
-                    state.market_id = market.get('conditionId') or market.get('id')
+                    state.market_id = slug
+                    state.token_id_up = token_up
+                    state.token_id_down = token_down
                     state.end_time = end_time
-                    
-                    # Get token IDs
-                    tokens = market.get('tokens', [])
-                    for token in tokens:
-                        outcome = token.get('outcome', '').upper()
-                        token_id = token.get('token_id')
-                        if outcome == 'YES' or outcome == 'UP':
-                            state.token_id_up = token_id
-                        elif outcome == 'NO' or outcome == 'DOWN':
-                            state.token_id_down = token_id
-                    
-                    if state.token_id_up and state.token_id_down:
-                        state.is_active = True
-                        self.logger.info(f"{asset}: Found market {state.market_id}, ends {end_time}")
-                        return True
+                    state.is_active = True
+                    state.collected_count = 0
+                    state.error_count = 0
+                    self.logger.info(f"{asset}: Found market {slug}, ends {end_time}")
+                    return True
             
             return False
             
@@ -224,52 +241,56 @@ class FastOrchestrator:
     def _preload_next_market(self, asset: str):
         """Preload next market for seamless transition."""
         import requests
+        import json as json_module
         
         try:
             slug_prefix = get_polymarket_slug_prefix(asset)
-            url = f"https://gamma-api.polymarket.com/events?slug={slug_prefix}"
+            state = self.market_states[asset]
+            
+            if not state.end_time:
+                return
+            
+            # Calculate next market timestamp (current end + 15 min = next end)
+            current_end_ts = int(state.end_time.timestamp())
+            next_market_start = current_end_ts  # Next market starts when current ends
+            
+            slug = f"{slug_prefix}-{next_market_start}"
+            url = f"https://gamma-api.polymarket.com/markets/slug/{slug}"
             
             response = requests.get(url, timeout=10)
             if response.status_code != 200:
                 return
             
-            events = response.json()
-            if not events:
+            data = response.json()
+            
+            # Parse end time
+            end_str = data.get('endDate')
+            if not end_str:
                 return
             
-            event = events[0]
-            markets = event.get('markets', [])
+            end_time = pd.to_datetime(end_str)
+            if end_time.tzinfo is None:
+                end_time = end_time.replace(tzinfo=timezone.utc)
             
-            state = self.market_states[asset]
-            current_end = state.end_time
+            # Parse token IDs
+            outcomes = json_module.loads(data.get("outcomes", "[]"))
+            clob_token_ids = json_module.loads(data.get("clobTokenIds", "[]"))
             
-            for market in markets:
-                end_str = market.get('endDate') or market.get('end_date_iso')
-                if not end_str:
-                    continue
-                
-                end_time = pd.to_datetime(end_str)
-                if end_time.tzinfo is None:
-                    end_time = end_time.replace(tzinfo=timezone.utc)
-                
-                # Find market that ends after current one
-                if current_end and end_time > current_end:
-                    state.next_market_id = market.get('conditionId') or market.get('id')
-                    state.next_end_time = end_time
-                    
-                    tokens = market.get('tokens', [])
-                    for token in tokens:
-                        outcome = token.get('outcome', '').upper()
-                        token_id = token.get('token_id')
-                        if outcome == 'YES' or outcome == 'UP':
-                            state.next_token_id_up = token_id
-                        elif outcome == 'NO' or outcome == 'DOWN':
-                            state.next_token_id_down = token_id
-                    
-                    if state.next_token_id_up and state.next_token_id_down:
-                        state.next_preloaded = True
-                        self.logger.info(f"{asset}: Preloaded next market {state.next_market_id}")
-                        return
+            token_up = None
+            token_down = None
+            for i, outcome in enumerate(outcomes):
+                if outcome.lower() in ("up", "yes") and i < len(clob_token_ids):
+                    token_up = clob_token_ids[i]
+                elif outcome.lower() in ("down", "no") and i < len(clob_token_ids):
+                    token_down = clob_token_ids[i]
+            
+            if token_up and token_down:
+                state.next_market_id = slug
+                state.next_token_id_up = token_up
+                state.next_token_id_down = token_down
+                state.next_end_time = end_time
+                state.next_preloaded = True
+                self.logger.info(f"{asset}: Preloaded next market {slug}")
                         
         except Exception as e:
             self.logger.debug(f"Error preloading next market for {asset}: {e}")
