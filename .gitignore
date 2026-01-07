@@ -48,3 +48,7 @@ htmlcov/
 
 # Browser logs
 *.har
+
+# Large data files
+strategy_derivation/profitable_traders_wallet_data/polymarket_multi_activity.csv
+strategy_derivation/profitable_traders_wallet_data/polymarket_multi_activity.parquet
