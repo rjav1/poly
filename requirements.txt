@@ -3,6 +3,7 @@
 
 # Core dependencies
 requests>=2.31.0
+aiohttp>=3.9.0  # Async HTTP for fast PM collection
 pandas>=2.0.0
 pyarrow>=14.0.0
 

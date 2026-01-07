@@ -352,13 +352,16 @@ class DataCollectionCLI:
         interval: float = 1.0,
         max_time: Optional[int] = None,
         output_dir: str = "data_v2/raw",
-        lightweight: bool = True  # Default to lightweight mode
+        lightweight: bool = True,  # Default to lightweight mode
+        use_fast: bool = True      # Use FastCollector by default
     ):
         """Run data collection with real-time dashboard.
         
         Args:
             lightweight: If True (default), use lightweight collector with post-processing matching.
                         This is more accurate as it doesn't add matching overhead during collection.
+            use_fast: If True (default), use FastCollector with wall-clock anchored timing
+                     for ~1.0 pts/sec rate. If False, use RawCollector.
         """
         # Setup signal handler
         def signal_handler(sig, frame):
@@ -386,8 +389,10 @@ class DataCollectionCLI:
         
         if lightweight:
             target_seconds = int(duration * 1.2)  # 1.2x buffer
+            collector_name = "FastCollector (wall-clock anchored)" if use_fast else "RawCollector"
             config = {
                 "Mode": "Lightweight (collect first, match later)",
+                "Collector": collector_name,
                 "Assets": ", ".join(assets),
                 "Target Matched Points": f"{duration} per asset",
                 "Collection Duration": f"{target_seconds}s (1.2x buffer)",
@@ -412,16 +417,38 @@ class DataCollectionCLI:
         collector_done = False
         
         if lightweight:
-            # Use lightweight RawCollector
-            from src.raw_collector import RawCollector
-            
-            collector = RawCollector(
-                assets=assets,
-                target_matched=duration,
-                output_dir=output_dir,
-                log_level=30,  # WARNING level
-                sequential_cl=True  # More reliable
-            )
+            # Use lightweight collector (FastCollector by default)
+            if use_fast:
+                try:
+                    from src.fast_collector import FastCollector
+                    collector = FastCollector(
+                        assets=assets,
+                        target_matched=duration,
+                        output_dir=output_dir,
+                        log_level=30,  # WARNING level
+                        sequential_cl=True  # More reliable for CL
+                    )
+                    self.logger.info("Using FastCollector (wall-clock anchored, async HTTP)")
+                except ImportError as e:
+                    # Fallback to RawCollector if aiohttp not installed
+                    self.logger.warning(f"FastCollector not available ({e}), using RawCollector")
+                    from src.raw_collector import RawCollector
+                    collector = RawCollector(
+                        assets=assets,
+                        target_matched=duration,
+                        output_dir=output_dir,
+                        log_level=30,
+                        sequential_cl=True
+                    )
+            else:
+                from src.raw_collector import RawCollector
+                collector = RawCollector(
+                    assets=assets,
+                    target_matched=duration,
+                    output_dir=output_dir,
+                    log_level=30,  # WARNING level
+                    sequential_cl=True  # More reliable
+                )
             
             async def run_collector():
                 nonlocal collector_done
@@ -817,7 +844,13 @@ def parse_args():
         '--legacy',
         action='store_true',
         help='Use legacy real-time matching mode (slower, more overhead). '
-             'Default is lightweight mode which collects first and matches later.'
+             'Default is fast lightweight mode which collects first and matches later.'
+    )
+    collect_parser.add_argument(
+        '--slow',
+        action='store_true',
+        help='Use the slower RawCollector instead of FastCollector. '
+             'FastCollector uses wall-clock anchored timing and async HTTP for ~1.0 pts/sec rate.'
     )
     
     # Process command
@@ -922,11 +955,15 @@ async def main():
         
         # Determine mode
         lightweight = not args.legacy
+        use_fast = not getattr(args, 'slow', False)  # FastCollector by default
         
         if lightweight:
             # Lightweight mode: collect for duration * 1.2 seconds, match later
             target_seconds = int(args.duration * 1.2)
-            print(f"LIGHTWEIGHT MODE: Collecting for {target_seconds}s ({args.duration} target × 1.2 buffer)")
+            mode_name = "FAST" if use_fast else "LIGHTWEIGHT"
+            print(f"{mode_name} MODE: Collecting for {target_seconds}s ({args.duration} target × 1.2 buffer)")
+            if use_fast:
+                print(f"Using FastCollector (wall-clock anchored, async HTTP) for ~1.0 pts/sec")
             print(f"Matching will be done post-collection by 'cli_v2.py process'")
             print()
             
@@ -935,7 +972,8 @@ async def main():
                 duration=args.duration,
                 interval=args.interval,
                 output_dir=args.output,
-                lightweight=True
+                lightweight=True,
+                use_fast=use_fast
             )
         else:
             # Legacy mode: real-time matching
