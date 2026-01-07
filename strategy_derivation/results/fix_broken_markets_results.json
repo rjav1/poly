@@ -1,0 +1,77 @@
+[
+  {
+    "market_id": "20260106_1615",
+    "K": 3262.792,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1630",
+    "K": 3252.682,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1645",
+    "K": 3238.291,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1700",
+    "K": 3247.712,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1715",
+    "K": 3244.012,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1730",
+    "K": 3247.251,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1745",
+    "K": 3238.38,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1800",
+    "K": 3187.91,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1815",
+    "K": 3214.66,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1830",
+    "K": 3218.06,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1845",
+    "K": 3222.4,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1900",
+    "K": 3217.54,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1915",
+    "K": 3225.58,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_1930",
+    "K": 3224.01,
+    "status": "fixed"
+  },
+  {
+    "market_id": "20260106_2000",
+    "K": 3230.04,
+    "status": "fixed"
+  }
+]

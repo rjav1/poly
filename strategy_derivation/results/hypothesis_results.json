@@ -1,0 +1,270 @@
+{
+  "H1_late_window_concentration": {
+    "vidarx": {
+      "n_trades": 32900,
+      "share_last_60s": 0.0,
+      "share_last_120s": 0.009300911854103344,
+      "share_last_300s": 0.24495440729483284,
+      "share_last_600s": 0.6153191489361702,
+      "mean_tau": 510.51635258358664,
+      "median_tau": 515.0
+    },
+    "tsaiTop": {
+      "n_trades": 1734,
+      "share_last_60s": 0.16897347174163782,
+      "share_last_120s": 0.39158016147635527,
+      "share_last_300s": 0.6320645905420992,
+      "share_last_600s": 0.9290657439446367,
+      "mean_tau": 244.29065743944636,
+      "median_tau": 159.0
+    },
+    "Account88888": {
+      "n_trades": 190274,
+      "share_last_60s": 0.021237793918244215,
+      "share_last_120s": 0.062021085382133134,
+      "share_last_300s": 0.2595782923573373,
+      "share_last_600s": 0.5772464971567318,
+      "mean_tau": 512.4326287354027,
+      "median_tau": 535.0
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_trades": 152946,
+      "share_last_60s": 0.05084801171655356,
+      "share_last_120s": 0.11360872464791495,
+      "share_last_300s": 0.41653263243236177,
+      "share_last_600s": 0.7569011285028703,
+      "mean_tau": 406.4389130804336,
+      "median_tau": 361.0
+    },
+    "Lkjhgfdna": {
+      "n_trades": 96847,
+      "share_last_60s": 0.010625006453478166,
+      "share_last_120s": 0.04000123906780798,
+      "share_last_300s": 0.19100230260100984,
+      "share_last_600s": 0.557384327857342,
+      "mean_tau": 538.865953514306,
+      "median_tau": 563.0
+    },
+    "FLO782": {
+      "n_trades": 37,
+      "share_last_60s": 0.0,
+      "share_last_120s": 0.0,
+      "share_last_300s": 0.32432432432432434,
+      "share_last_600s": 0.7837837837837838,
+      "mean_tau": 449.7567567567568,
+      "median_tau": 421.0
+    }
+  },
+  "H2_two_sided_behavior": {
+    "vidarx": {
+      "n_markets": 93,
+      "n_both_outcomes": "92",
+      "n_up_only": "1",
+      "n_down_only": "0",
+      "pct_both_outcomes": 0.989247311827957,
+      "pct_up_only": 0.010752688172043012,
+      "pct_down_only": 0.0
+    },
+    "tsaiTop": {
+      "n_markets": 79,
+      "n_both_outcomes": "3",
+      "n_up_only": "38",
+      "n_down_only": "38",
+      "pct_both_outcomes": 0.0379746835443038,
+      "pct_up_only": 0.4810126582278481,
+      "pct_down_only": 0.4810126582278481
+    },
+    "Account88888": {
+      "n_markets": 261,
+      "n_both_outcomes": "260",
+      "n_up_only": "1",
+      "n_down_only": "0",
+      "pct_both_outcomes": 0.9961685823754789,
+      "pct_up_only": 0.0038314176245210726,
+      "pct_down_only": 0.0
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_markets": 769,
+      "n_both_outcomes": "737",
+      "n_up_only": "12",
+      "n_down_only": "20",
+      "pct_both_outcomes": 0.9583875162548765,
+      "pct_up_only": 0.015604681404421327,
+      "pct_down_only": 0.02600780234070221
+    },
+    "Lkjhgfdna": {
+      "n_markets": 2271,
+      "n_both_outcomes": "2226",
+      "n_up_only": "25",
+      "n_down_only": "20",
+      "pct_both_outcomes": 0.9801849405548216,
+      "pct_up_only": 0.011008366358432409,
+      "pct_down_only": 0.008806693086745927
+    },
+    "FLO782": {
+      "n_markets": 3,
+      "n_both_outcomes": "0",
+      "n_up_only": "2",
+      "n_down_only": "1",
+      "pct_both_outcomes": 0.0,
+      "pct_up_only": 0.6666666666666666,
+      "pct_down_only": 0.3333333333333333
+    }
+  },
+  "H3_underround_harvesting": {
+    "vidarx": {
+      "n_paired_seconds": 951,
+      "median_edge": 0.029999999999999805,
+      "mean_edge": 0.03028771618913613,
+      "pct_positive_edge": 0.8296529968454258,
+      "p25_edge": 0.010000000000000009,
+      "p75_edge": 0.04368797797756718,
+      "total_matched_volume": 20550.618150000002,
+      "mean_matched_volume": 21.60948280757098
+    },
+    "tsaiTop": {
+      "n_paired_seconds": 0,
+      "median_edge": null,
+      "mean_edge": null,
+      "pct_positive_edge": null,
+      "total_matched_volume": 0
+    },
+    "Account88888": {
+      "n_paired_seconds": 6091,
+      "median_edge": 0.0,
+      "mean_edge": -0.0011582673583416206,
+      "pct_positive_edge": 0.49893285174848134,
+      "p25_edge": -0.016509469222551032,
+      "p75_edge": 0.015698689680676448,
+      "total_matched_volume": 590688.824671,
+      "mean_matched_volume": 96.9773148368084
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_paired_seconds": 1037,
+      "median_edge": 0.024892020060727882,
+      "mean_edge": 0.035502140553370684,
+      "pct_positive_edge": 0.648023143683703,
+      "p25_edge": -0.011497308556932762,
+      "p75_edge": 0.06999999999999995,
+      "total_matched_volume": 111726.972889,
+      "mean_matched_volume": 107.74057173481195
+    },
+    "Lkjhgfdna": {
+      "n_paired_seconds": 463,
+      "median_edge": -0.030666353824495562,
+      "mean_edge": -0.03115353061342004,
+      "pct_positive_edge": 0.13390928725701945,
+      "p25_edge": -0.04999996586942079,
+      "p75_edge": -0.01890282730190207,
+      "total_matched_volume": 17992.893077,
+      "mean_matched_volume": 38.86154012311015
+    },
+    "FLO782": {
+      "n_paired_seconds": 0,
+      "median_edge": null,
+      "mean_edge": null,
+      "pct_positive_edge": null,
+      "total_matched_volume": 0
+    }
+  },
+  "H4_short_horizon_scalping": {
+    "vidarx": {
+      "n_buys": "32900",
+      "n_sells": 0,
+      "n_matched_lots": 0,
+      "median_hold_seconds": null,
+      "mean_hold_seconds": null,
+      "matched_pnl": null
+    },
+    "tsaiTop": {
+      "n_buys": "1178",
+      "n_sells": "556",
+      "n_matched_lots": 37385,
+      "median_hold_seconds": 190.0,
+      "mean_hold_seconds": 180.16974169741698,
+      "p25_hold_seconds": 62.0,
+      "p75_hold_seconds": 282.0,
+      "matched_pnl": 1640.1242107731673,
+      "mean_pnl_per_lot": 2.0173729529805255
+    },
+    "Account88888": {
+      "n_buys": "190274",
+      "n_sells": 0,
+      "n_matched_lots": 0,
+      "median_hold_seconds": null,
+      "mean_hold_seconds": null,
+      "matched_pnl": null
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_buys": "152946",
+      "n_sells": 0,
+      "n_matched_lots": 0,
+      "median_hold_seconds": null,
+      "mean_hold_seconds": null,
+      "matched_pnl": null
+    },
+    "Lkjhgfdna": {
+      "n_buys": "60264",
+      "n_sells": "36583",
+      "n_matched_lots": 1914276,
+      "median_hold_seconds": 114.0,
+      "mean_hold_seconds": 146.34126955453593,
+      "p25_hold_seconds": 54.0,
+      "p75_hold_seconds": 204.0,
+      "matched_pnl": -58021.49437951864,
+      "mean_pnl_per_lot": -1.0481139921875544
+    },
+    "FLO782": {
+      "n_buys": "37",
+      "n_sells": 0,
+      "n_matched_lots": 0,
+      "median_hold_seconds": null,
+      "mean_hold_seconds": null,
+      "matched_pnl": null
+    }
+  },
+  "H5_conversion_mechanics": {
+    "vidarx": {
+      "TRADE": 32900,
+      "SPLIT": 0,
+      "MERGE": 10,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    },
+    "tsaiTop": {
+      "TRADE": 1734,
+      "SPLIT": 0,
+      "MERGE": 0,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    },
+    "Account88888": {
+      "TRADE": 190274,
+      "SPLIT": 0,
+      "MERGE": 0,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    },
+    "PurpleThunderBicycleMountain": {
+      "TRADE": 152946,
+      "SPLIT": 0,
+      "MERGE": 0,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    },
+    "Lkjhgfdna": {
+      "TRADE": 96847,
+      "SPLIT": 16,
+      "MERGE": 0,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    },
+    "FLO782": {
+      "TRADE": 37,
+      "SPLIT": 0,
+      "MERGE": 0,
+      "CONVERSION": 0,
+      "REDEEM": 0
+    }
+  }
+}

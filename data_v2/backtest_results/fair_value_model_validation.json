@@ -1,0 +1,351 @@
+{
+  "data_info": {
+    "n_markets": 36,
+    "n_observations": 32400,
+    "n_train_markets": 25,
+    "n_test_markets": 11,
+    "min_coverage": 90.0
+  },
+  "model_comparison": {
+    "binned": {
+      "model_name": "BinnedFairValueModel",
+      "train": {
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_samples": 22500,
+        "n_markets": 25,
+        "mean_pred": 0.51692410317677,
+        "mean_actual": NaN,
+        "calibration_curve": {
+          "centers": [
+            0.05,
+            0.15000000000000002,
+            0.25,
+            0.35000000000000003,
+            0.45,
+            0.55,
+            0.6500000000000001,
+            0.75,
+            0.8500000000000001,
+            0.95
+          ],
+          "actuals": [
+            0.008353221957040573,
+            0.19269406392694063,
+            0.28986587183308493,
+            0.2967812329514457,
+            0.3570219966159052,
+            NaN,
+            0.6471176274575141,
+            0.6927751519243754,
+            0.840877914951989,
+            0.9796954314720813
+          ],
+          "counts": [
+            1676,
+            1095,
+            1342,
+            1833,
+            2364,
+            6811,
+            3001,
+            1481,
+            729,
+            591
+          ]
+        }
+      },
+      "test": {
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_samples": 9900,
+        "n_markets": 11,
+        "mean_pred": 0.5030841352084875,
+        "mean_actual": NaN,
+        "calibration_curve": {
+          "centers": [
+            0.55
+          ],
+          "actuals": [
+            NaN
+          ],
+          "counts": [
+            9900
+          ]
+        }
+      }
+    },
+    "logistic": {
+      "model_name": "FairValueModel",
+      "train": {
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_samples": 22500,
+        "n_markets": 25,
+        "mean_pred": 0.5008225889777178,
+        "mean_actual": NaN,
+        "calibration_curve": {
+          "centers": [
+            0.05,
+            0.15000000000000002,
+            0.25,
+            0.35000000000000003,
+            0.45,
+            0.55,
+            0.6500000000000001,
+            0.75,
+            0.8500000000000001,
+            0.95
+          ],
+          "actuals": [
+            0.0074875207986688855,
+            0.21657250470809794,
+            0.23175416133162613,
+            0.34270833333333334,
+            NaN,
+            NaN,
+            0.6577825159914712,
+            0.6503978779840849,
+            0.8698023176550784,
+            0.954868154158215
+          ],
+          "counts": [
+            2404,
+            1062,
+            1562,
+            1920,
+            3487,
+            4865,
+            1876,
+            1885,
+            1467,
+            1972
+          ]
+        }
+      },
+      "test": {
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_samples": 9900,
+        "n_markets": 11,
+        "mean_pred": 0.5198255816762928,
+        "mean_actual": NaN,
+        "calibration_curve": {
+          "centers": [
+            0.45,
+            0.55
+          ],
+          "actuals": [
+            NaN,
+            NaN
+          ],
+          "counts": [
+            1562,
+            8338
+          ]
+        }
+      }
+    },
+    "comparison": {
+      "test_brier_binned": NaN,
+      "test_brier_logistic": NaN,
+      "test_ece_binned": NaN,
+      "test_ece_logistic": NaN,
+      "winner_brier": "logistic",
+      "winner_ece": "logistic"
+    }
+  },
+  "ablation": {
+    "full_model": {
+      "brier_score": NaN
+    },
+    "delta_bps": {
+      "brier_with": NaN,
+      "brier_without": NaN,
+      "importance": NaN
+    },
+    "tau": {
+      "brier_with": NaN,
+      "brier_without": NaN,
+      "importance": NaN
+    },
+    "realized_vol_bps": {
+      "brier_with": NaN,
+      "brier_without": NaN,
+      "importance": NaN
+    }
+  },
+  "temporal_stability": {
+    "n_splits": 5,
+    "n_markets_per_split": 7,
+    "splits": [
+      {
+        "split_index": 0,
+        "n_markets": 7,
+        "is_train": true,
+        "brier_score": 0.1736237515861952,
+        "ece": 0.11193499597494949,
+        "mean_pred": 0.39713301457632944,
+        "mean_actual": 0.2857142857142857
+      },
+      {
+        "split_index": 1,
+        "n_markets": 7,
+        "is_train": true,
+        "brier_score": 0.2081715836868646,
+        "ece": 0.12242037996119554,
+        "mean_pred": 0.4490081914673759,
+        "mean_actual": 0.5714285714285714
+      },
+      {
+        "split_index": 2,
+        "n_markets": 7,
+        "is_train": false,
+        "brier_score": 0.2433566715600417,
+        "ece": 0.1747803406189828,
+        "mean_pred": 0.5013187177116916,
+        "mean_actual": 0.5714285714285714
+      },
+      {
+        "split_index": 3,
+        "n_markets": 7,
+        "is_train": false,
+        "brier_score": NaN,
+        "ece": NaN,
+        "mean_pred": 0.46763535543762014,
+        "mean_actual": NaN
+      },
+      {
+        "split_index": 4,
+        "n_markets": 7,
+        "is_train": false,
+        "brier_score": NaN,
+        "ece": NaN,
+        "mean_pred": 0.4472643375082399,
+        "mean_actual": NaN
+      }
+    ]
+  },
+  "binning_sensitivity": {
+    "configs": [
+      {
+        "tau_size": 15,
+        "delta_size": 2.5,
+        "n_vol_bins": 2,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 45,
+        "n_total_bins": 1184
+      },
+      {
+        "tau_size": 15,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 61,
+        "n_total_bins": 990
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 2.5,
+        "n_vol_bins": 2,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 127,
+        "n_total_bins": 723
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 150,
+        "n_total_bins": 579
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 10.0,
+        "n_vol_bins": 3,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 166,
+        "n_total_bins": 370
+      },
+      {
+        "tau_size": 60,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 159,
+        "n_total_bins": 338
+      },
+      {
+        "tau_size": 60,
+        "delta_size": 10.0,
+        "n_vol_bins": 5,
+        "brier_score": NaN,
+        "ece": NaN,
+        "n_valid_bins": 155,
+        "n_total_bins": 315
+      }
+    ],
+    "best_by_brier": {
+      "tau_size": 15,
+      "delta_size": 2.5,
+      "n_vol_bins": 2,
+      "brier_score": NaN,
+      "ece": NaN,
+      "n_valid_bins": 45,
+      "n_total_bins": 1184
+    },
+    "best_by_ece": {
+      "tau_size": 15,
+      "delta_size": 2.5,
+      "n_vol_bins": 2,
+      "brier_score": NaN,
+      "ece": NaN,
+      "n_valid_bins": 45,
+      "n_total_bins": 1184
+    }
+  },
+  "vol_window_sensitivity": {
+    "windows": [
+      {
+        "vol_column": "realized_vol_15s",
+        "window_size": 15,
+        "brier_score": NaN,
+        "ece": NaN
+      },
+      {
+        "vol_column": "realized_vol_bps",
+        "window_size": 30,
+        "brier_score": NaN,
+        "ece": NaN
+      },
+      {
+        "vol_column": "realized_vol_60s",
+        "window_size": 60,
+        "brier_score": NaN,
+        "ece": NaN
+      },
+      {
+        "vol_column": "cl_vol_30s",
+        "window_size": 30,
+        "brier_score": NaN,
+        "ece": NaN
+      }
+    ],
+    "best_window": {
+      "vol_column": "realized_vol_15s",
+      "window_size": 15,
+      "brier_score": NaN,
+      "ece": NaN
+    }
+  },
+  "summary": {
+    "test_brier_score": NaN,
+    "test_ece": NaN,
+    "brier_pass": 

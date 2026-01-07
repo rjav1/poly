@@ -1,0 +1,401 @@
+{
+  "conditional_performance": {
+    "perf_by_tau": [
+      {
+        "tau_bucket": "0-60s",
+        "tau_min": 0,
+        "tau_max": 60,
+        "n_trades": 29,
+        "total_pnl": 7.013000000000001,
+        "mean_pnl": 0.24182758620689657,
+        "t_stat": 2.911004299138218,
+        "hit_rate": 0.27586206896551724
+      },
+      {
+        "tau_bucket": "60-120s",
+        "tau_min": 60,
+        "tau_max": 120,
+        "n_trades": 35,
+        "total_pnl": 7.194999999999999,
+        "mean_pnl": 0.20557142857142854,
+        "t_stat": 2.818697653252562,
+        "hit_rate": 0.2857142857142857
+      },
+      {
+        "tau_bucket": "120-180s",
+        "tau_min": 120,
+        "tau_max": 180,
+        "n_trades": 35,
+        "total_pnl": 1.765,
+        "mean_pnl": 0.05042857142857143,
+        "t_stat": 0.7240043008441205,
+        "hit_rate": 0.42857142857142855
+      },
+      {
+        "tau_bucket": "180-240s",
+        "tau_min": 180,
+        "tau_max": 240,
+        "n_trades": 35,
+        "total_pnl": 7.2299999999999995,
+        "mean_pnl": 0.20657142857142854,
+        "t_stat": 2.783540344201834,
+        "hit_rate": 0.4857142857142857
+      },
+      {
+        "tau_bucket": "240-300s",
+        "tau_min": 240,
+        "tau_max": 300,
+        "n_trades": 37,
+        "total_pnl": -1.0299999999999998,
+        "mean_pnl": -0.02783783783783783,
+        "t_stat": -0.4053376767317721,
+        "hit_rate": 0.35135135135135137
+      },
+      {
+        "tau_bucket": "300-420s",
+        "tau_min": 300,
+        "tau_max": 420,
+        "n_trades": 73,
+        "total_pnl": -4.21,
+        "mean_pnl": -0.05767123287671233,
+        "t_stat": -1.1011841366443471,
+        "hit_rate": 0.3013698630136986
+      }
+    ],
+    "perf_by_delta": [
+      {
+        "decile": 0,
+        "mean_abs_delta_bps": 1.7119517770440396,
+        "n_trades": 53,
+        "mean_pnl": 0.12009433962264153,
+        "total_pnl": 6.365000000000001,
+        "hit_rate": 0.4339622641509434
+      },
+      {
+        "decile": 1,
+        "mean_abs_delta_bps": 4.498878767072597,
+        "n_trades": 52,
+        "mean_pnl": 0.1091346153846154,
+        "total_pnl": 5.675000000000001,
+        "hit_rate": 0.36538461538461536
+      },
+      {
+        "decile": 2,
+        "mean_abs_delta_bps": 7.619942258190753,
+        "n_trades": 52,
+        "mean_pnl": 0.03476923076923076,
+        "total_pnl": 1.8079999999999994,
+        "hit_rate": 0.3269230769230769
+      },
+      {
+        "decile": 3,
+        "mean_abs_delta_bps": 10.902152471810268,
+        "n_trades": 52,
+        "mean_pnl": 0.10990384615384619,
+        "total_pnl": 5.715000000000002,
+        "hit_rate": 0.36538461538461536
+      },
+      {
+        "decile": 4,
+        "mean_abs_delta_bps": 23.92556303884579,
+        "n_trades": 53,
+        "mean_pnl": -0.012830188679245284,
+        "total_pnl": -0.68,
+        "hit_rate": 0.22641509433962265
+      }
+    ],
+    "perf_by_vol": [
+      {
+        "decile": 0,
+        "mean_vol_bps": 0.10015892019424065,
+        "n_trades": 53,
+        "mean_pnl": 0.06235849056603773,
+        "total_pnl": 3.3049999999999997,
+        "hit_rate": 0.33962264150943394
+      },
+      {
+        "decile": 1,
+        "mean_vol_bps": 0.1901837813924476,
+        "n_trades": 52,
+        "mean_pnl": 0.07692307692307694,
+        "total_pnl": 4.000000000000001,
+        "hit_rate": 0.36538461538461536
+      },
+      {
+        "decile": 2,
+        "mean_vol_bps": 0.28031654126363886,
+        "n_trades": 52,
+        "mean_pnl": -0.0017307692307692317,
+        "total_pnl": -0.09000000000000005,
+        "hit_rate": 0.28846153846153844
+      },
+      {
+        "decile": 3,
+        "mean_vol_bps": 0.36356487423103123,
+        "n_trades": 52,
+        "mean_pnl": 0.12461538461538464,
+        "total_pnl": 6.480000000000001,
+        "hit_rate": 0.40384615384615385
+      },
+      {
+        "decile": 4,
+        "mean_vol_bps": 0.7000067989291286,
+        "n_trades": 53,
+        "mean_pnl": 0.09788679245283019,
+        "total_pnl": 5.188,
+        "hit_rate": 0.32075471698113206
+      }
+    ],
+    "heatmap_tau_vol": [
+      {
+        "tau_bucket": "0-60s",
+        "vol_decile": 0,
+        "n_trades": 2,
+        "mean_pnl": -0.125,
+        "total_pnl": -0.25
+      },
+      {
+        "tau_bucket": "0-60s",
+        "vol_decile": 1,
+        "n_trades": 5,
+        "mean_pnl": 0.374,
+        "total_pnl": 1.8699999999999999
+      },
+      {
+        "tau_bucket": "0-60s",
+        "vol_decile": 2,
+        "n_trades": 5,
+        "mean_pnl": -0.013999999999999999,
+        "total_pnl": -0.06999999999999999
+      },
+      {
+        "tau_bucket": "0-60s",
+        "vol_decile": 3,
+        "n_trades": 7,
+        "mean_pnl": 0.2492857142857143,
+        "total_pnl": 1.745
+      },
+      {
+        "tau_bucket": "0-60s",
+        "vol_decile": 4,
+        "n_trades": 10,
+        "mean_pnl": 0.3718,
+        "total_pnl": 3.7180000000000004
+      },
+      {
+        "tau_bucket": "60-120s",
+        "vol_decile": 0,
+        "n_trades": 15,
+        "mean_pnl": 0.14533333333333334,
+        "total_pnl": 2.18
+      },
+      {
+        "tau_bucket": "60-120s",
+        "vol_decile": 1,
+        "n_trades": 7,
+        "mean_pnl": 0.49000000000000005,
+        "total_pnl": 3.43
+      },
+      {
+        "tau_bucket": "60-120s",
+        "vol_decile": 2,
+        "n_trades": 4,
+        "mean_pnl": 0.07749999999999999,
+        "total_pnl": 0.30999999999999994
+      },
+      {
+        "tau_bucket": "60-120s",
+        "vol_decile": 3,
+        "n_trades": 6,
+        "mean_pnl": 0.05583333333333332,
+        "total_pnl": 0.3349999999999999
+      },
+      {
+        "tau_bucket": "60-120s",
+        "vol_decile": 4,
+        "n_trades": 3,
+        "mean_pnl": 0.3133333333333333,
+        "total_pnl": 0.94
+      },
+      {
+        "tau_bucket": "120-180s",
+        "vol_decile": 0,
+        "n_trades": 13,
+        "mean_pnl": 0.2034615384615385,
+        "total_pnl": 2.6450000000000005
+      },
+      {
+        "tau_bucket": "120-180s",
+        "vol_decile": 1,
+        "n_trades": 10,
+        "mean_pnl": -0.22000000000000003,
+        "total_pnl": -2.2
+      },
+      {
+        "tau_bucket": "120-180s",
+        "vol_decile": 2,
+        "n_trades": 6,
+        "mean_pnl": 0.11666666666666665,
+        "total_pnl": 0.7
+      },
+      {
+        "tau_bucket": "120-180s",
+        "vol_decile": 3,
+        "n_trades": 4,
+        "mean_pnl": 0.1625,
+        "total_pnl": 0.65
+      },
+      {
+        "tau_bucket": "120-180s",
+        "vol_decile": 4,
+        "n_trades": 2,
+        "mean_pnl": -0.015,
+        "total_pnl": -0.03
+      },
+      {
+        "tau_bucket": "180-240s",
+        "vol_decile": 0,
+        "n_trades": 3,
+        "mean_pnl": -0.3333333333333333,
+        "total_pnl": -0.9999999999999999
+      },
+      {
+        "tau_bucket": "180-240s",
+        "vol_decile": 1,
+        "n_trades": 9,
+        "mean_pnl": 0.18555555555555556,
+        "total_pnl": 1.67
+      },
+      {
+        "tau_bucket": "180-240s",
+        "vol_decile": 2,
+        "n_trades": 7,
+        "mean_pnl": 0.32142857142857145,
+        "total_pnl": 2.25
+      },
+      {
+        "tau_bucket": "180-240s",
+        "vol_decile": 3,
+        "n_trades": 6,
+        "mean_pnl": 0.37999999999999995,
+        "total_pnl": 2.28
+      },
+      {
+        "tau_bucket": "180-240s",
+        "vol_decile": 4,
+        "n_trades": 10,
+        "mean_pnl": 0.20299999999999993,
+        "total_pnl": 2.0299999999999994
+      },
+      {
+        "tau_bucket": "240-300s",
+        "vol_decile": 0,
+        "n_trades": 5,
+        "mean_pnl": 0.346,
+        "total_pnl": 1.73
+      },
+      {
+        "tau_bucket": "240-300s",
+        "vol_decile": 1,
+        "n_trades": 8,
+        "mean_pnl": -0.061249999999999985,
+        "total_pnl": -0.4899999999999999
+      },
+      {
+        "tau_bucket": "240-300s",
+        "vol_decile": 2,
+        "n_trades": 8,
+        "mean_pnl": 0.018750000000000017,
+        "total_pnl": 0.15000000000000013
+      },
+      {
+        "tau_bucket": "240-300s",
+        "vol_decile": 3,
+        "n_trades": 6,
+        "mean_pnl": -0.09500000000000001,
+        "total_pnl": -0.5700000000000001
+      },
+      {
+        "tau_bucket": "240-300s",
+        "vol_decile": 4,
+        "n_trades": 10,
+        "mean_pnl": -0.185,
+        "total_pnl": -1.8499999999999999
+      },
+      {
+        "tau_bucket": "300-420s",
+        "vol_decile": 0,
+        "n_trades": 12,
+        "mean_pnl": -0.15666666666666668,
+        "total_pnl": -1.8800000000000001
+      },
+      {
+        "tau_bucket": "300-420s",
+        "vol_decile": 1,
+        "n_trades": 10,
+        "mean_pnl": -0.07300000000000001,
+        "total_pnl": -0.7300000000000001
+      },
+      {
+        "tau_bucket": "300-420s",
+        "vol_decile": 2,
+        "n_trades": 20,
+        "mean_pnl": -0.15650000000000003,
+        "total_pnl": -3.1300000000000003
+      },
+      {
+        "tau_bucket": "300-420s",
+        "vol_decile": 3,
+        "n_trades": 18,
+        "mean_pnl": 0.06777777777777781,
+        "total_pnl": 1.2200000000000006
+      },
+      {
+        "tau_bucket": "300-420s",
+        "vol_decile": 4,
+        "n_trades": 13,
+        "mean_pnl": 0.023846153846153857,
+        "total_pnl": 0.31000000000000016
+      }
+    ],
+    "summary": {
+      "n_trades": 262,
+      "total_pnl": 18.883,
+      "mean_pnl": 0.07207251908396946,
+      "std_pnl": 0.44728462837675925,
+      "best_tau_bucket": "0-60s",
+      "worst_tau_bucket": "300-420s"
+    }
+  },
+  "regime_transitions": {
+    "perf_by_regime": [
+      {
+        "regime": "stable",
+        "n_trades": 259,
+        "total_pnl": 19.233000000000004,
+        "mean_pnl": 0.07425868725868727,
+        "t_stat": 2.662956207522795,
+        "hit_rate": 0.3436293436293436
+      },
+      {
+        "regime": "increasing",
+        "n_trades": 1,
+        "total_pnl": -0.18,
+        "mean_pnl": -0.18,
+        "t_stat": null,
+        "hit_rate": 0.0
+      },
+      {
+        "regime": "decreasing",
+        "n_trades": 2,
+        "total_pnl": -0.17000000000000004,
+        "mean_pnl": -0.08500000000000002,
+        "t_stat": null,
+        "hit_rate": 0.5
+      }
+    ],
+    "best_regime": "stable",
+    "worst_regime": "increasing",
+    "regime_spread": 0.2542586872586873
+  }
+}

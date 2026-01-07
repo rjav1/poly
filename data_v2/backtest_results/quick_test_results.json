@@ -1,0 +1,27 @@
+{
+  "model_calibration": {
+    "brier_score": null,
+    "ece": null,
+    "brier_pass": false,
+    "ece_pass": false
+  },
+  "strategy_performance": {
+    "n_markets": 11,
+    "n_trades": 150,
+    "total_pnl": 32.95,
+    "mean_pnl_per_market": 2.9954545454545456,
+    "std_pnl_per_market": 3.4584457886061006,
+    "se_pnl_per_market": 1.0427606398719296,
+    "t_stat": 2.8726194976274164,
+    "hit_rate_per_market": 0.8181818181818182,
+    "hit_rate_per_trade": 0.74,
+    "worst_market_pnl": -3.249999999999999,
+    "best_market_pnl": 7.4700000000000015,
+    "median_market_pnl": 3.47,
+    "avg_trades_per_market": 13.636363636363637,
+    "conversion_entry_rate": 30.666666666666664,
+    "conversion_exit_rate": 29.333333333333332
+  },
+  "n_train_markets": 25,
+  "n_test_markets": 11
+}

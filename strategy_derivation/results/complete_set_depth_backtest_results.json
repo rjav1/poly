@@ -1,0 +1,77 @@
+{
+  "params": {
+    "epsilon": 0.005,
+    "tau_min": 600,
+    "tau_max": 900,
+    "slippage_buffer": 0.005,
+    "q_cap_limit": 10,
+    "cooldown": 30,
+    "market_duration": 900
+  },
+  "analysis": {
+    "n_signals": 45,
+    "n_markets": 29,
+    "capacity": {
+      "q_max_p10": 4.8671875,
+      "q_max_p50": 16.46875,
+      "q_max_p90": 99.2265625,
+      "q_max_mean": 34.446875,
+      "q_filled_mean": 8.7875
+    },
+    "pnl": {
+      "total_pnl": 3.441181249999999,
+      "avg_pnl_per_signal": 0.07647069444444443,
+      "avg_edge_per_set": 0.00831587973856209,
+      "min_pnl": 0.012734375000000022,
+      "max_pnl": 0.2500000000000003
+    },
+    "executability": {
+      "executable_at_q1": {
+        "count": 45,
+        "pct": 100.0
+      },
+      "executable_at_q5": {
+        "count": 38,
+        "pct": 84.44444444444444
+      },
+      "executable_at_q10": {
+        "count": 30,
+        "pct": 66.66666666666666
+      },
+      "executable_at_q20": {
+        "count": 18,
+        "pct": 40.0
+      }
+    },
+    "expected_pnl_by_size": {
+      "expected_pnl_at_q1": 0.009000000000000013,
+      "expected_pnl_at_q5": 0.041799999999999976,
+      "expected_pnl_at_q10": 0.08309487179487175,
+      "expected_pnl_at_q20": 0.15111562499999953
+    },
+    "avg_edge_by_size": {
+      "avg_edge_at_q1": 0.009000000000000013,
+      "avg_edge_at_q5": 0.008359999999999994,
+      "avg_edge_at_q10": 0.00830948717948717,
+      "avg_edge_at_q20": 0.007555781249999977
+    },
+    "vwap": {
+      "avg_vwap_up": 0.5102396758169936,
+      "avg_vwap_down": 0.47644444444444456,
+      "avg_set_cost": 0.9866841202614381,
+      "l1_set_cost_avg": 0.9860000000000001,
+      "slippage_from_l1": 0.0006841202614380482
+    }
+  },
+  "comparison": {
+    "l1_executable_at_q1": 45,
+    "depth_executable_at_q1": 45,
+    "l1_executable_pct": 100.0,
+    "depth_executable_pct": 100.0,
+    "improvement_factor": 1.0,
+    "avg_l1_capacity": 31.000888888888895,
+    "avg_depth_capacity": 34.446875
+  },
+  "n_signals": 45,
+  "generated": "2026-01-07T09:41:24.673072"
+}

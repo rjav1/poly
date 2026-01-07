@@ -1,0 +1,41 @@
+{
+  "strategy": "complete_set_arb_underround_only",
+  "parameters": {
+    "epsilon": 0.005,
+    "tau_window_seconds": [600, 900],
+    "slippage_buffer": 0.005,
+    "cooldown_seconds": 30
+  },
+  "execution": {
+    "mode": "taker",
+    "initial_size_q": 1,
+    "adaptive_rules": [
+      {
+        "condition": "q_max_at_signal >= 10 AND edge(q=5) >= 0.006",
+        "action": "size = 5"
+      }
+    ],
+    "max_size_q": 5
+  },
+  "logging": {
+    "depth_snapshots": ["t0", "t0+0.5s", "t0+1s", "t0+2s", "t0+5s"],
+    "record": [
+      "up/down 6-level asks",
+      "q_max(t)",
+      "edge(q=1,t)",
+      "VWAP costs at q=1,5,10"
+    ]
+  },
+  "kill_switches": [
+    {
+      "condition": "rolling_50_fill_avg_edge < 0",
+      "action": "halt"
+    },
+    {
+      "condition": "rolling_50_exec_q1 < 0.5",
+      "action": "halt"
+    }
+  ],
+  "notes": "Run paper mode only; do not place live orders. Use this to validate fillability and timing before small capital deployment."
+}
+

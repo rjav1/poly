@@ -1,0 +1,4 @@
+strategy,subset,n_markets,n_trades,total_pnl,mean_pnl_per_market,t_stat,hit_rate_trade
+Strategy_A,volume_markets,12,49,1.8199999999999987,0.1516666666666667,0.2260354499851532,0.5714285714285714
+Strategy_B,volume_markets,12,0,0.0,0.0,0.0,0.0
+Strategy_C,volume_markets,12,45,-0.13000000000000034,-0.010833333333333287,-0.018756703934004876,0.5111111111111111

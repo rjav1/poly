@@ -1,0 +1,1206 @@
+{
+  "per_wallet": {
+    "vidarx": {
+      "wallet": "vidarx",
+      "n_positive": 6217,
+      "n_negative": 18651,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.2879720307077418,
+          "cv_auc_std": 0.0720737094812665,
+          "n_nonzero_coefs": 11,
+          "top_features": [
+            {
+              "feature": "cl_mid",
+              "coefficient": -1.2721946957898367,
+              "direction": "low",
+              "threshold": -2873.812165966321,
+              "condition": [
+                "cl_mid",
+                "<",
+                -2873.812165966321
+              ],
+              "importance": 1.2721946957898367
+            },
+            {
+              "feature": "cl_bid",
+              "coefficient": 0.6493216204456431,
+              "direction": "high",
+              "threshold": 21061.744652822334,
+              "condition": [
+                "cl_bid",
+                ">",
+                21061.744652822334
+              ],
+              "importance": 0.6493216204456431
+            },
+            {
+              "feature": "cl_ask",
+              "coefficient": 0.6478848873730013,
+              "direction": "high",
+              "threshold": 21063.349793046473,
+              "condition": [
+                "cl_ask",
+                ">",
+                21063.349793046473
+              ],
+              "importance": 0.6478848873730013
+            },
+            {
+              "feature": "pm_ffill",
+              "coefficient": -0.10883876595152121,
+              "direction": "low",
+              "threshold": -0.05895315111410159,
+              "condition": [
+                "pm_ffill",
+                "<",
+                -0.05895315111410159
+              ],
+              "importance": 0.10883876595152121
+            },
+            {
+              "feature": "sum_bids",
+              "coefficient": -0.051709816988176824,
+              "direction": "low",
+              "threshold": 0.9581498772459904,
+              "condition": [
+                "sum_bids",
+                "<",
+                0.9581498772459904
+              ],
+              "importance": 0.051709816988176824
+            }
+          ]
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.3290843989451741,
+          "cv_auc_std": 0.09942966384552078,
+          "tree_depth": 5,
+          "n_leaves": 21,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "pm_up_spread",
+              "importance": 0.5014565062419587
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "importance": 0.14662201947415843
+            },
+            {
+              "feature": "pm_down_best_ask",
+              "importance": 0.08885583797346272
+            },
+            {
+              "feature": "cl_mid",
+              "importance": 0.08586626871134487
+            },
+            {
+              "feature": "cl_ask",
+              "importance": 0.07883954950161694
+            },
+            {
+              "feature": "sum_bids",
+              "importance": 0.027691613403143786
+            },
+            {
+              "feature": "pm_up_best_bid",
+              "importance": 0.026426409276155898
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.025715781532724816
+            },
+            {
+              "feature": "delta",
+              "importance": 0.012166770433105514
+            },
+            {
+              "feature": "delta_bps",
+              "importance": 0.0032873203728173007
+            }
+          ]
+        }
+      },
+      "rules": [
+        {
+          "source": "logistic_regression",
+          "feature": "cl_mid",
+          "direction": "low",
+          "importance": 1.2721946957898367,
+          "rule_string": "IF cl_mid is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_bid",
+          "direction": "high",
+          "importance": 0.6493216204456431,
+          "rule_string": "IF cl_bid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_ask",
+          "direction": "high",
+          "importance": 0.6478848873730013,
+          "rule_string": "IF cl_ask is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_ffill",
+          "direction": "low",
+          "importance": 0.10883876595152121,
+          "rule_string": "IF pm_ffill is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "sum_bids",
+          "direction": "low",
+          "importance": 0.051709816988176824,
+          "rule_string": "IF sum_bids is low THEN more likely to trade"
+        }
+      ]
+    },
+    "tsaiTop": {
+      "wallet": "tsaiTop",
+      "n_positive": 59,
+      "n_negative": 7141,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.3089775910364146,
+          "cv_auc_std": 0.139838283476526,
+          "n_nonzero_coefs": 4,
+          "top_features": [
+            {
+              "feature": "pm_up_best_bid",
+              "coefficient": 0.03215109892328254,
+              "direction": "high",
+              "threshold": 0.6835267327972616,
+              "condition": [
+                "pm_up_best_bid",
+                ">",
+                0.6835267327972616
+              ],
+              "importance": 0.03215109892328254
+            },
+            {
+              "feature": "pm_up_mid",
+              "coefficient": 0.0236581217634759,
+              "direction": "high",
+              "threshold": 0.6892087655095587,
+              "condition": [
+                "pm_up_mid",
+                ">",
+                0.6892087655095587
+              ],
+              "importance": 0.0236581217634759
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "coefficient": -0.015056585395022613,
+              "direction": "low",
+              "threshold": 0.30489221656429555,
+              "condition": [
+                "pm_down_best_bid",
+                "<",
+                0.30489221656429555
+              ],
+              "importance": 0.015056585395022613
+            },
+            {
+              "feature": "pm_up_best_ask",
+              "coefficient": 0.01450327122480242,
+              "direction": "high",
+              "threshold": 0.6949172955929016,
+              "condition": [
+                "pm_up_best_ask",
+                ">",
+                0.6949172955929016
+              ],
+              "importance": 0.01450327122480242
+            }
+          ]
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.44386740345688436,
+          "cv_auc_std": 0.042011084189673226,
+          "tree_depth": 5,
+          "n_leaves": 19,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "cl_ask",
+              "importance": 0.4411472831722859
+            },
+            {
+              "feature": "pm_up_best_ask",
+              "importance": 0.18246586056642683
+            },
+            {
+              "feature": "pm_up_best_bid",
+              "importance": 0.16552636314049776
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.06429376598568479
+            },
+            {
+              "feature": "pm_down_best_ask",
+              "importance": 0.05692435306742463
+            },
+            {
+              "feature": "pm_down_best_ask_size",
+              "importance": 0.04169904180639194
+            },
+            {
+              "feature": "pm_up_mid",
+              "importance": 0.02386215423234673
+            },
+            {
+              "feature": "pm_up_best_bid_size",
+              "importance": 0.009789030447730603
+            },
+            {
+              "feature": "pm_up_best_ask_size",
+              "importance": 0.009683531261720713
+            },
+            {
+              "feature": "sum_asks",
+              "importance": 0.004608616319489991
+            }
+          ]
+        }
+      },
+      "rules": [
+        {
+          "source": "logistic_regression",
+          "feature": "pm_up_best_bid",
+          "direction": "high",
+          "importance": 0.03215109892328254,
+          "rule_string": "IF pm_up_best_bid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_up_mid",
+          "direction": "high",
+          "importance": 0.0236581217634759,
+          "rule_string": "IF pm_up_mid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_down_best_bid",
+          "direction": "low",
+          "importance": 0.015056585395022613,
+          "rule_string": "IF pm_down_best_bid is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_up_best_ask",
+          "direction": "high",
+          "importance": 0.01450327122480242,
+          "rule_string": "IF pm_up_best_ask is high THEN more likely to trade"
+        }
+      ]
+    },
+    "Account88888": {
+      "wallet": "Account88888",
+      "n_positive": 11283,
+      "n_negative": 25617,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.5212914688513283,
+          "cv_auc_std": 0.009612842322797507,
+          "n_nonzero_coefs": 9,
+          "top_features": [
+            {
+              "feature": "pm_ffill",
+              "coefficient": -0.12346900275792683,
+              "direction": "low",
+              "threshold": -0.05887495760117552,
+              "condition": [
+                "pm_ffill",
+                "<",
+                -0.05887495760117552
+              ],
+              "importance": 0.12346900275792683
+            },
+            {
+              "feature": "cl_mid",
+              "coefficient": 0.0873864651918351,
+              "direction": "high",
+              "threshold": 20986.083688826388,
+              "condition": [
+                "cl_mid",
+                ">",
+                20986.083688826388
+              ],
+              "importance": 0.0873864651918351
+            },
+            {
+              "feature": "pm_up_spread",
+              "coefficient": 0.08629348661106409,
+              "direction": "high",
+              "threshold": 0.016778803830878396,
+              "condition": [
+                "pm_up_spread",
+                ">",
+                0.016778803830878396
+              ],
+              "importance": 0.08629348661106409
+            },
+            {
+              "feature": "pm_down_spread",
+              "coefficient": 0.06875811677735767,
+              "direction": "high",
+              "threshold": 0.016698832892946734,
+              "condition": [
+                "pm_down_spread",
+                ">",
+                0.016698832892946734
+              ],
+              "importance": 0.06875811677735767
+            },
+            {
+              "feature": "sum_bids",
+              "coefficient": -0.05820538900958439,
+              "direction": "low",
+              "threshold": 0.9588267645008617,
+              "condition": [
+                "sum_bids",
+                "<",
+                0.9588267645008617
+              ],
+              "importance": 0.05820538900958439
+            }
+          ]
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.5700780825997162,
+          "cv_auc_std": 0.028853722449526942,
+          "tree_depth": 5,
+          "n_leaves": 30,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "pm_up_mid",
+              "importance": 0.42828202299557405
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "importance": 0.39025367325416466
+            },
+            {
+              "feature": "cl_ask",
+              "importance": 0.046070249731944325
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.039160220082015404
+            },
+            {
+              "feature": "pm_up_best_bid",
+              "importance": 0.03129162738930874
+            },
+            {
+              "feature": "cl_mid",
+              "importance": 0.02806935278704554
+            },
+            {
+              "feature": "delta",
+              "importance": 0.016389346512334327
+            },
+            {
+              "feature": "pm_down_best_ask",
+              "importance": 0.008616087621467879
+            },
+            {
+              "feature": "pm_up_best_ask",
+              "importance": 0.005571840914431674
+            },
+            {
+              "feature": "pm_down_spread",
+              "importance": 0.0036348379901118147
+            }
+          ]
+        }
+      },
+      "rules": [
+        {
+          "source": "logistic_regression",
+          "feature": "pm_ffill",
+          "direction": "low",
+          "importance": 0.12346900275792683,
+          "rule_string": "IF pm_ffill is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_mid",
+          "direction": "high",
+          "importance": 0.0873864651918351,
+          "rule_string": "IF cl_mid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_up_spread",
+          "direction": "high",
+          "importance": 0.08629348661106409,
+          "rule_string": "IF pm_up_spread is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_down_spread",
+          "direction": "high",
+          "importance": 0.06875811677735767,
+          "rule_string": "IF pm_down_spread is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "sum_bids",
+          "direction": "low",
+          "importance": 0.05820538900958439,
+          "rule_string": "IF sum_bids is low THEN more likely to trade"
+        }
+      ]
+    },
+    "PurpleThunderBicycleMountain": {
+      "wallet": "PurpleThunderBicycleMountain",
+      "n_positive": 6565,
+      "n_negative": 19535,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.5222430375183553,
+          "cv_auc_std": 0.041993635972469856,
+          "n_nonzero_coefs": 12,
+          "top_features": [
+            {
+              "feature": "delta",
+              "coefficient": 0.4080115409806269,
+              "direction": "high",
+              "threshold": 1.8280964929759331,
+              "condition": [
+                "delta",
+                ">",
+                1.8280964929759331
+              ],
+              "importance": 0.4080115409806269
+            },
+            {
+              "feature": "delta_bps",
+              "coefficient": -0.32881875995295123,
+              "direction": "low",
+              "threshold": -5.34651450212704,
+              "condition": [
+                "delta_bps",
+                "<",
+                -5.34651450212704
+              ],
+              "importance": 0.32881875995295123
+            },
+            {
+              "feature": "cl_mid",
+              "coefficient": 0.09571716147044966,
+              "direction": "high",
+              "threshold": 2881.605328209765,
+              "condition": [
+                "cl_mid",
+                ">",
+                2881.605328209765
+              ],
+              "importance": 0.09571716147044966
+            },
+            {
+              "feature": "pm_up_spread",
+              "coefficient": 0.07383011279810989,
+              "direction": "high",
+              "threshold": 0.01683700565226578,
+              "condition": [
+                "pm_up_spread",
+                ">",
+                0.01683700565226578
+              ],
+              "importance": 0.07383011279810989
+            },
+            {
+              "feature": "pm_ffill",
+              "coefficient": -0.07219622022254044,
+              "direction": "low",
+              "threshold": -0.05898778027690714,
+              "condition": [
+                "pm_ffill",
+                "<",
+                -0.05898778027690714
+              ],
+              "importance": 0.07219622022254044
+            }
+          ]
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.45044821020471276,
+          "cv_auc_std": 0.029917065956286636,
+          "tree_depth": 5,
+          "n_leaves": 28,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "delta_bps",
+              "importance": 0.2905882506347958
+            },
+            {
+              "feature": "pm_up_spread",
+              "importance": 0.22089989239268878
+            },
+            {
+              "feature": "cl_mid",
+              "importance": 0.1748594616836559
+            },
+            {
+              "feature": "pm_down_mid",
+              "importance": 0.08372175770006249
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "importance": 0.06987101611731933
+            },
+            {
+              "feature": "pm_up_mid",
+              "importance": 0.05458182574125705
+            },
+            {
+              "feature": "delta",
+              "importance": 0.03899252248345013
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.03496502497748046
+            },
+            {
+              "feature": "pm_up_best_ask",
+              "importance": 0.011829567488880113
+            },
+            {
+              "feature": "pm_down_best_ask",
+              "importance": 0.009401383305272624
+            }
+          ]
+        }
+      },
+      "rules": [
+        {
+          "source": "logistic_regression",
+          "feature": "delta",
+          "direction": "high",
+          "importance": 0.4080115409806269,
+          "rule_string": "IF delta is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "delta_bps",
+          "direction": "low",
+          "importance": 0.32881875995295123,
+          "rule_string": "IF delta_bps is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_mid",
+          "direction": "high",
+          "importance": 0.09571716147044966,
+          "rule_string": "IF cl_mid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_up_spread",
+          "direction": "high",
+          "importance": 0.07383011279810989,
+          "rule_string": "IF pm_up_spread is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_ffill",
+          "direction": "low",
+          "importance": 0.07219622022254044,
+          "rule_string": "IF pm_ffill is low THEN more likely to trade"
+        }
+      ]
+    },
+    "Lkjhgfdna": {
+      "wallet": "Lkjhgfdna",
+      "n_positive": 3245,
+      "n_negative": 10000,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.29143158660497875,
+          "cv_auc_std": 0.07436652535462862,
+          "n_nonzero_coefs": 10,
+          "top_features": [
+            {
+              "feature": "cl_mid",
+              "coefficient": -1.3225716025829317,
+              "direction": "low",
+              "threshold": -2812.3872092978418,
+              "condition": [
+                "cl_mid",
+                "<",
+                -2812.3872092978418
+              ],
+              "importance": 1.3225716025829317
+            },
+            {
+              "feature": "cl_bid",
+              "coefficient": 0.7035217931758287,
+              "direction": "high",
+              "threshold": 21429.03556035651,
+              "condition": [
+                "cl_bid",
+                ">",
+                21429.03556035651
+              ],
+              "importance": 0.7035217931758287
+            },
+            {
+              "feature": "cl_ask",
+              "coefficient": 0.6989624763419316,
+              "direction": "high",
+              "threshold": 21430.658612939063,
+              "condition": [
+                "cl_ask",
+                ">",
+                21430.658612939063
+              ],
+              "importance": 0.6989624763419316
+            },
+            {
+              "feature": "pm_ffill",
+              "coefficient": -0.16821808986048628,
+              "direction": "low",
+              "threshold": -0.05901697168502299,
+              "condition": [
+                "pm_ffill",
+                "<",
+                -0.05901697168502299
+              ],
+              "importance": 0.16821808986048628
+            },
+            {
+              "feature": "sum_bids",
+              "coefficient": -0.05005213059634893,
+              "direction": "low",
+              "threshold": 0.9608892018343953,
+              "condition": [
+                "sum_bids",
+                "<",
+                0.9608892018343953
+              ],
+              "importance": 0.05005213059634893
+            }
+          ]
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.3425810131930364,
+          "cv_auc_std": 0.1166408271429206,
+          "tree_depth": 5,
+          "n_leaves": 23,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "pm_up_best_ask",
+              "importance": 0.37785280098177293
+            },
+            {
+              "feature": "pm_down_mid",
+              "importance": 0.2983088397819958
+            },
+            {
+              "feature": "cl_mid",
+              "importance": 0.13506634551159913
+            },
+            {
+              "feature": "cl_ask",
+              "importance": 0.07184357612539147
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.04813095041230398
+            },
+            {
+              "feature": "pm_down_best_ask",
+              "importance": 0.04151971017553926
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "importance": 0.019037177491706688
+            },
+            {
+              "feature": "delta_bps",
+              "importance": 0.004604439255156837
+            },
+            {
+              "feature": "delta",
+              "importance": 0.0036361602645340234
+            },
+            {
+              "feature": "cl_ffill",
+              "importance": 0.0
+            }
+          ]
+        }
+      },
+      "rules": [
+        {
+          "source": "logistic_regression",
+          "feature": "cl_mid",
+          "direction": "low",
+          "importance": 1.3225716025829317,
+          "rule_string": "IF cl_mid is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_bid",
+          "direction": "high",
+          "importance": 0.7035217931758287,
+          "rule_string": "IF cl_bid is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "cl_ask",
+          "direction": "high",
+          "importance": 0.6989624763419316,
+          "rule_string": "IF cl_ask is high THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "pm_ffill",
+          "direction": "low",
+          "importance": 0.16821808986048628,
+          "rule_string": "IF pm_ffill is low THEN more likely to trade"
+        },
+        {
+          "source": "logistic_regression",
+          "feature": "sum_bids",
+          "direction": "low",
+          "importance": 0.05005213059634893,
+          "rule_string": "IF sum_bids is low THEN more likely to trade"
+        }
+      ]
+    },
+    "FLO782": {
+      "wallet": "FLO782",
+      "n_positive": 16,
+      "n_negative": 2684,
+      "models": {
+        "logistic_regression": {
+          "cv_auc_mean": 0.5,
+          "cv_auc_std": 0.0,
+          "n_nonzero_coefs": 0,
+          "top_features": []
+        },
+        "decision_tree": {
+          "cv_auc_mean": 0.36708372389486704,
+          "cv_auc_std": 0.14484841201929555,
+          "tree_depth": 5,
+          "n_leaves": 10,
+          "extracted_rules": [],
+          "feature_importances": [
+            {
+              "feature": "pm_up_best_bid",
+              "importance": 0.2908259428397818
+            },
+            {
+              "feature": "pm_down_best_bid_size",
+              "importance": 0.23926684360930023
+            },
+            {
+              "feature": "pm_down_best_ask_size",
+              "importance": 0.2150264912579439
+            },
+            {
+              "feature": "pm_up_best_bid_size",
+              "importance": 0.13514407302731257
+            },
+            {
+              "feature": "pm_up_best_ask_size",
+              "importance": 0.05243057335274353
+            },
+            {
+              "feature": "pm_down_best_bid",
+              "importance": 0.04095207532562506
+            },
+            {
+              "feature": "cl_ask",
+              "importance": 0.02635400058729283
+            },
+            {
+              "feature": "cl_bid",
+              "importance": 0.0
+            },
+            {
+              "feature": "cl_ffill",
+              "importance": 0.0
+            },
+            {
+              "feature": "pm_up_mid",
+              "importance": 0.0
+            }
+          ]
+        }
+      },
+      "rules": []
+    }
+  },
+  "direction_analysis": {
+    "vidarx": {
+      "wallet": "vidarx",
+      "n_up": 6219,
+      "n_down": 7312,
+      "direction_rules": []
+    },
+    "tsaiTop": {
+      "wallet": "tsaiTop",
+      "n_up": 149,
+      "n_down": 140,
+      "direction_rules": [
+        {
+          "feature": "feat_down_spread_rel",
+          "effect_size": 1.005196048752216,
+          "up_mean": 0.18056157504122472,
+          "down_mean": 0.02089044652099067,
+          "rule": "Higher down_spread_rel -> UP"
+        },
+        {
+          "feature": "feat_pm_momentum_5s_abs",
+          "effect_size": 0.9418464809864644,
+          "up_mean": 0.0182214765100671,
+          "down_mean": 0.06275000000000001,
+          "rule": "Higher pm_momentum_5s_abs -> DOWN"
+        },
+        {
+          "feature": "feat_pm_momentum_1s_abs",
+          "effect_size": 0.6332418355881878,
+          "up_mean": 0.0069463087248322185,
+          "down_mean": 0.021000000000000005,
+          "rule": "Higher pm_momentum_1s_abs -> DOWN"
+        },
+        {
+          "feature": "feat_up_spread_rel",
+          "effect_size": 0.6120689565211027,
+          "up_mean": 0.014361401801824453,
+          "down_mean": 0.07307903595407923,
+          "rule": "Higher up_spread_rel -> DOWN"
+        },
+        {
+          "feature": "feat_quote_staleness",
+          "effect_size": 0.41232180113393085,
+          "up_mean": 1.3355704697986577,
+          "down_mean": 0.45357142857142857,
+          "rule": "Higher quote_staleness -> UP"
+        },
+        {
+          "feature": "feat_stale_quote",
+          "effect_size": 0.3724576907561574,
+          "up_mean": 0.087248322147651,
+          "down_mean": 0.007142857142857143,
+          "rule": "Higher stale_quote -> UP"
+        },
+        {
+          "feature": "feat_pm_momentum_1s_sign",
+          "effect_size": 0.3554706276322252,
+          "up_mean": 0.020134228187919462,
+          "down_mean": -0.2571428571428571,
+          "rule": "Higher pm_momentum_1s_sign -> UP"
+        }
+      ]
+    },
+    "Account88888": {
+      "wallet": "Account88888",
+      "n_up": 21603,
+      "n_down": 20337,
+      "direction_rules": [
+        {
+          "feature": "feat_pm_momentum_5s",
+          "effect_size": 0.32113713681718276,
+          "up_mean": 0.008702014355174809,
+          "down_mean": -0.004899985146308859,
+          "rule": "Higher pm_momentum_5s -> UP"
+        }
+      ]
+    },
+    "PurpleThunderBicycleMountain": {
+      "wallet": "PurpleThunderBicycleMountain",
+      "n_up": 7750,
+      "n_down": 9414,
+      "direction_rules": [
+        {
+          "feature": "feat_up_spread_rel",
+          "effect_size": 0.4920374112119275,
+          "up_mean": 0.12345709095298774,
+          "down_mean": 0.03563662173458075,
+          "rule": "Higher up_spread_rel -> UP"
+        },
+        {
+          "feature": "feat_down_spread_rel",
+          "effect_size": 0.47646493708637205,
+          "up_mean": 0.032537770397581,
+          "down_mean": 0.09151983715575261,
+          "rule": "Higher down_spread_rel -> DOWN"
+        },
+        {
+          "feature": "feat_pm_momentum_5s",
+          "effect_size": 0.349646053434149,
+          "up_mean": 0.0076881935483870956,
+          "down_mean": -0.0065769067346505205,
+          "rule": "Higher pm_momentum_5s -> UP"
+        }
+      ]
+    },
+    "Lkjhgfdna": {
+      "wallet": "Lkjhgfdna",
+      "n_up": 592,
+      "n_down": 535,
+      "direction_rules": []
+    },
+    "FLO782": {
+      "wallet": "FLO782",
+      "n_up": 29,
+      "n_down": 8,
+      "direction_rules": [
+        {
+          "feature": "feat_spread_diff",
+          "effect_size": 1.021135421483287,
+          "up_mean": -0.00034482758620688536,
+          "down_mean": -0.007500000000000007,
+          "rule": "Higher spread_diff -> UP"
+        },
+        {
+          "feature": "feat_pm_momentum_1s_sign",
+          "effect_size": 0.8547499558795655,
+          "up_mean": 0.034482758620689655,
+          "down_mean": -0.75,
+          "rule": "Higher pm_momentum_1s_sign -> UP"
+        },
+        {
+          "feature": "feat_down_spread",
+          "effect_size": 0.8067191054729341,
+          "up_mean": 0.013448275862068962,
+          "down_mean": 0.017500000000000016,
+          "rule": "Higher down_spread -> DOWN"
+        },
+        {
+          "feature": "feat_pm_momentum_5s",
+          "effect_size": 0.7924422778741833,
+          "up_mean": 0.0089655172413793,
+          "down_mean": -0.025625000000000023,
+          "rule": "Higher pm_momentum_5s -> UP"
+        },
+        {
+          "feature": "feat_underround",
+          "effect_size": 0.7554099490270428,
+          "up_mean": -0.011379310344827597,
+          "down_mean": -0.015000000000000013,
+          "rule": "Higher underround -> UP"
+        },
+        {
+          "feature": "feat_up_spread",
+          "effect_size": 0.7135039037186182,
+          "up_mean": 0.013103448275862076,
+          "down_mean": 0.010000000000000009,
+          "rule": "Higher up_spread -> UP"
+        },
+        {
+          "feature": "feat_quote_staleness",
+          "effect_size": 0.6447504095550474,
+          "up_mean": 0.3448275862068966,
+          "down_mean": 0.0,
+          "rule": "Higher quote_staleness -> UP"
+        },
+        {
+          "feature": "feat_pm_momentum_1s_abs",
+          "effect_size": 0.5381555672279942,
+          "up_mean": 0.01586206896551724,
+          "down_mean": 0.007500000000000007,
+          "rule": "Higher pm_momentum_1s_abs -> UP"
+        },
+        {
+          "feature": "feat_pm_momentum_1s",
+          "effect_size": 0.5178074768525694,
+          "up_mean": 0.006896551724137922,
+          "down_mean": -0.0037500000000000033,
+          "rule": "Higher pm_momentum_1s -> UP"
+        },
+        {
+          "feature": "feat_up_spread_rel",
+          "effect_size": 0.45413840017690116,
+          "up_mean": 0.020917932921754992,
+          "down_mean": 0.017063036121822632,
+          "rule": "Higher up_spread_rel -> UP"
+        }
+      ]
+    }
+  },
+  "cross_wallet_patterns": {
+    "universal_features": [
+      {
+        "feature": "cl_bid",
+        "n_wallets": 6,
+        "wallets": [
+          "tsaiTop",
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "FLO782",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.19563864457646016
+      },
+      {
+        "feature": "pm_down_best_bid",
+        "n_wallets": 6,
+        "wallets": [
+          "tsaiTop",
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "FLO782",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.11363209117633279
+      },
+      {
+        "feature": "cl_ask",
+        "n_wallets": 5,
+        "wallets": [
+          "tsaiTop",
+          "Lkjhgfdna",
+          "FLO782",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.28730028897620924
+      },
+      {
+        "feature": "pm_down_best_ask",
+        "n_wallets": 5,
+        "wallets": [
+          "tsaiTop",
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.04106347442863342
+      },
+      {
+        "feature": "cl_mid",
+        "n_wallets": 4,
+        "wallets": [
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.40021641921608736
+      },
+      {
+        "feature": "pm_up_best_ask",
+        "n_wallets": 4,
+        "wallets": [
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "tsaiTop",
+          "Account88888"
+        ],
+        "avg_importance": 0.11844466823526278
+      },
+      {
+        "feature": "pm_ffill",
+        "n_wallets": 4,
+        "wallets": [
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.11818051969811869
+      },
+      {
+        "feature": "pm_up_best_bid",
+        "n_wallets": 4,
+        "wallets": [
+          "FLO782",
+          "tsaiTop",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.10924428831380535
+      },
+      {
+        "feature": "pm_up_mid",
+        "n_wallets": 4,
+        "wallets": [
+          "FLO782",
+          "PurpleThunderBicycleMountain",
+          "tsaiTop",
+          "Account88888"
+        ],
+        "avg_importance": 0.10607682494653074
+      },
+      {
+        "feature": "delta",
+        "n_wallets": 4,
+        "wallets": [
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.09583926813481017
+      },
+      {
+        "feature": "pm_up_spread",
+        "n_wallets": 3,
+        "wallets": [
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.22061999951095537
+      },
+      {
+        "feature": "delta_bps",
+        "n_wallets": 3,
+        "wallets": [
+          "Lkjhgfdna",
+          "vidarx",
+          "PurpleThunderBicycleMountain"
+        ],
+        "avg_importance": 0.1568246925539303
+      },
+      {
+        "feature": "sum_bids",
+        "n_wallets": 3,
+        "wallets": [
+          "Lkjhgfdna",
+          "vidarx",
+          "Account88888"
+        ],
+        "avg_importance": 0.04691473749931348
+      },
+      {
+        "feature": "pm_down_mid",
+        "n_wallets": 2,
+        "wallets": [
+          "Lkjhgfdna",
+          "PurpleThunderBicycleMountain"
+        ],
+        "avg_importance": 0.19101529874102913
+      },
+      {
+        "feature": "pm_down_best_ask_size",
+        "n_wallets": 2,
+        "wallets": [
+          "FLO782",
+          "tsaiTop"
+        ],
+        "avg_importance": 0.1283627665321679
+      }
+    ],
+    "total_features_analyzed": 21
+  }
+}

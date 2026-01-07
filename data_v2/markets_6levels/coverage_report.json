@@ -1,0 +1,376 @@
+{
+  "total_markets": 41,
+  "markets_above_80": 35,
+  "markets_above_90": 25,
+  "markets": [
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1130_3222",
+      "cl_coverage": 99.33333333333333,
+      "pm_coverage": 95.88888888888889,
+      "both_coverage": 95.33333333333334,
+      "cl_points": 894,
+      "pm_points": 863
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0345_3264",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 95.55555555555556,
+      "both_coverage": 94.77777777777779,
+      "cl_points": 892,
+      "pm_points": 860
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0745_3253",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 95.55555555555556,
+      "both_coverage": 94.77777777777779,
+      "cl_points": 893,
+      "pm_points": 860
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1115_3221",
+      "cl_coverage": 98.66666666666667,
+      "pm_coverage": 94.88888888888889,
+      "both_coverage": 93.66666666666667,
+      "cl_points": 888,
+      "pm_points": 854
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0500_3253",
+      "cl_coverage": 99.0,
+      "pm_coverage": 94.55555555555556,
+      "both_coverage": 93.55555555555556,
+      "cl_points": 891,
+      "pm_points": 851
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0730_3258",
+      "cl_coverage": 98.77777777777777,
+      "pm_coverage": 94.77777777777779,
+      "both_coverage": 93.55555555555556,
+      "cl_points": 889,
+      "pm_points": 853
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0715_3257",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 94.55555555555556,
+      "both_coverage": 93.44444444444444,
+      "cl_points": 890,
+      "pm_points": 851
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1015_3205",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 94.11111111111111,
+      "both_coverage": 93.44444444444444,
+      "cl_points": 892,
+      "pm_points": 847
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1200_3218",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 94.0,
+      "both_coverage": 93.44444444444444,
+      "cl_points": 892,
+      "pm_points": 846
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0400_3264",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 93.88888888888889,
+      "both_coverage": 93.22222222222221,
+      "cl_points": 893,
+      "pm_points": 845
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0415_3261",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 93.66666666666667,
+      "both_coverage": 92.88888888888889,
+      "cl_points": 892,
+      "pm_points": 843
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0430_3261",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 93.77777777777779,
+      "both_coverage": 92.77777777777779,
+      "cl_points": 890,
+      "pm_points": 844
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0815_3256",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 93.22222222222221,
+      "both_coverage": 92.55555555555556,
+      "cl_points": 893,
+      "pm_points": 839
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0845_3251",
+      "cl_coverage": 99.0,
+      "pm_coverage": 93.55555555555556,
+      "both_coverage": 92.55555555555556,
+      "cl_points": 891,
+      "pm_points": 842
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1145_3221",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 93.22222222222221,
+      "both_coverage": 92.55555555555556,
+      "cl_points": 893,
+      "pm_points": 839
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1215_3215",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 93.44444444444444,
+      "both_coverage": 92.55555555555556,
+      "cl_points": 892,
+      "pm_points": 841
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0515_3254",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 93.0,
+      "both_coverage": 92.11111111111111,
+      "cl_points": 892,
+      "pm_points": 837
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0945_3204",
+      "cl_coverage": 99.33333333333333,
+      "pm_coverage": 92.66666666666666,
+      "both_coverage": 92.0,
+      "cl_points": 894,
+      "pm_points": 834
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1100_3214",
+      "cl_coverage": 99.55555555555556,
+      "pm_coverage": 92.33333333333333,
+      "both_coverage": 91.88888888888889,
+      "cl_points": 896,
+      "pm_points": 831
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0915_3237",
+      "cl_coverage": 99.0,
+      "pm_coverage": 92.66666666666666,
+      "both_coverage": 91.66666666666666,
+      "cl_points": 891,
+      "pm_points": 834
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0830_3255",
+      "cl_coverage": 99.44444444444444,
+      "pm_coverage": 92.0,
+      "both_coverage": 91.44444444444444,
+      "cl_points": 895,
+      "pm_points": 828
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0645_3247",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 92.0,
+      "both_coverage": 91.33333333333333,
+      "cl_points": 893,
+      "pm_points": 828
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0530_3253",
+      "cl_coverage": 99.44444444444444,
+      "pm_coverage": 91.66666666666666,
+      "both_coverage": 91.11111111111111,
+      "cl_points": 895,
+      "pm_points": 825
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0600_3248",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 91.66666666666666,
+      "both_coverage": 90.55555555555556,
+      "cl_points": 890,
+      "pm_points": 825
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1030_3208",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 91.33333333333333,
+      "both_coverage": 90.55555555555556,
+      "cl_points": 890,
+      "pm_points": 822
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0545_3246",
+      "cl_coverage": 99.44444444444444,
+      "pm_coverage": 89.66666666666666,
+      "both_coverage": 89.11111111111111,
+      "cl_points": 895,
+      "pm_points": 807
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0800_3254",
+      "cl_coverage": 99.0,
+      "pm_coverage": 90.11111111111111,
+      "both_coverage": 89.11111111111111,
+      "cl_points": 891,
+      "pm_points": 811
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1045_3211",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 89.44444444444444,
+      "both_coverage": 88.77777777777777,
+      "cl_points": 893,
+      "pm_points": 805
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0445_3260",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 89.66666666666666,
+      "both_coverage": 88.55555555555556,
+      "cl_points": 890,
+      "pm_points": 807
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1000_3197",
+      "cl_coverage": 98.77777777777777,
+      "pm_coverage": 86.33333333333333,
+      "both_coverage": 85.33333333333334,
+      "cl_points": 889,
+      "pm_points": 777
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0330_3274",
+      "cl_coverage": 98.33333333333333,
+      "pm_coverage": 86.22222222222223,
+      "both_coverage": 84.77777777777777,
+      "cl_points": 885,
+      "pm_points": 776
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0930_3225",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 85.11111111111111,
+      "both_coverage": 84.44444444444444,
+      "cl_points": 892,
+      "pm_points": 766
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0700_3251",
+      "cl_coverage": 98.88888888888889,
+      "pm_coverage": 84.55555555555556,
+      "both_coverage": 83.44444444444444,
+      "cl_points": 890,
+      "pm_points": 761
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0630_3256",
+      "cl_coverage": 99.11111111111111,
+      "pm_coverage": 84.11111111111111,
+      "both_coverage": 83.22222222222221,
+      "cl_points": 892,
+      "pm_points": 757
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0615_3251",
+      "cl_coverage": 99.22222222222223,
+      "pm_coverage": 81.88888888888889,
+      "both_coverage": 81.33333333333333,
+      "cl_points": 893,
+      "pm_points": 737
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0900_3248",
+      "cl_coverage": 96.66666666666667,
+      "pm_coverage": 82.33333333333334,
+      "both_coverage": 79.77777777777779,
+      "cl_points": 870,
+      "pm_points": 741
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1230_3216",
+      "cl_coverage": 34.77777777777778,
+      "pm_coverage": 94.66666666666667,
+      "both_coverage": 33.33333333333333,
+      "cl_points": 313,
+      "pm_points": 852
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0315_3277",
+      "cl_coverage": 30.555555555555557,
+      "pm_coverage": 21.88888888888889,
+      "both_coverage": 18.555555555555557,
+      "cl_points": 275,
+      "pm_points": 197
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0300_26854659750",
+      "cl_coverage": 7.666666666666666,
+      "pm_coverage": 7.444444444444444,
+      "both_coverage": 2.2222222222222223,
+      "cl_points": 69,
+      "pm_points": 67
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_0315",
+      "cl_coverage": 0.0,
+      "pm_coverage": 3.3333333333333335,
+      "both_coverage": 0.0,
+      "cl_points": 0,
+      "pm_points": 30
+    },
+    {
+      "asset": "ETH",
+      "market_id": "20260107_1245",
+      "cl_coverage": 0.0,
+      "pm_coverage": 8.222222222222223,
+      "both_coverage": 0.0,
+      "cl_points": 0,
+      "pm_points": 74
+    }
+  ]
+}

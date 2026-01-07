@@ -1,0 +1,412 @@
+[
+  {
+    "market_id": "20260107_0300_26854659750",
+    "n_rows": 67,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0315",
+    "n_rows": 30,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0315_3277",
+    "n_rows": 197,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 36.04060913705584,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0330_3274",
+    "n_rows": 776,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.74226804123711,
+    "down_asks_full_depth_pct": 58.76288659793815
+  },
+  {
+    "market_id": "20260107_0345_3264",
+    "n_rows": 860,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 93.48837209302326
+  },
+  {
+    "market_id": "20260107_0400_3264",
+    "n_rows": 845,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 82.9585798816568
+  },
+  {
+    "market_id": "20260107_0415_3261",
+    "n_rows": 843,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 91.81494661921708
+  },
+  {
+    "market_id": "20260107_0430_3261",
+    "n_rows": 844,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 62.44075829383886
+  },
+  {
+    "market_id": "20260107_0445_3260",
+    "n_rows": 807,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 63.44485749690211
+  },
+  {
+    "market_id": "20260107_0500_3253",
+    "n_rows": 851,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 88.2491186839013
+  },
+  {
+    "market_id": "20260107_0515_3254",
+    "n_rows": 837,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 89.00836320191159
+  },
+  {
+    "market_id": "20260107_0530_3253",
+    "n_rows": 825,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 58.42424242424242,
+    "down_asks_full_depth_pct": 99.75757575757575
+  },
+  {
+    "market_id": "20260107_0545_3246",
+    "n_rows": 807,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.87608426270135,
+    "down_asks_full_depth_pct": 59.85130111524164
+  },
+  {
+    "market_id": "20260107_0600_3248",
+    "n_rows": 825,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 74.3030303030303,
+    "down_asks_full_depth_pct": 99.75757575757575
+  },
+  {
+    "market_id": "20260107_0615_3251",
+    "n_rows": 737,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 57.53052917232022,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0630_3256",
+    "n_rows": 757,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.73579920739762,
+    "down_asks_full_depth_pct": 56.93527080581242
+  },
+  {
+    "market_id": "20260107_0645_3247",
+    "n_rows": 828,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 83.57487922705315,
+    "down_asks_full_depth_pct": 99.7584541062802
+  },
+  {
+    "market_id": "20260107_0700_3251",
+    "n_rows": 761,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 74.90144546649145,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0715_3257",
+    "n_rows": 851,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 88.60164512338426,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_0730_3258",
+    "n_rows": 853,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.76553341148886,
+    "down_asks_full_depth_pct": 94.13833528722158
+  },
+  {
+    "market_id": "20260107_0745_3253",
+    "n_rows": 860,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 92.09302325581396
+  },
+  {
+    "market_id": "20260107_0800_3254",
+    "n_rows": 811,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 64.73489519112206,
+    "down_asks_full_depth_pct": 99.63008631319359
+  },
+  {
+    "market_id": "20260107_0815_3256",
+    "n_rows": 839,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.761620977354,
+    "down_asks_full_depth_pct": 76.04290822407627
+  },
+  {
+    "market_id": "20260107_0830_3255",
+    "n_rows": 828,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 79.22705314009661
+  },
+  {
+    "market_id": "20260107_0845_3251",
+    "n_rows": 842,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 76.48456057007125,
+    "down_asks_full_depth_pct": 99.6437054631829
+  },
+  {
+    "market_id": "20260107_0900_3248",
+    "n_rows": 741,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.59514170040485,
+    "down_asks_full_depth_pct": 54.92577597840756
+  },
+  {
+    "market_id": "20260107_0915_3237",
+    "n_rows": 834,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 73.02158273381295
+  },
+  {
+    "market_id": "20260107_0930_3225",
+    "n_rows": 766,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 63.315926892950394
+  },
+  {
+    "market_id": "20260107_0945_3204",
+    "n_rows": 834,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 83.69304556354916
+  },
+  {
+    "market_id": "20260107_1000_3197",
+    "n_rows": 777,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 58.17245817245818,
+    "down_asks_full_depth_pct": 99.74259974259975
+  },
+  {
+    "market_id": "20260107_1015_3205",
+    "n_rows": 847,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 98.58323494687131,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_1030_3208",
+    "n_rows": 822,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 51.21654501216545,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_1045_3211",
+    "n_rows": 805,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 60.12422360248447,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_1100_3214",
+    "n_rows": 831,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 72.6835138387485,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_1115_3221",
+    "n_rows": 854,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 88.75878220140515,
+    "down_asks_full_depth_pct": 100.0
+  },
+  {
+    "market_id": "20260107_1130_3222",
+    "n_rows": 863,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 95.94438006952491,
+    "down_asks_full_depth_pct": 99.88412514484357
+  },
+  {
+    "market_id": "20260107_1145_3221",
+    "n_rows": 839,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 72.10965435041716
+  },
+  {
+    "market_id": "20260107_1200_3218",
+    "n_rows": 846,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 90.54373522458629
+  },
+  {
+    "market_id": "20260107_1215_3215",
+    "n_rows": 841,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 95.83828775267538,
+    "down_asks_full_depth_pct": 99.76218787158146
+  },
+  {
+    "market_id": "20260107_1230_3216",
+    "n_rows": 852,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 99.76525821596243,
+    "down_asks_full_depth_pct": 89.31924882629107
+  },
+  {
+    "market_id": "20260107_1245",
+    "n_rows": 74,
+    "monotonic_up_asks_violation_pct": 0.0,
+    "monotonic_down_asks_violation_pct": 0.0,
+    "crossed_up_pct": 0.0,
+    "crossed_down_pct": 0.0,
+    "up_asks_full_depth_pct": 100.0,
+    "down_asks_full_depth_pct": 97.2972972972973
+  }
+]

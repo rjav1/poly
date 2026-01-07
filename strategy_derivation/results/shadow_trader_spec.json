@@ -1,0 +1,64 @@
+{
+  "version": "1.0",
+  "generated": "2026-01-06T21:40:34.754504",
+  "strategies": [
+    {
+      "name": "complete_set_arb",
+      "description": "Buy both UP and DOWN tokens when underround exists",
+      "category": "PM_ONLY",
+      "signal_conditions": {
+        "underround_threshold": 0.005,
+        "min_tau": 600,
+        "max_tau": 900,
+        "cooldown_seconds": 30,
+        "min_capacity": 0
+      },
+      "execution": {
+        "mode": "taker",
+        "fill_assumption": "immediate at best_ask",
+        "capacity_check": true
+      },
+      "expected_metrics": {
+        "t_stat": 6.526546115351073,
+        "win_rate": 1.0,
+        "avg_pnl_per_signal": 0.014117647058823542
+      },
+      "logging": {
+        "log_all_signals": true,
+        "log_book_snapshot": true,
+        "log_fill_simulation": true,
+        "track_outcome": true
+      }
+    },
+    {
+      "name": "late_directional",
+      "description": "Take directional position based on CL delta in late window",
+      "category": "TIMING",
+      "signal_conditions": {
+        "max_tau": 120,
+        "min_tau": 30,
+        "delta_threshold_bps": 15,
+        "cooldown_seconds": 60
+      },
+      "execution": {
+        "mode": "taker",
+        "fill_assumption": "immediate at best_ask"
+      },
+      "expected_metrics": {
+        "t_stat": 3.9627016285660437,
+        "win_rate": 1.0,
+        "direction_accuracy": 1.0
+      },
+      "logging": {
+        "log_all_signals": true,
+        "log_book_snapshot": true,
+        "log_delta_at_signal": true,
+        "track_outcome": true
+      },
+      "validation_required": [
+        "CL time-shift degradation test",
+        "More sample data (current: small sample)"
+      ]
+    }
+  ]
+}

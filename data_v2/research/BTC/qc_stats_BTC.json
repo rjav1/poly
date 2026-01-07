@@ -1,0 +1,21 @@
+{
+  "n_markets": 3,
+  "n_rows": 2700,
+  "n_up_outcomes": 1,
+  "n_down_outcomes": 2,
+  "avg_cl_coverage_pct": 94.0,
+  "avg_pm_coverage_pct": 96.14814814814815,
+  "avg_both_coverage_pct": 90.33333333333333,
+  "cl_ffill_pct": 6.0,
+  "pm_ffill_pct": 3.851851851851852,
+  "avg_up_spread": 0.012583011583011585,
+  "median_up_spread": 0.010000000000000009,
+  "p95_up_spread": 0.020000000000000018,
+  "avg_down_spread": 0.01250675936655079,
+  "median_down_spread": 0.010000000000000009,
+  "p95_down_spread": 0.020000000000000018,
+  "overround_pct": 0.8518518518518519,
+  "underround_pct": 1.074074074074074,
+  "avg_k_folder_diff": 0.25033333332976326,
+  "k_within_10": 100.0
+}

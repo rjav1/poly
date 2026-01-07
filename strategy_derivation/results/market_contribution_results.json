@@ -1,0 +1,159 @@
+{
+  "market_pnl": [
+    {
+      "market_id": "20260106_0830_3215",
+      "total_pnl": 0.71,
+      "n_trades": 3,
+      "mean_pnl": 0.2367
+    },
+    {
+      "market_id": "20260106_1115_3235",
+      "total_pnl": 0.46,
+      "n_trades": 3,
+      "mean_pnl": 0.1533
+    },
+    {
+      "market_id": "20260106_0515_3225",
+      "total_pnl": 0.36,
+      "n_trades": 1,
+      "mean_pnl": 0.36
+    },
+    {
+      "market_id": "20260106_0700_3239",
+      "total_pnl": 0.27,
+      "n_trades": 4,
+      "mean_pnl": 0.0675
+    },
+    {
+      "market_id": "20260106_0645_3250",
+      "total_pnl": 0.27,
+      "n_trades": 4,
+      "mean_pnl": 0.0675
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "total_pnl": 0.249,
+      "n_trades": 4,
+      "mean_pnl": 0.0623
+    },
+    {
+      "market_id": "20260106_0745_3216",
+      "total_pnl": 0.22,
+      "n_trades": 2,
+      "mean_pnl": 0.11
+    },
+    {
+      "market_id": "20260106_0845_3217",
+      "total_pnl": 0.2,
+      "n_trades": 1,
+      "mean_pnl": 0.2
+    },
+    {
+      "market_id": "20260106_0945_3221",
+      "total_pnl": 0.13,
+      "n_trades": 2,
+      "mean_pnl": 0.065
+    },
+    {
+      "market_id": "20260106_0900_3217",
+      "total_pnl": 0.12,
+      "n_trades": 4,
+      "mean_pnl": 0.03
+    },
+    {
+      "market_id": "20260106_0730_3218",
+      "total_pnl": 0.11,
+      "n_trades": 2,
+      "mean_pnl": 0.055
+    },
+    {
+      "market_id": "20260106_0615_3222",
+      "total_pnl": 0.1,
+      "n_trades": 1,
+      "mean_pnl": 0.1
+    },
+    {
+      "market_id": "20260106_0545_3217",
+      "total_pnl": 0.09,
+      "n_trades": 1,
+      "mean_pnl": 0.09
+    },
+    {
+      "market_id": "20260106_0530_3224",
+      "total_pnl": 0.06,
+      "n_trades": 4,
+      "mean_pnl": 0.015
+    },
+    {
+      "market_id": "20260106_0600_3220",
+      "total_pnl": 0.06,
+      "n_trades": 1,
+      "mean_pnl": 0.06
+    },
+    {
+      "market_id": "20260106_0800_3220",
+      "total_pnl": 0.04,
+      "n_trades": 3,
+      "mean_pnl": 0.0133
+    },
+    {
+      "market_id": "20260106_0815_3220",
+      "total_pnl": -0.29,
+      "n_trades": 3,
+      "mean_pnl": -0.0967
+    }
+  ],
+  "loo_results": {
+    "baseline": {
+      "t_stat": 3.086096564352086,
+      "total_pnl": 3.1590000000000003,
+      "n_markets": 36
+    },
+    "leave_one_out": [
+      {
+        "removed_market": "20260106_0830_3215",
+        "t_stat": 3.0643896504101136,
+        "total_pnl": 2.4490000000000003,
+        "t_stat_change": -0.021706913941972328,
+        "t_stat_change_pct": -0.7033776646107511
+      },
+      {
+        "removed_market": "20260106_1115_3235",
+        "t_stat": 2.8419356813609653,
+        "total_pnl": 2.6990000000000003,
+        "t_stat_change": -0.2441608829911206,
+        "t_stat_change_pct": -7.911641061768955
+      },
+      {
+        "removed_market": "20260106_0515_3225",
+        "t_stat": 2.8416896634198885,
+        "total_pnl": 2.7990000000000004,
+        "t_stat_change": -0.2444069009321974,
+        "t_stat_change_pct": -7.919612877813812
+      },
+      {
+        "removed_market": "20260106_0700_3239",
+        "t_stat": 2.8697064086625486,
+        "total_pnl": 2.8890000000000002,
+        "t_stat_change": -0.21639015568953734,
+        "t_stat_change_pct": -7.01177526941603
+      },
+      {
+        "removed_market": "20260106_0645_3250",
+        "t_stat": 2.8697064086625486,
+        "total_pnl": 2.8890000000000002,
+        "t_stat_change": -0.21639015568953734,
+        "t_stat_change_pct": -7.01177526941603
+      }
+    ]
+  },
+  "summary": {
+    "n_markets_traded": 17,
+    "n_positive": "16",
+    "n_negative": "1",
+    "hit_rate_markets": 94.11764705882352,
+    "top1_share": 22.475466919911362,
+    "top3_share": 48.433048433048434,
+    "max_loo_drop_pct": 7.919612877813812
+  }
+}

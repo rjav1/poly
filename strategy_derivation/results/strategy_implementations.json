@@ -1,0 +1,258 @@
+{
+  "H6_underround_harvest": {
+    "hypothesis": {
+      "hypothesis_id": "H6_underround_harvest",
+      "name": "Underround Harvesting",
+      "category": "PM_ONLY",
+      "condition": "sum_asks < 1 - epsilon (underround > 1%)",
+      "action": "Buy both UP and DOWN tokens simultaneously (complete set)",
+      "mechanism": "When sum_asks < 1, buying both sides for less than $1 guarantees $1 at expiry regardless of outcome. The edge equals the underround magnitude.",
+      "failure_modes": [
+        "Insufficient capacity (size limits)",
+        "Execution slippage erodes edge",
+        "Quote staleness leads to stale underround",
+        "Competition from other arb traders"
+      ],
+      "evidence": {
+        "n_trades_with_underround": 1268,
+        "avg_underround_when_trading": 0.01409305993690853,
+        "pct_both_sides": 0.5331230283911672,
+        "wallets": [
+          "Account88888",
+          "PurpleThunderBicycleMountain",
+          "vidarx",
+          "Lkjhgfdna"
+        ]
+      },
+      "parameters": {
+        "epsilon": {
+          "suggested": 0.01,
+          "sweep": [
+            0.005,
+            0.01,
+            0.02,
+            0.03
+          ]
+        },
+        "min_tau": {
+          "suggested": 60,
+          "sweep": [
+            30,
+            60,
+            120
+          ]
+        },
+        "max_tau": {
+          "suggested": 840,
+          "sweep": [
+            720,
+            840
+          ]
+        },
+        "min_capacity": {
+          "suggested": 1,
+          "sweep": [
+            0,
+            1,
+            5,
+            10
+          ]
+        }
+      },
+      "ranking_score": 1.0
+    },
+    "best_params": {
+      "epsilon": 0.005,
+      "min_tau": 120,
+      "max_tau": 840,
+      "min_capacity": 0
+    },
+    "best_t_stat": 1.7208250578905855
+  },
+  "H7_late_underround": {
+    "hypothesis": {
+      "hypothesis_id": "H7_late_underround",
+      "name": "Late Window Underround",
+      "category": "PM_ONLY",
+      "condition": "underround > 1% AND tau < 120s",
+      "action": "Buy complete set in last 2 minutes",
+      "mechanism": "Late-window underround opportunities may be more reliable as market-makers widen spreads near expiry, creating exploitable inefficiencies.",
+      "failure_modes": [
+        "Time pressure increases execution risk",
+        "Late spreads may be wider",
+        "Lower liquidity near expiry"
+      ],
+      "evidence": {
+        "n_late_underround_trades": 126,
+        "avg_underround": 0.011825396825396836
+      },
+      "parameters": {
+        "epsilon": {
+          "suggested": 0.015,
+          "sweep": [
+            0.01,
+            0.015,
+            0.02
+          ]
+        },
+        "max_tau": {
+          "suggested": 120,
+          "sweep": [
+            60,
+            120,
+            180
+          ]
+        }
+      },
+      "ranking_score": 0.75
+    },
+    "best_params": {
+      "epsilon": 0.01,
+      "max_tau": 180
+    },
+    "best_t_stat": 1.251420969850984
+  },
+  "H8_late_directional": {
+    "hypothesis": {
+      "hypothesis_id": "H8_late_directional",
+      "name": "Late Directional Taker",
+      "category": "TIMING",
+      "condition": "tau < 300s AND |delta_bps| > threshold",
+      "action": "Take directional position based on CL signal",
+      "mechanism": "In late window, CL price movement has high predictive value for final outcome. Taking directional position captures this information advantage.",
+      "failure_modes": [
+        "CL signal is noise not signal",
+        "Spread cost exceeds expected edge",
+        "Late liquidity insufficient",
+        "Information already priced in"
+      ],
+      "evidence": {
+        "n_late_directional_trades": 4984,
+        "late_wallets": []
+      },
+      "parameters": {
+        "max_tau": {
+          "suggested": 300,
+          "sweep": [
+            120,
+            180,
+            300,
+            420
+          ]
+        },
+        "delta_threshold_bps": {
+          "suggested": 10,
+          "sweep": [
+            5,
+            10,
+            15,
+            20
+          ]
+        },
+        "hold_seconds": {
+          "suggested": 180,
+          "sweep": [
+            60,
+            120,
+            180,
+            240
+          ]
+        }
+      },
+      "ranking_score": 0.35
+    },
+    "best_params": {
+      "max_tau": 120,
+      "delta_threshold_bps": 15,
+      "hold_seconds": 60
+    },
+    "best_t_stat": 3.9627016285660437
+  },
+  "H9_early_inventory": {
+    "hypothesis": {
+      "hypothesis_id": "H9_early_inventory",
+      "name": "Early Inventory Build",
+      "category": "INVENTORY",
+      "condition": "tau > 600s AND underround exists",
+      "action": "Build matched inventory early, hold to expiry",
+      "mechanism": "Building inventory early when spreads are tighter allows accumulating position at better prices. Hold to expiry for guaranteed payoff.",
+      "failure_modes": [
+        "Early prices may not be better",
+        "Capital tied up longer",
+        "Missing late opportunities"
+      ],
+      "evidence": {
+        "n_early_both_trades": 27544,
+        "early_underround_mean": 0.00010632837134267077
+      },
+      "parameters": {
+        "min_tau": {
+          "suggested": 600,
+          "sweep": [
+            500,
+            600,
+            700
+          ]
+        },
+        "epsilon": {
+          "suggested": 0.015,
+          "sweep": [
+            0.01,
+            0.015,
+            0.02
+          ]
+        }
+      },
+      "ranking_score": 0.52
+    },
+    "best_params": {
+      "min_tau": 500,
+      "epsilon": 0.01
+    },
+    "best_t_stat": 7.93576822630243
+  },
+  "H10_tight_spread": {
+    "hypothesis": {
+      "hypothesis_id": "H10_tight_spread",
+      "name": "Tight Spread Entry",
+      "category": "PM_ONLY",
+      "condition": "spread < median_spread * 0.8",
+      "action": "Enter position when spreads are unusually tight",
+      "mechanism": "Tight spreads indicate either high liquidity or stale quotes. If it's liquidity, execution is cheaper. If it's staleness, there may be information advantage.",
+      "failure_modes": [
+        "Tight spreads may widen immediately",
+        "May indicate low volatility periods with no edge",
+        "Staleness means quotes may not be executable"
+      ],
+      "evidence": {
+        "n_tight_spread_trades": 1403,
+        "median_spread": 0.010000000000000009,
+        "tight_threshold": 0.008000000000000007
+      },
+      "parameters": {
+        "spread_percentile": {
+          "suggested": 20,
+          "sweep": [
+            10,
+            20,
+            30
+          ]
+        },
+        "min_spread_bps": {
+          "suggested": 5,
+          "sweep": [
+            0,
+            5,
+            10
+          ]
+        }
+      },
+      "ranking_score": 0.55
+    },
+    "best_params": {
+      "spread_percentile": 10,
+      "min_spread_bps": 0
+    },
+    "best_t_stat": 1.9234776353499803
+  }
+}

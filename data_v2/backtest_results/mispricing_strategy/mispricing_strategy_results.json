@@ -1,0 +1,568 @@
+{
+  "timestamp": "2026-01-06T20:01:59.841166",
+  "phases_run": [
+    3,
+    4,
+    5
+  ],
+  "data_info": {
+    "n_markets": 36,
+    "n_observations": 32400,
+    "n_train_markets": 25,
+    "n_test_markets": 11
+  },
+  "phase3": {
+    "param_grid": {
+      "buffer": [
+        0.01,
+        0.015,
+        0.02,
+        0.025,
+        0.03
+      ],
+      "tau_max": [
+        300,
+        420,
+        600
+      ],
+      "min_tau": [
+        0,
+        30,
+        60
+      ],
+      "exit_rule": [
+        "expiry"
+      ],
+      "cooldown": [
+        30
+      ]
+    },
+    "n_combinations": 45,
+    "best_params": {
+      "best": {
+        "buffer": 0.03,
+        "tau_max": 300,
+        "min_tau": 0,
+        "exit_rule": "expiry",
+        "cooldown": 30,
+        "n_trades": 110,
+        "n_markets": 11,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "std_pnl_per_market": 2.3328663601984263,
+        "t_stat": 3.4456720640266196,
+        "hit_rate_market": 0.8181818181818182,
+        "hit_rate_trade": 0.7454545454545455,
+        "avg_trades_per_market": 10.0,
+        "avg_hold_time": 163.14545454545456
+      },
+      "top5": [
+        {
+          "buffer": 0.03,
+          "tau_max": 300,
+          "min_tau": 0,
+          "exit_rule": "expiry",
+          "cooldown": 30,
+          "n_trades": 110,
+          "n_markets": 11,
+          "total_pnl": 26.66,
+          "mean_pnl_per_market": 2.423636363636364,
+          "std_pnl_per_market": 2.3328663601984263,
+          "t_stat": 3.4456720640266196,
+          "hit_rate_market": 0.8181818181818182,
+          "hit_rate_trade": 0.7454545454545455,
+          "avg_trades_per_market": 10.0,
+          "avg_hold_time": 163.14545454545456
+        },
+        {
+          "buffer": 0.025,
+          "tau_max": 300,
+          "min_tau": 0,
+          "exit_rule": "expiry",
+          "cooldown": 30,
+          "n_trades": 110,
+          "n_markets": 11,
+          "total_pnl": 26.66,
+          "mean_pnl_per_market": 2.423636363636364,
+          "std_pnl_per_market": 2.3328663601984263,
+          "t_stat": 3.4456720640266196,
+          "hit_rate_market": 0.8181818181818182,
+          "hit_rate_trade": 0.7454545454545455,
+          "avg_trades_per_market": 10.0,
+          "avg_hold_time": 163.14545454545456
+        },
+        {
+          "buffer": 0.02,
+          "tau_max": 300,
+          "min_tau": 0,
+          "exit_rule": "expiry",
+          "cooldown": 30,
+          "n_trades": 110,
+          "n_markets": 11,
+          "total_pnl": 26.61,
+          "mean_pnl_per_market": 2.4190909090909094,
+          "std_pnl_per_market": 2.335557554612836,
+          "t_stat": 3.4352469128273286,
+          "hit_rate_market": 0.8181818181818182,
+          "hit_rate_trade": 0.7454545454545455,
+          "avg_trades_per_market": 10.0,
+          "avg_hold_time": 163.27272727272728
+        },
+        {
+          "buffer": 0.015,
+          "tau_max": 300,
+          "min_tau": 0,
+          "exit_rule": "expiry",
+          "cooldown": 30,
+          "n_trades": 110,
+          "n_markets": 11,
+          "total_pnl": 25.11,
+          "mean_pnl_per_market": 2.282727272727273,
+          "std_pnl_per_market": 2.2102266440756293,
+          "t_stat": 3.425417878587742,
+          "hit_rate_market": 0.8181818181818182,
+          "hit_rate_trade": 0.7181818181818181,
+          "avg_trades_per_market": 10.0,
+          "avg_hold_time": 163.47272727272727
+        },
+        {
+          "buffer": 0.01,
+          "tau_max": 300,
+          "min_tau": 0,
+          "exit_rule": "expiry",
+          "cooldown": 30,
+          "n_trades": 110,
+          "n_markets": 11,
+          "total_pnl": 24.86,
+          "mean_pnl_per_market": 2.2600000000000002,
+          "std_pnl_per_market": 2.2232048938413214,
+          "t_stat": 3.3715165196726993,
+          "hit_rate_market": 0.8181818181818182,
+          "hit_rate_trade": 0.7090909090909091,
+          "avg_trades_per_market": 10.0,
+          "avg_hold_time": 163.6909090909091
+        }
+      ],
+      "n_valid_combinations": 45
+    }
+  },
+  "phase4": {
+    "latency": [
+      {
+        "latency": 0.0,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196,
+        "hit_rate_trade": 0.7454545454545455
+      },
+      {
+        "latency": 0.5,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196,
+        "hit_rate_trade": 0.7454545454545455
+      },
+      {
+        "latency": 1.0,
+        "n_trades": 110,
+        "total_pnl": 22.22,
+        "mean_pnl_per_market": 2.0200000000000005,
+        "t_stat": 2.9993672409128087,
+        "hit_rate_trade": 0.6727272727272727
+      },
+      {
+        "latency": 2.0,
+        "n_trades": 110,
+        "total_pnl": 23.43,
+        "mean_pnl_per_market": 2.13,
+        "t_stat": 3.254376349675729,
+        "hit_rate_trade": 0.6909090909090909
+      },
+      {
+        "latency": 5.0,
+        "n_trades": 110,
+        "total_pnl": 24.22,
+        "mean_pnl_per_market": 2.201818181818182,
+        "t_stat": 3.315608291003456,
+        "hit_rate_trade": 0.7090909090909091
+      },
+      {
+        "latency": 10.0,
+        "n_trades": 110,
+        "total_pnl": 24.55,
+        "mean_pnl_per_market": 2.2318181818181824,
+        "t_stat": 3.41235557047427,
+        "hit_rate_trade": 0.7
+      }
+    ],
+    "placebo": {
+      "shift_seconds": 30,
+      "original": {
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196
+      },
+      "placebo": {
+        "n_trades": 0,
+        "total_pnl": 0,
+        "t_stat": 0
+      },
+      "t_stat_degradation": 3.4456720640266196,
+      "edge_destroyed": true
+    },
+    "vol_window": [
+      {
+        "vol_window": 15,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196
+      },
+      {
+        "vol_window": 30,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196
+      },
+      {
+        "vol_window": 60,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196
+      },
+      {
+        "vol_window": 120,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "mean_pnl_per_market": 2.423636363636364,
+        "t_stat": 3.4456720640266196
+      }
+    ],
+    "binning": [
+      {
+        "tau_size": 15,
+        "delta_size": 2.5,
+        "n_vol_bins": 2,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 45
+      },
+      {
+        "tau_size": 15,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 61
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 2.5,
+        "n_vol_bins": 2,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 127
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 150
+      },
+      {
+        "tau_size": 30,
+        "delta_size": 10.0,
+        "n_vol_bins": 3,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 166
+      },
+      {
+        "tau_size": 60,
+        "delta_size": 5.0,
+        "n_vol_bins": 3,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 159
+      },
+      {
+        "tau_size": 60,
+        "delta_size": 10.0,
+        "n_vol_bins": 5,
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "n_valid_bins": 155
+      }
+    ],
+    "market_subsets": {
+      "full": {
+        "n_markets": 36,
+        "n_trades": 335,
+        "t_stat": 2.699783587037443,
+        "total_pnl": 36.865
+      },
+      "high_volatility": {
+        "n_markets": 12,
+        "n_trades": 114,
+        "t_stat": 1.3454062092230934,
+        "total_pnl": 7.167000000000001
+      },
+      "low_volatility": {
+        "n_markets": 12,
+        "n_trades": 111,
+        "t_stat": 0.3503491414410421,
+        "total_pnl": 3.0380000000000007
+      }
+    },
+    "exit_rules": [
+      {
+        "exit_rule": "expiry",
+        "n_trades": 110,
+        "total_pnl": 26.66,
+        "t_stat": 3.4456720640266196,
+        "hit_rate": 0.7454545454545455,
+        "avg_hold_time": 163.14545454545456,
+        "exit_buffer": NaN,
+        "max_hold_seconds": NaN
+      },
+      {
+        "exit_rule": "convergence",
+        "n_trades": 110,
+        "total_pnl": 10.281,
+        "t_stat": 2.063275507986478,
+        "hit_rate": 0.5818181818181818,
+        "avg_hold_time": 45.654545454545456,
+        "exit_buffer": 0.01,
+        "max_hold_seconds": 60.0
+      },
+      {
+        "exit_rule": "convergence",
+        "n_trades": 110,
+        "total_pnl": 15.451000000000004,
+        "t_stat": 2.971680651594443,
+        "hit_rate": 0.6272727272727273,
+        "avg_hold_time": 75.18181818181819,
+        "exit_buffer": 0.01,
+        "max_hold_seconds": 120.0
+      },
+      {
+        "exit_rule": "convergence",
+        "n_trades": 110,
+        "total_pnl": 20.431,
+        "t_stat": 3.554928846309085,
+        "hit_rate": 0.7090909090909091,
+        "avg_hold_time": 92.15454545454546,
+        "exit_buffer": 0.01,
+        "max_hold_seconds": 180.0
+      },
+      {
+        "exit_rule": "convergence",
+        "n_trades": 110,
+        "total_pnl": 15.411000000000001,
+        "t_stat": 2.950153687197118,
+        "hit_rate": 0.6272727272727273,
+        "avg_hold_time": 74.34545454545454,
+        "exit_buffer": 0.015,
+        "max_hold_seconds": 120.0
+      },
+      {
+        "exit_rule": "convergence",
+        "n_trades": 110,
+        "total_pnl": 15.381000000000004,
+        "t_stat": 2.938465849013033,
+        "hit_rate": 0.6272727272727273,
+        "avg_hold_time": 74.31818181818181,
+        "exit_buffer": 0.02,
+        "max_hold_seconds": 120.0
+      }
+    ]
+  },
+  "phase5": {
+    "walk_forward": {
+      "folds": [
+        {
+          "fold": 1,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.147420217672911,
+          "n_trades": 27,
+          "total_pnl": 4.55,
+          "mean_pnl_per_market": 2.275,
+          "t_stat": 0.7858376511226252
+        },
+        {
+          "fold": 2,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.354230298354806,
+          "n_trades": 28,
+          "total_pnl": -2.5999999999999996,
+          "mean_pnl_per_market": -1.2999999999999998,
+          "t_stat": -1.4606741573033706
+        },
+        {
+          "fold": 3,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.24779835553655288,
+          "n_trades": 28,
+          "total_pnl": 6.67,
+          "mean_pnl_per_market": 3.335,
+          "t_stat": 2.461254612546127
+        },
+        {
+          "fold": 4,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.35112920492294897,
+          "n_trades": 28,
+          "total_pnl": -2.3600000000000003,
+          "mean_pnl_per_market": -1.1800000000000002,
+          "t_stat": -2.744186046511629
+        },
+        {
+          "fold": 5,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.23919069103414214,
+          "n_trades": 28,
+          "total_pnl": -1.2399999999999998,
+          "mean_pnl_per_market": -0.6199999999999999,
+          "t_stat": -3.2631578947368425
+        },
+        {
+          "fold": 6,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.29873062910543796,
+          "n_trades": 28,
+          "total_pnl": -2.2100000000000004,
+          "mean_pnl_per_market": -1.1050000000000002,
+          "t_stat": -0.3830155979202773
+        },
+        {
+          "fold": 7,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": 0.2874884554286374,
+          "n_trades": 28,
+          "total_pnl": 5.980000000000001,
+          "mean_pnl_per_market": 2.9900000000000007,
+          "t_stat": 14.950000000000026
+        },
+        {
+          "fold": 8,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 11,
+          "total_pnl": 2.4000000000000004,
+          "mean_pnl_per_market": 1.2000000000000002,
+          "t_stat": 1.0000000000000002
+        },
+        {
+          "fold": 9,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 28,
+          "total_pnl": 6.730000000000001,
+          "mean_pnl_per_market": 3.3650000000000007,
+          "t_stat": 19.228571428571406
+        },
+        {
+          "fold": 10,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 28,
+          "total_pnl": 12.630000000000003,
+          "mean_pnl_per_market": 6.315000000000001,
+          "t_stat": 5.467532467532467
+        },
+        {
+          "fold": 11,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 28,
+          "total_pnl": 6.750000000000001,
+          "mean_pnl_per_market": 3.3750000000000004,
+          "t_stat": 1.216216216216216
+        },
+        {
+          "fold": 12,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 28,
+          "total_pnl": 7.159999999999998,
+          "mean_pnl_per_market": 3.579999999999999,
+          "t_stat": 1.6966824644549763
+        },
+        {
+          "fold": 13,
+          "n_train_markets": 10,
+          "n_test_markets": 2,
+          "model_brier": NaN,
+          "n_trades": 0,
+          "total_pnl": 0,
+          "mean_pnl_per_market": 0,
+          "t_stat": 0
+        }
+      ],
+      "aggregates": {
+        "mean_brier": 0.2751411217222052,
+        "std_brier": 0.07198483383984083,
+        "mean_t_stat": 2.9965431649209013,
+        "std_t_stat": 6.701343789709552,
+        "mean_pnl": 3.42,
+        "positive_folds": 8,
+        "total_folds": 13
+      }
+    },
+    "bootstrap": {
+      "n_bootstrap": 200,
+      "pnl_distribution": {
+        "mean": 2.5410818181818184,
+        "std": 0.6418725472081698,
+        "percentile_5": 1.439727272727273,
+        "percentile_50": 2.5640909090909094,
+        "percentile_95": 3.5459545454545456
+      },
+      "t_stat_distribution": {
+        "mean": 4.278332977589596,
+        "std": 2.0271257324979306,
+        "percentile_5": 1.8427624546874812,
+        "percentile_50": 3.8715456977396885,
+        "percentile_95": 8.114734793444068
+      },
+      "prob_positive_pnl": 1.0,
+      "prob_t_stat_gt_2": 0.94
+    }
+  },
+  "summary": {
+    "model_n_valid_bins": 150,
+    "best_t_stat": 3.4456720640266196,
+    "best_total_pnl": 26.66,
+    "best_buffer": 0.03,
+    "best_tau_max": 300,
+    "placebo_edge_destroyed": true,
+    "placebo_t_stat_degradation": 3.4456720640266196,
+    "bootstrap_prob_positive": 1.0,
+    "bootstrap_prob_t_gt_2": 0.94
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "unified_strategy": {},
+  "fill_model_comparison": [
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "full_window"
+      },
+      "fill_model": "taker",
+      "total_signals": 181,
+      "total_filled": 60,
+      "fill_rate": 0.3314917127071823,
+      "total_pnl": 5.83,
+      "avg_pnl_per_fill": 0.09716666666666667,
+      "n_markets": 42,
+      "t_stat": 1.183044081635267,
+      "capacity_p10": 7.275,
+      "capacity_p50": 31.5,
+      "capacity_p90": 192.52800000000025,
+      "config": "full_window"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "full_window"
+      },
+      "fill_model": "maker_conservative",
+      "total_signals": 181,
+      "total_filled": 58,
+      "fill_rate": 0.32044198895027626,
+      "total_pnl": 2.3450000000000006,
+      "avg_pnl_per_fill": 0.04043103448275863,
+      "n_markets": 42,
+      "t_stat": 2.3911201617046185,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 56.19800000000003,
+      "config": "full_window"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "full_window"
+      },
+      "fill_model": "maker_realistic",
+      "total_signals": 181,
+      "total_filled": 29,
+      "fill_rate": 0.16022099447513813,
+      "total_pnl": 1.9140000000000008,
+      "avg_pnl_per_fill": 0.06600000000000003,
+      "n_markets": 42,
+      "t_stat": 1.937584148595557,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 61.234,
+      "config": "full_window"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 600,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "early_only"
+      },
+      "fill_model": "taker",
+      "total_signals": 51,
+      "total_filled": 14,
+      "fill_rate": 0.27450980392156865,
+      "total_pnl": 0.16000000000000014,
+      "avg_pnl_per_fill": 0.011428571428571439,
+      "n_markets": 29,
+      "t_stat": 2.6242765590265122,
+      "capacity_p10": 5.684,
+      "capacity_p50": 20.78,
+      "capacity_p90": 57.610000000000014,
+      "config": "early_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 600,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "early_only"
+      },
+      "fill_model": "maker_conservative",
+      "total_signals": 51,
+      "total_filled": 16,
+      "fill_rate": 0.3137254901960784,
+      "total_pnl": 0.3400000000000003,
+      "avg_pnl_per_fill": 0.02125000000000002,
+      "n_markets": 29,
+      "t_stat": 4.708710829086627,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 18.08,
+      "config": "early_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 600,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "early_only"
+      },
+      "fill_model": "maker_realistic",
+      "total_signals": 51,
+      "total_filled": 12,
+      "fill_rate": 0.23529411764705882,
+      "total_pnl": 0.40200000000000036,
+      "avg_pnl_per_fill": 0.03350000000000003,
+      "n_markets": 29,
+      "t_stat": 3.7287095873638707,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 29.70000000000001,
+      "config": "early_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 300,
+        "cooldown": 30,
+        "name": "late_only"
+      },
+      "fill_model": "taker",
+      "total_signals": 76,
+      "total_filled": 27,
+      "fill_rate": 0.35526315789473684,
+      "total_pnl": 5.389999999999999,
+      "avg_pnl_per_fill": 0.19962962962962957,
+      "n_markets": 31,
+      "t_stat": 1.0981780262696994,
+      "capacity_p10": 11.0,
+      "capacity_p50": 78.0,
+      "capacity_p90": 4999.784,
+      "config": "late_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 300,
+        "cooldown": 30,
+        "name": "late_only"
+      },
+      "fill_model": "maker_conservative",
+      "total_signals": 76,
+      "total_filled": 25,
+      "fill_rate": 0.32894736842105265,
+      "total_pnl": 1.6050000000000004,
+      "avg_pnl_per_fill": 0.06420000000000002,
+      "n_markets": 31,
+      "t_stat": 1.6527717327673779,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 99.724,
+      "config": "late_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.01,
+        "min_tau": 0,
+        "max_tau": 300,
+        "cooldown": 30,
+        "name": "late_only"
+      },
+      "fill_model": "maker_realistic",
+      "total_signals": 76,
+      "total_filled": 7,
+      "fill_rate": 0.09210526315789473,
+      "total_pnl": 1.1520000000000001,
+      "avg_pnl_per_fill": 0.1645714285714286,
+      "n_markets": 31,
+      "t_stat": 1.1722107162549316,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 2356.1080000000024,
+      "config": "late_only"
+    },
+    {
+      "params": {
+        "epsilon": 0.02,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "high_epsilon"
+      },
+      "fill_model": "taker",
+      "total_signals": 66,
+      "total_filled": 27,
+      "fill_rate": 0.4090909090909091,
+      "total_pnl": 5.539999999999999,
+      "avg_pnl_per_fill": 0.20518518518518516,
+      "n_markets": 27,
+      "t_stat": 1.1328775737368764,
+      "capacity_p10": 16.212,
+      "capacity_p50": 61.0,
+      "capacity_p90": 2459.724000000011,
+      "config": "high_epsilon"
+    },
+    {
+      "params": {
+        "epsilon": 0.02,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "high_epsilon"
+      },
+      "fill_model": "maker_conservative",
+      "total_signals": 66,
+      "total_filled": 18,
+      "fill_rate": 0.2727272727272727,
+      "total_pnl": 1.6500000000000004,
+      "avg_pnl_per_fill": 0.09166666666666669,
+      "n_markets": 27,
+      "t_stat": 1.6990757710868123,
+      "capacity_p10": 0.0,
+      "capacity_p50": 12.23,
+      "capacity_p90": 72.86200000000002,
+      "config": "high_epsilon"
+    },
+    {
+      "params": {
+        "epsilon": 0.02,
+        "min_tau": 0,
+        "max_tau": 900,
+        "cooldown": 30,
+        "name": "high_epsilon"
+      },
+      "fill_model": "maker_realistic",
+      "total_signals": 66,
+      "total_filled": 35,
+      "fill_rate": 0.5303030303030303,
+      "total_pnl": 2.0900000000000007,
+      "avg_pnl_per_fill": 0.059714285714285734,
+      "n_markets": 27,
+      "t_stat": 2.1836058421128204,
+      "capacity_p10": 0.0,
+      "capacity_p50": 0.0,
+      "capacity_p90": 61.702000000000005,
+      "config": "high_epsilon"
+    }
+  ],
+  "h10_decomposition": {
+    "with_underround": {
+      "n_signals": 9,
+      "total_pnl": 1.56,
+      "avg_underround": 0.17333333333333334
+    },
+    "without_underround": {
+      "n_signals": 627,
+      "total_pnl": 0,
+      "avg_underround": -0.011800637958532706
+    }
+  },
+  "capacity_analysis": {
+    "n_signals": 181,
+    "capacity_p10": 0.0,
+    "capacity_p50": 0.0,
+    "capacity_p90": 61.0,
+    "capacity_mean": 111.08558011049725,
+    "underround_p10": 0.010000000000000009,
+    "underround_p50": 0.010000000000000009,
+    "underround_p90": 0.050000000000000044,
+    "expected_pnl_per_signal_at_1_contract": 0.04370165745856354,
+    "pct_signals_with_capacity_ge_1": 0.3314917127071823
+  }
+}

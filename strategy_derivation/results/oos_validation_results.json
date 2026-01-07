@@ -1,0 +1,73 @@
+{
+  "train_test_results": {
+    "train_n_markets": 24,
+    "test_n_markets": 12,
+    "best_params": {
+      "tau_max": 420,
+      "delta_threshold_bps": 10.0,
+      "hold_seconds": 120
+    },
+    "train_t_stat": 3.296419682154287,
+    "test_t_stat": 0,
+    "test_pnl": 0,
+    "degradation_pct": 100.0,
+    "train_results": [
+      {
+        "tau_max": 300,
+        "delta_threshold_bps": 10,
+        "hold_seconds": 120,
+        "t_stat": 2.1557432572728406,
+        "total_pnl": 2.0300000000000002
+      },
+      {
+        "tau_max": 420,
+        "delta_threshold_bps": 10,
+        "hold_seconds": 120,
+        "t_stat": 3.296419682154287,
+        "total_pnl": 3.1590000000000003
+      },
+      {
+        "tau_max": 300,
+        "delta_threshold_bps": 20,
+        "hold_seconds": 120,
+        "t_stat": 1.4812893485184333,
+        "total_pnl": 0.32999999999999996
+      },
+      {
+        "tau_max": 420,
+        "delta_threshold_bps": 20,
+        "hold_seconds": 120,
+        "t_stat": 1.3555751150775261,
+        "total_pnl": 0.3700000000000001
+      },
+      {
+        "tau_max": 300,
+        "delta_threshold_bps": 10,
+        "hold_seconds": 180,
+        "t_stat": 2.1298617554779353,
+        "total_pnl": 1.949
+      },
+      {
+        "tau_max": 420,
+        "delta_threshold_bps": 10,
+        "hold_seconds": 180,
+        "t_stat": 2.72774692238513,
+        "total_pnl": 2.6889999999999996
+      }
+    ]
+  },
+  "bootstrap_results": {
+    "original_t_stat": 3.086096564352086,
+    "original_pnl": 3.1590000000000003,
+    "bootstrap_n": 500,
+    "t_stat_mean": 3.1739718548564597,
+    "t_stat_std": 0.8469540224104877,
+    "t_stat_ci_low": 1.5421113167080736,
+    "t_stat_ci_high": 4.767561524200024,
+    "pnl_mean": 3.1487320000000003,
+    "pnl_std": 1.035533350586064,
+    "pnl_ci_low": 1.2333,
+    "pnl_ci_high": 5.39,
+    "p_value": 0.0
+  }
+}

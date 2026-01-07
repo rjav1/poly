@@ -1,0 +1,222 @@
+{
+  "H6_underround_harvest": {
+    "name": "Underround Harvesting",
+    "category": "PM_ONLY",
+    "evidence": {
+      "n_trades_with_underround": 1268,
+      "avg_underround_when_trading": 0.01409305993690853,
+      "pct_both_sides": 0.5331230283911672,
+      "wallets": [
+        "Account88888",
+        "PurpleThunderBicycleMountain",
+        "vidarx",
+        "Lkjhgfdna"
+      ]
+    },
+    "parameters": {
+      "epsilon": {
+        "suggested": 0.01,
+        "sweep": [
+          0.005,
+          0.01,
+          0.02,
+          0.03
+        ]
+      },
+      "min_tau": {
+        "suggested": 60,
+        "sweep": [
+          30,
+          60,
+          120
+        ]
+      },
+      "max_tau": {
+        "suggested": 840,
+        "sweep": [
+          720,
+          840
+        ]
+      },
+      "min_capacity": {
+        "suggested": 1,
+        "sweep": [
+          0,
+          1,
+          5,
+          10
+        ]
+      }
+    }
+  },
+  "H7_late_underround": {
+    "name": "Late Window Underround",
+    "category": "PM_ONLY",
+    "evidence": {
+      "n_late_underround_trades": 126,
+      "avg_underround": 0.011825396825396836
+    },
+    "parameters": {
+      "epsilon": {
+        "suggested": 0.015,
+        "sweep": [
+          0.01,
+          0.015,
+          0.02
+        ]
+      },
+      "max_tau": {
+        "suggested": 120,
+        "sweep": [
+          60,
+          120,
+          180
+        ]
+      }
+    }
+  },
+  "H12_maker_underround": {
+    "name": "Passive Underround Harvesting",
+    "category": "PM_ONLY",
+    "evidence": {
+      "n_maker_underround_trades": 608,
+      "maker_pct_overall": 0.5216563844238171
+    },
+    "parameters": {
+      "limit_offset": {
+        "suggested": 0.005,
+        "sweep": [
+          0.002,
+          0.005,
+          0.01
+        ]
+      },
+      "min_underround": {
+        "suggested": 0.01,
+        "sweep": [
+          0.005,
+          0.01,
+          0.015
+        ]
+      }
+    }
+  },
+  "H10_tight_spread": {
+    "name": "Tight Spread Entry",
+    "category": "PM_ONLY",
+    "evidence": {
+      "n_tight_spread_trades": 1403,
+      "median_spread": 0.010000000000000009,
+      "tight_threshold": 0.008000000000000007
+    },
+    "parameters": {
+      "spread_percentile": {
+        "suggested": 20,
+        "sweep": [
+          10,
+          20,
+          30
+        ]
+      },
+      "min_spread_bps": {
+        "suggested": 5,
+        "sweep": [
+          0,
+          5,
+          10
+        ]
+      }
+    }
+  },
+  "H9_early_inventory": {
+    "name": "Early Inventory Build",
+    "category": "INVENTORY",
+    "evidence": {
+      "n_early_both_trades": 27544,
+      "early_underround_mean": 0.00010632837134267077
+    },
+    "parameters": {
+      "min_tau": {
+        "suggested": 600,
+        "sweep": [
+          500,
+          600,
+          700
+        ]
+      },
+      "epsilon": {
+        "suggested": 0.015,
+        "sweep": [
+          0.01,
+          0.015,
+          0.02
+        ]
+      }
+    }
+  },
+  "H8_late_directional": {
+    "name": "Late Directional Taker",
+    "category": "TIMING",
+    "evidence": {
+      "n_late_directional_trades": 4984,
+      "late_wallets": []
+    },
+    "parameters": {
+      "max_tau": {
+        "suggested": 300,
+        "sweep": [
+          120,
+          180,
+          300,
+          420
+        ]
+      },
+      "delta_threshold_bps": {
+        "suggested": 10,
+        "sweep": [
+          5,
+          10,
+          15,
+          20
+        ]
+      },
+      "hold_seconds": {
+        "suggested": 180,
+        "sweep": [
+          60,
+          120,
+          180,
+          240
+        ]
+      }
+    }
+  },
+  "H11_momentum_follow": {
+    "name": "CL Momentum Following",
+    "category": "CL_PM_LEADLAG",
+    "evidence": {
+      "n_momentum_trades": 105197,
+      "up_avg_momentum": 0.07047206057893089,
+      "down_avg_momentum": 0.09251416154099978,
+      "follows_momentum": "False"
+    },
+    "parameters": {
+      "momentum_threshold": {
+        "suggested": 0.0001,
+        "sweep": [
+          5e-05,
+          0.0001,
+          0.0002
+        ]
+      },
+      "momentum_window": {
+        "suggested": 10,
+        "sweep": [
+          5,
+          10,
+          20
+        ]
+      }
+    }
+  }
+}

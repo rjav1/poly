@@ -1,0 +1,251 @@
+{
+  "observed_only": {
+    "baseline": {
+      "train_rows": 37800,
+      "test_rows": 17100,
+      "n_trades": 262,
+      "t_stat": 1.2500034440798984,
+      "total_pnl": 18.882999999999996
+    },
+    "observed_only": {
+      "train_rows": 35739,
+      "test_rows": 15826,
+      "train_pct": 94.54761904761905,
+      "test_pct": 92.54970760233918,
+      "n_trades": 262,
+      "t_stat": 1.2233388759010273,
+      "total_pnl": 18.398
+    },
+    "t_stat_change": 0.026664568178871084,
+    "edge_persists": false
+  },
+  "coarser_info": {
+    "update_intervals": [
+      {
+        "interval": 1,
+        "n_trades": 262,
+        "t_stat": 1.2500034440798984,
+        "total_pnl": 18.882999999999996,
+        "mean_pnl": 0.9938421052631579
+      },
+      {
+        "interval": 5,
+        "n_trades": 262,
+        "t_stat": 1.1591005541087431,
+        "total_pnl": 17.482999999999997,
+        "mean_pnl": 0.920157894736842
+      },
+      {
+        "interval": 10,
+        "n_trades": 262,
+        "t_stat": 1.1596989088814589,
+        "total_pnl": 17.491,
+        "mean_pnl": 0.920578947368421
+      },
+      {
+        "interval": 15,
+        "n_trades": 261,
+        "t_stat": 1.1607301122520535,
+        "total_pnl": 17.505999999999997,
+        "mean_pnl": 0.9213684210526316
+      },
+      {
+        "interval": 30,
+        "n_trades": 253,
+        "t_stat": 1.1267328461394766,
+        "total_pnl": 16.273999999999997,
+        "mean_pnl": 0.8565263157894737
+      }
+    ],
+    "baseline_t_stat": 1.2500034440798984,
+    "survives_5s": false,
+    "t_stat_at_5s": 1.1591005541087431,
+    "survives_10s": false,
+    "t_stat_at_10s": 1.1596989088814589
+  },
+  "calibration": {
+    "overall": {
+      "brier_score": 0.25361350564781,
+      "ece": 0.0611616665457828,
+      "mean_prediction": 0.48755249051582755,
+      "mean_outcome": 0.47368421052631576
+    },
+    "reliability_curve": {
+      "bin_centers": [
+        0.05,
+        0.15000000000000002,
+        0.25,
+        0.35000000000000003,
+        0.45,
+        0.55,
+        0.6500000000000001,
+        0.75,
+        0.8500000000000001,
+        0.95
+      ],
+      "actual_rates": [
+        0.1761827079934747,
+        0.2777777777777778,
+        0.3407864302235929,
+        0.4028287061288633,
+        0.4554720133667502,
+        0.5901422428051605,
+        0.5151739452257587,
+        0.6514778325123153,
+        0.6950819672131148,
+        0.4961832061068702
+      ],
+      "bin_counts": [
+        613,
+        648,
+        1297,
+        1909,
+        5985,
+        3023,
+        1351,
+        812,
+        305,
+        393
+      ]
+    },
+    "brier_by_tau": [
+      {
+        "tau_bucket": "0-60s",
+        "tau_min": 0,
+        "tau_max": 60,
+        "brier_score": 0.21308741013737229,
+        "n_samples": 1121
+      },
+      {
+        "tau_bucket": "60-120s",
+        "tau_min": 60,
+        "tau_max": 120,
+        "brier_score": 0.22720276988511873,
+        "n_samples": 1140
+      },
+      {
+        "tau_bucket": "120-180s",
+        "tau_min": 120,
+        "tau_max": 180,
+        "brier_score": 0.28810694935714637,
+        "n_samples": 1140
+      },
+      {
+        "tau_bucket": "180-240s",
+        "tau_min": 180,
+        "tau_max": 240,
+        "brier_score": 0.23610369440944848,
+        "n_samples": 1140
+      },
+      {
+        "tau_bucket": "240-300s",
+        "tau_min": 240,
+        "tau_max": 300,
+        "brier_score": 0.26758400082141737,
+        "n_samples": 1140
+      }
+    ],
+    "calibration_by_delta": [
+      {
+        "decile": 0,
+        "mean_delta_bps": -22.61283536128827,
+        "brier_score": 0.16640604986524782,
+        "n_samples": 1710
+      },
+      {
+        "decile": 1,
+        "mean_delta_bps": -10.078198886786064,
+        "brier_score": 0.13059818231626388,
+        "n_samples": 1714
+      },
+      {
+        "decile": 2,
+        "mean_delta_bps": -5.625026218976244,
+        "brier_score": 0.20422727667743507,
+        "n_samples": 1714
+      },
+      {
+        "decile": 3,
+        "mean_delta_bps": -2.089519406142385,
+        "brier_score": 0.2813251939972858,
+        "n_samples": 1703
+      },
+      {
+        "decile": 4,
+        "mean_delta_bps": 0.4197745022535384,
+        "brier_score": 0.30089945799656637,
+        "n_samples": 1709
+      },
+      {
+        "decile": 5,
+        "mean_delta_bps": 2.775321612933245,
+        "brier_score": 0.2847042038079709,
+        "n_samples": 1710
+      },
+      {
+        "decile": 6,
+        "mean_delta_bps": 5.035987951399161,
+        "brier_score": 0.31476776924294503,
+        "n_samples": 1711
+      },
+      {
+        "decile": 7,
+        "mean_delta_bps": 7.578076720399384,
+        "brier_score": 0.2516601111405104,
+        "n_samples": 1710
+      },
+      {
+        "decile": 8,
+        "mean_delta_bps": 11.134361908679812,
+        "brier_score": 0.29716861568365177,
+        "n_samples": 1710
+      },
+      {
+        "decile": 9,
+        "mean_delta_bps": 19.319621340265375,
+        "brier_score": 0.3049168057013699,
+        "n_samples": 1709
+      }
+    ],
+    "calibration_by_vol": [
+      {
+        "decile": 0,
+        "mean_vol_bps": 0.11797663127328553,
+        "brier_score": 0.2845033006689255,
+        "n_samples": 3420
+      },
+      {
+        "decile": 1,
+        "mean_vol_bps": 0.2122215331229845,
+        "brier_score": 0.2521583650619026,
+        "n_samples": 3420
+      },
+      {
+        "decile": 2,
+        "mean_vol_bps": 0.29695393166728923,
+        "brier_score": 0.26961297092805336,
+        "n_samples": 3420
+      },
+      {
+        "decile": 3,
+        "mean_vol_bps": 0.399575543917659,
+        "brier_score": 0.2537128066862673,
+        "n_samples": 3420
+      },
+      {
+        "decile": 4,
+        "mean_vol_bps": 0.7062730467255309,
+        "brier_score": 0.2080800848939012,
+        "n_samples": 3420
+      }
+    ],
+    "prediction_stats": {
+      "mean": 0.48755249051582755,
+      "std": 0.21045564556483953,
+      "min": 0.0,
+      "max": 1.0,
+      "pct_below_0.3": 0.14742690058479532,
+      "pct_above_0.7": 0.13298245614035087
+    }
+  }
+}

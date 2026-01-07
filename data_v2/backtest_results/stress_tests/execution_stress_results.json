@@ -1,0 +1,218 @@
+{
+  "slippage_uniform": {
+    "n_simulations": 200,
+    "slippage_type": "uniform",
+    "slippage_params": {
+      "max": 0.015,
+      "mean": null,
+      "std": null
+    },
+    "baseline": {
+      "n_trades": 262,
+      "total_pnl": 18.882999999999996,
+      "t_stat": 1.2500034440798984
+    },
+    "pnl_distribution": {
+      "mean": 14.958065146892247,
+      "std": 0.14229764242015375,
+      "percentile_5": 14.720489250436819,
+      "percentile_50": 14.971060974978084,
+      "percentile_95": 15.168614675967412
+    },
+    "t_stat_distribution": {
+      "mean": 0.9897225886757492,
+      "std": 0.009576718210866603,
+      "percentile_5": 0.9720990814492648,
+      "percentile_50": 0.9902661946962857,
+      "percentile_95": 1.004160567912008
+    },
+    "prob_positive_pnl": 1.0,
+    "prob_t_stat_gt_2": 0.0,
+    "prob_t_stat_gt_1_5": 0.0
+  },
+  "slippage_normal": {
+    "n_simulations": 200,
+    "slippage_type": "normal",
+    "slippage_params": {
+      "max": null,
+      "mean": 0.008,
+      "std": 0.004
+    },
+    "baseline": {
+      "n_trades": 262,
+      "total_pnl": 18.882999999999996,
+      "t_stat": 1.2500034440798984
+    },
+    "pnl_distribution": {
+      "mean": 14.673111107425502,
+      "std": 0.12726541363608676,
+      "percentile_5": 14.486017136695507,
+      "percentile_50": 14.660670109127224,
+      "percentile_95": 14.912163926650916
+    },
+    "t_stat_distribution": {
+      "mean": 0.9703727235623757,
+      "std": 0.008453592762696662,
+      "percentile_5": 0.9581469745405058,
+      "percentile_50": 0.9705600248527242,
+      "percentile_95": 0.9843908718727504
+    },
+    "prob_positive_pnl": 1.0,
+    "prob_t_stat_gt_2": 0.0,
+    "prob_t_stat_gt_1_5": 0.0
+  },
+  "quote_fade": [
+    {
+      "fade_delay": 0,
+      "n_trades": 262,
+      "total_pnl": 18.882999999999996,
+      "mean_pnl_per_market": 0.9938421052631579,
+      "t_stat": 1.2500034440798984,
+      "hit_rate": 0.3435114503816794
+    },
+    {
+      "fade_delay": 1,
+      "n_trades": 263,
+      "total_pnl": 19.738,
+      "mean_pnl_per_market": 1.0388421052631578,
+      "t_stat": 1.306811563091511,
+      "hit_rate": 0.34980988593155893
+    },
+    {
+      "fade_delay": 2,
+      "n_trades": 263,
+      "total_pnl": 19.708000000000002,
+      "mean_pnl_per_market": 1.0372631578947369,
+      "t_stat": 1.2853861826350077,
+      "hit_rate": 0.34600760456273766
+    },
+    {
+      "fade_delay": 3,
+      "n_trades": 263,
+      "total_pnl": 18.817999999999994,
+      "mean_pnl_per_market": 0.9904210526315789,
+      "t_stat": 1.2198467468858143,
+      "hit_rate": 0.33840304182509506
+    },
+    {
+      "fade_delay": 5,
+      "n_trades": 263,
+      "total_pnl": 22.633000000000003,
+      "mean_pnl_per_market": 1.1912105263157897,
+      "t_stat": 1.4940871813354244,
+      "hit_rate": 0.35361216730038025
+    }
+  ],
+  "capacity_first": [
+    {
+      "max_trades": 1,
+      "selection_method": "first",
+      "n_trades": 19,
+      "n_markets": 19,
+      "total_pnl": 0.3400000000000001,
+      "mean_pnl_per_market": 0.017894736842105255,
+      "t_stat": 0.1671560730992839
+    },
+    {
+      "max_trades": 2,
+      "selection_method": "first",
+      "n_trades": 38,
+      "n_markets": 19,
+      "total_pnl": -1.8299999999999996,
+      "mean_pnl_per_market": -0.09631578947368417,
+      "t_stat": -0.7421602891040395
+    },
+    {
+      "max_trades": 3,
+      "selection_method": "first",
+      "n_trades": 57,
+      "n_markets": 19,
+      "total_pnl": -4.069999999999999,
+      "mean_pnl_per_market": -0.21421052631578943,
+      "t_stat": -1.3295944891921008
+    },
+    {
+      "max_trades": 5,
+      "selection_method": "first",
+      "n_trades": 95,
+      "n_markets": 19,
+      "total_pnl": -2.7599999999999993,
+      "mean_pnl_per_market": -0.14526315789473682,
+      "t_stat": -0.5532199040459002
+    },
+    {
+      "max_trades": 10,
+      "selection_method": "first",
+      "n_trades": 190,
+      "n_markets": 19,
+      "total_pnl": 7.175000000000004,
+      "mean_pnl_per_market": 0.37763157894736854,
+      "t_stat": 0.6253089512048743
+    },
+    {
+      "max_trades": "unlimited",
+      "selection_method": "first",
+      "n_trades": 262,
+      "n_markets": 19,
+      "total_pnl": 18.882999999999996,
+      "mean_pnl_per_market": 0.9938421052631579,
+      "t_stat": 1.2500034440798984
+    }
+  ],
+  "capacity_strongest": [
+    {
+      "max_trades": 1,
+      "selection_method": "strongest",
+      "n_trades": 19,
+      "n_markets": 19,
+      "total_pnl": 4.198000000000001,
+      "mean_pnl_per_market": 0.22094736842105261,
+      "t_stat": 1.8940651134338025
+    },
+    {
+      "max_trades": 2,
+      "selection_method": "strongest",
+      "n_trades": 38,
+      "n_markets": 19,
+      "total_pnl": 8.698,
+      "mean_pnl_per_market": 0.45778947368421047,
+      "t_stat": 2.2528531663574154
+    },
+    {
+      "max_trades": 3,
+      "selection_method": "strongest",
+      "n_trades": 57,
+      "n_markets": 19,
+      "total_pnl": 11.503000000000004,
+      "mean_pnl_per_market": 0.6054210526315789,
+      "t_stat": 2.2211141718188787
+    },
+    {
+      "max_trades": 5,
+      "selection_method": "strongest",
+      "n_trades": 95,
+      "n_markets": 19,
+      "total_pnl": 15.052999999999999,
+      "mean_pnl_per_market": 0.792263157894737,
+      "t_stat": 1.8152941045323212
+    },
+    {
+      "max_trades": 10,
+      "selection_method": "strongest",
+      "n_trades": 190,
+      "n_markets": 19,
+      "total_pnl": 20.588,
+      "mean_pnl_per_market": 1.083578947368421,
+      "t_stat": 1.481033687623247
+    },
+    {
+      "max_trades": "unlimited",
+      "selection_method": "strongest",
+      "n_trades": 262,
+      "n_markets": 19,
+      "total_pnl": 18.882999999999996,
+      "mean_pnl_per_market": 0.9938421052631579,
+      "t_stat": 1.2500034440798984
+    }
+  ]
+}

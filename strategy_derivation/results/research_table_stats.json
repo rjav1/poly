@@ -1,0 +1,35 @@
+{
+  "total_rows": 141344,
+  "unique_wallets": 6,
+  "unique_markets": 44,
+  "wallets": {
+    "Account88888": 97020,
+    "PurpleThunderBicycleMountain": 22208,
+    "vidarx": 15518,
+    "Lkjhgfdna": 6272,
+    "tsaiTop": 289,
+    "FLO782": 37
+  },
+  "direction_distribution": {
+    "BOTH": 67256,
+    "Down": 37746,
+    "Up": 36342
+  },
+  "side_distribution": {
+    "BUY": 138196,
+    "SELL": 3148
+  },
+  "asset_distribution": {
+    "BTC": 91278,
+    "ETH": 35305,
+    "SOL": 7754,
+    "XRP": 7007
+  },
+  "tau_bucket_distribution": {
+    "600-900": 54700,
+    "300-600": 46568,
+    "120-300": 30546,
+    "60-120": 5735,
+    "0-60": 3795
+  }
+}

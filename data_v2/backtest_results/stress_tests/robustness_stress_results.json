@@ -1,0 +1,276 @@
+{
+  "lomo": {
+    "n_markets": 19,
+    "baseline": {
+      "t_stat": 1.2500034440798984,
+      "total_pnl": 18.882999999999996
+    },
+    "lomo_stats": {
+      "min_t_stat": 0.7381018847729274,
+      "median_t_stat": 1.2716269348475844,
+      "max_t_stat": 1.4035099170057521,
+      "mean_t_stat": 1.210226704922688,
+      "std_t_stat": 0.18917334137855674
+    },
+    "vulnerable_markets": [
+      {
+        "dropped_market": "20260107_0530_3253",
+        "t_stat": 0.7381018847729274,
+        "t_stat_change": 0.511901559306971
+      }
+    ],
+    "helpful_markets": [
+      {
+        "dropped_market": "20260107_0530_3253",
+        "t_stat": 0.7381018847729274,
+        "t_stat_change": 0.511901559306971
+      },
+      {
+        "dropped_market": "20260107_1015_3205",
+        "t_stat": 0.8793402735577676,
+        "t_stat_change": 0.3706631705221308
+      },
+      {
+        "dropped_market": "20260107_0745_3253",
+        "t_stat": 0.9048678775398279,
+        "t_stat_change": 0.3451355665400705
+      }
+    ],
+    "hurting_markets": [
+      {
+        "dropped_market": "20260107_0600_3248",
+        "t_stat": 1.4035099170057521,
+        "t_stat_change": -0.15350647292585373
+      },
+      {
+        "dropped_market": "20260107_1215_3215",
+        "t_stat": 1.4017468752081914,
+        "t_stat_change": -0.15174343112829303
+      },
+      {
+        "dropped_market": "20260107_0715_3257",
+        "t_stat": 1.385195463480767,
+        "t_stat_change": -0.13519201940086867
+      }
+    ],
+    "per_market_results": [
+      {
+        "dropped_market": "20260107_0530_3253",
+        "n_markets": 18,
+        "n_trades": 249,
+        "total_pnl": 8.265,
+        "t_stat": 0.7381018847729274,
+        "t_stat_change": 0.511901559306971
+      },
+      {
+        "dropped_market": "20260107_0600_3248",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 20.792999999999992,
+        "t_stat": 1.4035099170057521,
+        "t_stat_change": -0.15350647292585373
+      },
+      {
+        "dropped_market": "20260107_0645_3247",
+        "n_markets": 18,
+        "n_trades": 249,
+        "total_pnl": 19.532999999999994,
+        "t_stat": 1.2996366217589428,
+        "t_stat_change": -0.049633177679044405
+      },
+      {
+        "dropped_market": "20260107_0715_3257",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 20.58299999999999,
+        "t_stat": 1.385195463480767,
+        "t_stat_change": -0.13519201940086867
+      },
+      {
+        "dropped_market": "20260107_0730_3258",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 17.642999999999994,
+        "t_stat": 1.1662876019778825,
+        "t_stat_change": 0.08371584210201588
+      },
+      {
+        "dropped_market": "20260107_0745_3253",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 12.792999999999996,
+        "t_stat": 0.9048678775398279,
+        "t_stat_change": 0.3451355665400705
+      },
+      {
+        "dropped_market": "20260107_0815_3256",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 17.572999999999993,
+        "t_stat": 1.1617719398849187,
+        "t_stat_change": 0.08823150419497972
+      },
+      {
+        "dropped_market": "20260107_0830_3255",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 19.042999999999996,
+        "t_stat": 1.262759010974007,
+        "t_stat_change": -0.012755566894108616
+      },
+      {
+        "dropped_market": "20260107_0845_3251",
+        "n_markets": 18,
+        "n_trades": 249,
+        "total_pnl": 14.273,
+        "t_stat": 0.9750136951447079,
+        "t_stat_change": 0.27498974893519046
+      },
+      {
+        "dropped_market": "20260107_0915_3237",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 19.752999999999997,
+        "t_stat": 1.3167906783322587,
+        "t_stat_change": -0.06678723425236033
+      },
+      {
+        "dropped_market": "20260107_0945_3204",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 19.162999999999997,
+        "t_stat": 1.2716269348475844,
+        "t_stat_change": -0.021623490767685993
+      },
+      {
+        "dropped_market": "20260107_1015_3205",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 12.212999999999997,
+        "t_stat": 0.8793402735577676,
+        "t_stat_change": 0.3706631705221308
+      },
+      {
+        "dropped_market": "20260107_1030_3208",
+        "n_markets": 18,
+        "n_trades": 249,
+        "total_pnl": 19.137999999999995,
+        "t_stat": 1.2697709303388256,
+        "t_stat_change": -0.019767486258927214
+      },
+      {
+        "dropped_market": "20260107_1100_3214",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 19.332999999999995,
+        "t_stat": 1.2843688765963008,
+        "t_stat_change": -0.03436543251640245
+      },
+      {
+        "dropped_market": "20260107_1115_3221",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 20.202999999999996,
+        "t_stat": 1.353120994486636,
+        "t_stat_change": -0.10311755040673765
+      },
+      {
+        "dropped_market": "20260107_1130_3222",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 18.732999999999997,
+        "t_stat": 1.2403166480846781,
+        "t_stat_change": 0.009686795995220265
+      },
+      {
+        "dropped_market": "20260107_1145_3221",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 19.952999999999996,
+        "t_stat": 1.332725639478673,
+        "t_stat_change": -0.08272219539877468
+      },
+      {
+        "dropped_market": "20260107_1200_3218",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 20.132999999999996,
+        "t_stat": 1.347355530060427,
+        "t_stat_change": -0.09735208598052858
+      },
+      {
+        "dropped_market": "20260107_1215_3215",
+        "n_markets": 18,
+        "n_trades": 248,
+        "total_pnl": 20.772999999999996,
+        "t_stat": 1.4017468752081914,
+        "t_stat_change": -0.15174343112829303
+      }
+    ],
+    "robustness_score": 0.8486617438739912
+  },
+  "winsorization": {
+    "baseline": {
+      "n_trades": 262,
+      "t_stat": 1.2500034440798984,
+      "total_pnl": 18.882999999999996,
+      "mean_pnl_per_trade": 0.07207251908396946,
+      "max_pnl": 0.998,
+      "min_pnl": -0.95
+    },
+    "percentile_results": [
+      {
+        "percentile": 80,
+        "cap_value": 0.5780000000000002,
+        "floor_value": -0.23799999999999996,
+        "total_pnl": 17.395000000000014,
+        "mean_pnl_per_market": 0.9155263157894744,
+        "t_stat": 1.4757020145223316,
+        "t_stat_change": -0.22569857044243324,
+        "pnl_change_pct": -7.88010379706605
+      },
+      {
+        "percentile": 90,
+        "cap_value": 0.8290000000000001,
+        "floor_value": -0.38,
+        "total_pnl": 21.697999999999997,
+        "mean_pnl_per_market": 1.1420000000000001,
+        "t_stat": 1.443232444030888,
+        "t_stat_change": -0.19322899995098952,
+        "pnl_change_pct": 14.907588836519631
+      },
+      {
+        "percentile": 95,
+        "cap_value": 0.9594999999999998,
+        "floor_value": -0.51,
+        "total_pnl": 21.918,
+        "mean_pnl_per_market": 1.1535789473684213,
+        "t_stat": 1.3835053369179748,
+        "t_stat_change": -0.13350189283807645,
+        "pnl_change_pct": 16.07265794630093
+      },
+      {
+        "percentile": 99,
+        "cap_value": 0.9869499999999999,
+        "floor_value": -0.8878,
+        "total_pnl": 18.982449999999996,
+        "mean_pnl_per_market": 0.9990763157894735,
+        "t_stat": 1.2534307320462008,
+        "t_stat_change": -0.003427287966302428,
+        "pnl_change_pct": 0.5266641953079539
+      },
+      {
+        "percentile": 100,
+        "cap_value": 0.998,
+        "floor_value": -0.95,
+        "total_pnl": 18.882999999999996,
+        "mean_pnl_per_market": 0.9938421052631579,
+        "t_stat": 1.2500034440798984,
+        "t_stat_change": 0.0,
+        "pnl_change_pct": 0.0
+      }
+    ],
+    "robust_to_95th": false,
+    "t_stat_at_95th": 1.3835053369179748
+  }
+}

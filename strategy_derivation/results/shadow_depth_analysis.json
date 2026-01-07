@@ -1,0 +1,29 @@
+{
+  "n_signals": 45,
+  "executability": {
+    "pct_executable_q1": 100.0,
+    "pct_executable_q5": 84.44444444444444,
+    "pct_executable_q10": 66.66666666666666
+  },
+  "capacity": {
+    "q_max_median": 16.46875,
+    "q_max_mean": 34.446875
+  },
+  "edge": {
+    "edge_q1_median": 0.005000000000000009,
+    "edge_q1_mean": 0.009000000000000013
+  },
+  "persistence": {
+    "pct_persisted_0_5s": 100.0,
+    "pct_persisted_1s": 0.0,
+    "pct_persisted_2s": 0.0,
+    "pct_persisted_5s": 0.0
+  },
+  "capacity_decay": {
+    "q_max_at_signal": 34.446875,
+    "q_max_after_0_5s": 34.446875,
+    "q_max_after_1s": 0,
+    "q_max_after_2s": 0,
+    "q_max_after_5s": 0
+  }
+}

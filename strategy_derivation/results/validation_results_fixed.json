@@ -1,0 +1,202 @@
+{
+  "H6_underround_harvest": {
+    "hypothesis_id": "H6_underround_harvest",
+    "category": "PM_ONLY",
+    "params": {
+      "epsilon": 0.005,
+      "min_tau": 120,
+      "max_tau": 840,
+      "min_capacity": 0
+    },
+    "original_t_stat": 1.7208250578905855,
+    "original_pnl": 5.869999999999995,
+    "placebo_time_shift_30s": {
+      "shift_seconds": 30,
+      "category": "PM_ONLY",
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "original_pnl": 5.870000000000002,
+      "shifted_pnl": 5.870000000000002,
+      "original_t_stat": 1.7208250578905855,
+      "shifted_t_stat": 1.7208250578905855,
+      "pnl_change_pct": 0.0,
+      "passed": "True"
+    },
+    "placebo_time_shift_60s": {
+      "shift_seconds": 60,
+      "category": "PM_ONLY",
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "original_pnl": 5.870000000000002,
+      "shifted_pnl": 5.870000000000002,
+      "original_t_stat": 1.7208250578905855,
+      "shifted_t_stat": 1.7208250578905855,
+      "pnl_change_pct": 0.0,
+      "passed": "True"
+    },
+    "placebo_outcome_shuffle": {
+      "skipped": true,
+      "reason": "PM_ONLY strategies use complete-set arb, outcome does not affect PnL",
+      "passed": "N/A"
+    },
+    "walk_forward": {
+      "train_markets": 32,
+      "test_markets": 15,
+      "train_pnl": 1.6300000000000012,
+      "test_pnl": 4.240000000000001,
+      "train_t_stat": 5.023789400446264,
+      "test_t_stat": 1.279438269694357,
+      "train_avg_pnl_per_market": 0.05093750000000004,
+      "test_avg_pnl_per_market": 0.28266666666666673,
+      "degradation_pct": 74.53240636280047,
+      "win_rate": 1.0,
+      "total_wins": 154,
+      "total_losses": 0,
+      "passed": "True"
+    },
+    "bootstrap_ci": {
+      "n_bootstrap": 500,
+      "n_markets": 47,
+      "original_mean": 0.12489361702127663,
+      "bootstrap_mean": 0.12571404255319152,
+      "bootstrap_std": 0.07245867033957291,
+      "ci_95_lower": 0.040851063829787274,
+      "ci_95_upper": 0.2847553191489361,
+      "prob_positive": 1.0,
+      "ci_excludes_zero": "True"
+    }
+  },
+  "H9_early_inventory": {
+    "hypothesis_id": "H9_early_inventory",
+    "category": "INVENTORY",
+    "params": {
+      "min_tau": 500,
+      "epsilon": 0.01
+    },
+    "original_t_stat": 7.93576822630243,
+    "original_pnl": 0.7500000000000007,
+    "placebo_time_shift_30s": {
+      "shift_seconds": 30,
+      "category": "INVENTORY",
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "original_pnl": 0.7500000000000007,
+      "shifted_pnl": 0.7500000000000007,
+      "original_t_stat": 7.93576822630243,
+      "shifted_t_stat": 7.93576822630243,
+      "pnl_change_pct": 0.0,
+      "passed": "True"
+    },
+    "placebo_time_shift_60s": {
+      "shift_seconds": 60,
+      "category": "INVENTORY",
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "original_pnl": 0.7500000000000007,
+      "shifted_pnl": 0.7500000000000007,
+      "original_t_stat": 7.93576822630243,
+      "shifted_t_stat": 7.93576822630243,
+      "pnl_change_pct": 0.0,
+      "passed": "True"
+    },
+    "placebo_outcome_shuffle": {
+      "n_shuffles": 50,
+      "category": "INVENTORY",
+      "original_pnl": 0.7500000000000007,
+      "shuffled_mean": 0.7500000000000007,
+      "shuffled_std": 0.0,
+      "pct_shuffled_beats_original": 1.0,
+      "passed": "False"
+    },
+    "walk_forward": {
+      "train_markets": 32,
+      "test_markets": 15,
+      "train_pnl": 0.5300000000000005,
+      "test_pnl": 0.2200000000000002,
+      "train_t_stat": 6.562807023871924,
+      "test_t_stat": 4.515889549907781,
+      "train_avg_pnl_per_market": 0.016562500000000015,
+      "test_avg_pnl_per_market": 0.01466666666666668,
+      "degradation_pct": 31.189664217134073,
+      "win_rate": 1.0,
+      "total_wins": 58,
+      "total_losses": 0,
+      "passed": "True"
+    },
+    "bootstrap_ci": {
+      "n_bootstrap": 500,
+      "n_markets": 47,
+      "original_mean": 0.01595744680851065,
+      "bootstrap_mean": 0.016205531914893632,
+      "bootstrap_std": 0.0020074380024387144,
+      "ci_95_lower": 0.012441489361702139,
+      "ci_95_upper": 0.020537234042553205,
+      "prob_positive": 1.0,
+      "ci_excludes_zero": "True"
+    }
+  },
+  "H8_late_directional": {
+    "hypothesis_id": "H8_late_directional",
+    "category": "TIMING",
+    "params": {
+      "max_tau": 120,
+      "delta_threshold_bps": 15,
+      "hold_seconds": 60
+    },
+    "original_t_stat": 3.9627016285660437,
+    "original_pnl": 0.27500000000000024,
+    "placebo_time_shift_30s": {
+      "shift_seconds": 30,
+      "category": "TIMING",
+      "expected_behavior": "Edge should degrade under CL staleness",
+      "original_pnl": 0.27500000000000024,
+      "shifted_pnl": 0.41000000000000014,
+      "original_t_stat": 3.9627016285660437,
+      "shifted_t_stat": 2.021805283888701,
+      "pnl_change_pct": 49.090909090909015,
+      "passed": "False"
+    },
+    "placebo_time_shift_60s": {
+      "shift_seconds": 60,
+      "category": "TIMING",
+      "expected_behavior": "Edge should degrade under CL staleness",
+      "original_pnl": 0.27500000000000024,
+      "shifted_pnl": 0.28000000000000025,
+      "original_t_stat": 3.9627016285660437,
+      "shifted_t_stat": 3.764612555404301,
+      "pnl_change_pct": 1.8181818181818181,
+      "passed": "False"
+    },
+    "placebo_outcome_shuffle": {
+      "n_shuffles": 50,
+      "category": "TIMING",
+      "original_pnl": 0.27500000000000024,
+      "shuffled_mean": -11.385000000000002,
+      "shuffled_std": 2.753978939643512,
+      "pct_shuffled_beats_original": 0.0,
+      "passed": "True"
+    },
+    "walk_forward": {
+      "train_markets": 32,
+      "test_markets": 15,
+      "train_pnl": 0.2250000000000002,
+      "test_pnl": 0.050000000000000044,
+      "train_t_stat": 3.780061426497275,
+      "test_t_stat": 1.4852213144650117,
+      "train_avg_pnl_per_market": 0.007031250000000006,
+      "test_avg_pnl_per_market": 0.003333333333333336,
+      "degradation_pct": 60.70906932744569,
+      "win_rate": 1.0,
+      "total_wins": 23,
+      "total_losses": 0,
+      "passed": "True"
+    },
+    "bootstrap_ci": {
+      "n_bootstrap": 500,
+      "n_markets": 47,
+      "original_mean": 0.005851063829787239,
+      "bootstrap_mean": 0.005756808510638303,
+      "bootstrap_std": 0.001485012662408882,
+      "ci_95_lower": 0.0028723404255319176,
+      "ci_95_upper": 0.008510638297872348,
+      "prob_positive": 1.0,
+      "ci_excludes_zero": "True"
+    }
+  }
+}

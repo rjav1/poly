@@ -1,0 +1,184 @@
+# ETH Lead-Lag Backtest Report
+
+**Generated**: 2026-01-06 10:57:53
+
+**Primary Strategy**: StrikeCross(tau_max=600s)
+
+---
+
+## Strategy Configuration
+
+All analysis in this report uses the following strategy:
+
+- **Strategy**: StrikeCross(tau_max=600s)
+- **tau_max**: 600
+- **hold_to_expiry**: True
+- **hold_seconds**: 60
+- **min_follow_through_bps**: 0
+
+---
+
+## Executive Summary
+
+| Metric | Value |
+|--------|-------|
+| Strategy | StrikeCross(tau_max=600s) |
+| Total Trades | 65 |
+| Total PnL | $3.0200 |
+| t-statistic | 1.94 |
+| Markets with positive PnL | 43.8% |
+| Placebo p-value | 0.000 |
+| Latency cliff | 30s |
+
+---
+
+## 2. Data Overview
+
+- **Asset**: ETH
+- **Markets**: 24
+- **Total Observations**: 21,600
+- **Train/Test Split**: 16 / 8 markets
+- **Min Coverage**: 90%
+
+
+## 3. Latency Cliff Analysis
+
+**Strategy**: StrikeCross(tau_max=600s)
+
+**Key Question**: At what latency does edge disappear?
+
+| Latency | Total PnL | Avg PnL | Hit Rate | N Trades | Conv % |
+|---------|-----------|---------|----------|----------|--------|
+| 0s | $5.1500 | $0.0526 | 51.0% | 98 | 48.0% |
+| 1s | $5.0300 | $0.0513 | 51.0% | 98 | 43.9% |
+| 2s | $4.9500 | $0.0505 | 50.0% | 98 | 46.9% |
+| 3s | $4.7200 | $0.0482 | 50.0% | 98 | 49.0% |
+| 5s | $5.1000 | $0.0520 | 50.0% | 98 | 45.9% |
+| 10s | $4.7200 | $0.0482 | 53.1% | 98 | 48.0% |
+| 15s | $4.9200 | $0.0502 | 52.0% | 98 | 44.9% |
+| 20s | $5.0900 | $0.0525 | 51.5% | 97 | 44.3% |
+| 30s | $3.8800 | $0.0417 | 51.6% | 93 | 43.0% |
+
+**Cliff Point**: 30s (first latency where avg PnL drops to 0 or below)
+
+### Per-Market Clustered Statistics
+
+| Latency | Mean PnL | Std | t-stat | Hit Rate | Worst |
+|---------|----------|-----|--------|----------|-------|
+| 0s | $0.2146 | $0.3843 | 2.74 | 50.0% | $-0.4000 |
+| 1s | $0.2096 | $0.3809 | 2.70 | 45.8% | $-0.4100 |
+| 2s | $0.2063 | $0.3751 | 2.69 | 45.8% | $-0.4100 |
+| 3s | $0.1967 | $0.3670 | 2.63 | 50.0% | $-0.3700 |
+| 5s | $0.2125 | $0.3692 | 2.82 | 50.0% | $-0.3600 |
+| 10s | $0.1967 | $0.3602 | 2.67 | 50.0% | $-0.3600 |
+| 15s | $0.2050 | $0.3684 | 2.73 | 45.8% | $-0.3600 |
+| 20s | $0.2121 | $0.3936 | 2.64 | 45.8% | $-0.4500 |
+| 30s | $0.1617 | $0.3697 | 2.14 | 41.7% | $-0.6000 |
+
+
+## 4. Strategy Performance
+
+**Strategy**: StrikeCross(tau_max=600s)
+
+### Parameters
+
+- tau_max: 600
+- hold_to_expiry: True
+- hold_seconds: 60
+- min_follow_through_bps: 0
+
+### Metrics
+
+| Metric | Value |
+|--------|-------|
+| Total PnL | $3.0200 |
+| N Trades | 65 |
+| N Markets | 16 |
+| Mean PnL per market | $0.1888 |
+| Std PnL per market | $0.3891 |
+| t-statistic | 1.94 |
+| Hit rate (markets) | 43.8% |
+| Hit rate (trades) | 50.8% |
+| Worst market | $-0.4000 |
+| Best market | $0.8000 |
+| Conversion rate (entry) | 20.0% |
+| Conversion rate (exit) | 29.2% |
+
+
+## 5. Parameter Sweep Summary
+
+**Note**: All strategies tested with same execution model.
+
+
+### Top 5 Strategies by Train t-stat
+
+| Strategy | Params | Latency | Train PnL | Train t | Test PnL | N Train |
+|----------|--------|---------|-----------|---------|----------|---------|
+| StrikeCross | tau=600.0 | 0s | $3.020 | 1.94 | $2.130 | 65 |
+| StrikeCross | tau=600.0 | 5s | $2.810 | 1.92 | $2.290 | 65 |
+| StrikeCross | tau=600.0 | 2s | $2.870 | 1.88 | $2.080 | 65 |
+| StrikeCross | tau=300.0 | 0s | $1.160 | 1.29 | $0.530 | 27 |
+| LatencyCapture | tau=900.0 | 0s | $0.250 | 1.26 | $-0.130 | 7 |
+
+
+## 6. Fair Value Analysis
+
+**Strategy**: StrikeCross(tau_max=600s)
+
+**Purpose**: Determine if edge comes from latency or momentum
+
+
+| Metric | Train | Test |
+|--------|-------|------|
+| PnL-Mispricing Correlation | 0.0561 | -0.0426 |
+| Avg Mispricing | $-0.1499 | $-0.0440 |
+| N Trades | 65 | 33 |
+
+**Interpretation**: No relationship: Edge is likely from latency, not fair value deviation
+
+
+## 7. Placebo Test Results
+
+**Strategy**: StrikeCross(tau_max=600s)
+
+
+### Randomization Test
+
+| Metric | Value |
+|--------|-------|
+| Real strategy PnL | $5.1500 |
+| Real strategy N trades | 98 |
+| Placebo mean PnL | $-54.8339 |
+| Placebo std PnL | $1.0497 |
+| P-value | 0.000 |
+
+**Result**: PASS: Real strategy significantly outperforms random (p < 0.05). Edge is likely real.
+
+
+## 8. Conclusions & Recommendations
+
+### Overall Assessment: MODERATE EVIDENCE of potential edge (needs more data)
+
+### Key Findings
+
+1. StrikeCross(tau_max=600s) shows positive returns ($3.0200)
+2. Edge persists up to 30s execution latency
+3. Fair value analysis: Edge is from latency, not momentum
+4. Placebo tests: Signal is statistically significant
+
+### Recommendations
+
+1. Collect more data (100+ markets) for statistical confidence
+2. Test on other assets (BTC, SOL) to verify generalization
+3. Validate timestamp semantics (source vs received times)
+4. Monitor execution quality and actual fill rates
+
+---
+
+### Report Consistency Check
+
+- All sections analyze: **StrikeCross(tau_max=600s)**
+- Latency cliff N trades at 0s: 98
+- Strategy results N trades: 65
+
+*Report generated by scripts/backtest/generate_report.py*

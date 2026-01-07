@@ -1,0 +1,17 @@
+{
+  "train_markets": 24,
+  "test_markets": 12,
+  "train_late_rows": 10080,
+  "test_late_rows": 5040,
+  "train_opportunities": 3466,
+  "test_opportunities": 0,
+  "train_signals": 43,
+  "test_signals": 0,
+  "train_trades": 43,
+  "test_trades": 0,
+  "train_pnl": 3.1590000000000003,
+  "test_pnl": 0,
+  "train_t_stat": 3.296419682154287,
+  "test_t_stat": 0,
+  "diagnosis": "INCONCLUSIVE - zero signals"
+}

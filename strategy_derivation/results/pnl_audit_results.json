@@ -1,0 +1,620 @@
+{
+  "complete_set_trades": [],
+  "directional_trades": [
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 0,
+      "side": "buy_up",
+      "entry_price": 0.54,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.54,
+      "expected_pnl": -0.54,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 0,
+      "side": "buy_down",
+      "entry_price": 0.47,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.53,
+      "expected_pnl": 0.53,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 1,
+      "side": "buy_up",
+      "entry_price": 0.55,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.55,
+      "expected_pnl": -0.55,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 1,
+      "side": "buy_down",
+      "entry_price": 0.48,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.52,
+      "expected_pnl": 0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 2,
+      "side": "buy_up",
+      "entry_price": 0.52,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.52,
+      "expected_pnl": -0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 2,
+      "side": "buy_down",
+      "entry_price": 0.49,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.51,
+      "expected_pnl": 0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 3,
+      "side": "buy_up",
+      "entry_price": 0.51,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.51,
+      "expected_pnl": -0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 3,
+      "side": "buy_down",
+      "entry_price": 0.5,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.5,
+      "expected_pnl": 0.5,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 4,
+      "side": "buy_up",
+      "entry_price": 0.52,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.52,
+      "expected_pnl": -0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0215_93747",
+      "entry_t": 4,
+      "side": "buy_down",
+      "entry_price": 0.49,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.51,
+      "expected_pnl": 0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 0,
+      "side": "buy_up",
+      "entry_price": 0.52,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.52,
+      "expected_pnl": -0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 0,
+      "side": "buy_down",
+      "entry_price": 0.5,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.5,
+      "expected_pnl": 0.5,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 1,
+      "side": "buy_up",
+      "entry_price": 0.51,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.51,
+      "expected_pnl": -0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 1,
+      "side": "buy_down",
+      "entry_price": 0.5,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.5,
+      "expected_pnl": 0.5,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 2,
+      "side": "buy_up",
+      "entry_price": 0.51,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.51,
+      "expected_pnl": -0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 2,
+      "side": "buy_down",
+      "entry_price": 0.51,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.49,
+      "expected_pnl": 0.49,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 3,
+      "side": "buy_up",
+      "entry_price": 0.49,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.49,
+      "expected_pnl": -0.49,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 3,
+      "side": "buy_down",
+      "entry_price": 0.52,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.48,
+      "expected_pnl": 0.48,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 4,
+      "side": "buy_up",
+      "entry_price": 0.49,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.49,
+      "expected_pnl": -0.49,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0315_93802",
+      "entry_t": 4,
+      "side": "buy_down",
+      "entry_price": 0.52,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.48,
+      "expected_pnl": 0.48,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 0,
+      "side": "buy_up",
+      "entry_price": 0.47,
+      "exit_price": 1.0,
+      "Y": 1,
+      "pnl": 0.53,
+      "expected_pnl": 0.53,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 0,
+      "side": "buy_down",
+      "entry_price": 0.54,
+      "exit_price": 0.0,
+      "Y": 1,
+      "pnl": -0.54,
+      "expected_pnl": -0.54,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 1,
+      "side": "buy_up",
+      "entry_price": 0.48,
+      "exit_price": 1.0,
+      "Y": 1,
+      "pnl": 0.52,
+      "expected_pnl": 0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 1,
+      "side": "buy_down",
+      "entry_price": 0.53,
+      "exit_price": 0.0,
+      "Y": 1,
+      "pnl": -0.53,
+      "expected_pnl": -0.53,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 2,
+      "side": "buy_up",
+      "entry_price": 0.51,
+      "exit_price": 1.0,
+      "Y": 1,
+      "pnl": 0.49,
+      "expected_pnl": 0.49,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 2,
+      "side": "buy_down",
+      "entry_price": 0.5,
+      "exit_price": 0.0,
+      "Y": 1,
+      "pnl": -0.5,
+      "expected_pnl": -0.5,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 3,
+      "side": "buy_up",
+      "entry_price": 0.5,
+      "exit_price": 1.0,
+      "Y": 1,
+      "pnl": 0.5,
+      "expected_pnl": 0.5,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 3,
+      "side": "buy_down",
+      "entry_price": 0.52,
+      "exit_price": 0.0,
+      "Y": 1,
+      "pnl": -0.52,
+      "expected_pnl": -0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 4,
+      "side": "buy_up",
+      "entry_price": 0.49,
+      "exit_price": 1.0,
+      "Y": 1,
+      "pnl": 0.51,
+      "expected_pnl": 0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0330_93764",
+      "entry_t": 4,
+      "side": "buy_down",
+      "entry_price": 0.51,
+      "exit_price": 0.0,
+      "Y": 1,
+      "pnl": -0.51,
+      "expected_pnl": -0.51,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 0,
+      "side": "buy_up",
+      "entry_price": 0.45,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.45,
+      "expected_pnl": -0.45,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 0,
+      "side": "buy_down",
+      "entry_price": 0.57,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.43000000000000005,
+      "expected_pnl": 0.43000000000000005,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 1,
+      "side": "buy_up",
+      "entry_price": 0.46,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.46,
+      "expected_pnl": -0.46,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 1,
+      "side": "buy_down",
+      "entry_price": 0.55,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.44999999999999996,
+      "expected_pnl": 0.44999999999999996,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 2,
+      "side": "buy_up",
+      "entry_price": 0.47,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.47,
+      "expected_pnl": -0.47,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 2,
+      "side": "buy_down",
+      "entry_price": 0.55,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.44999999999999996,
+      "expected_pnl": 0.44999999999999996,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 3,
+      "side": "buy_up",
+      "entry_price": 0.48,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.48,
+      "expected_pnl": -0.48,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 3,
+      "side": "buy_down",
+      "entry_price": 0.53,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.47,
+      "expected_pnl": 0.47,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 4,
+      "side": "buy_up",
+      "entry_price": 0.52,
+      "exit_price": 0.0,
+      "Y": 0,
+      "pnl": -0.52,
+      "expected_pnl": -0.52,
+      "pnl_correct": true
+    },
+    {
+      "market_id": "20260106_0415_3232",
+      "entry_t": 4,
+      "side": "buy_down",
+      "entry_price": 0.49,
+      "exit_price": 1.0,
+      "Y": 0,
+      "pnl": 0.51,
+      "expected_pnl": 0.51,
+      "pnl_correct": true
+    }
+  ],
+  "implementation_issues": {
+    "implementation_issues": [
+      {
+        "file": "17_implement_strategies.py",
+        "issue": "Y is read from entry_row, but Y should be the market outcome (constant for whole market)",
+        "line_pattern": "entry_row.get('Y'",
+        "fix": "Y should come from market_info or be consistent across the market, not per-row"
+      },
+      {
+        "file": "18_validation_suite.py",
+        "issue": "Y is read from entry_row in validation suite",
+        "line_pattern": "entry_row.get('Y'",
+        "fix": "Y should be consistent market outcome"
+      }
+    ]
+  },
+  "directional_simulation": {
+    "total_trades": 15,
+    "winning_trades": 15,
+    "losing_trades": 0,
+    "total_pnl": 1.9000000000000004,
+    "win_rate": 1.0,
+    "sample_trades": [
+      {
+        "market_id": "20260106_0415_3232",
+        "Y": 0,
+        "delta_bps": -14.356693282242913,
+        "side": "buy_down",
+        "entry_price": 0.93,
+        "exit_price": 1.0,
+        "pnl": 0.06999999999999995,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0530_3224",
+        "Y": 0,
+        "delta_bps": -18.92433121208669,
+        "side": "buy_down",
+        "entry_price": 0.82,
+        "exit_price": 1.0,
+        "pnl": 0.18000000000000005,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0630_3227",
+        "Y": 1,
+        "delta_bps": 25.785480914715652,
+        "side": "buy_up",
+        "entry_price": 0.95,
+        "exit_price": 1.0,
+        "pnl": 0.050000000000000044,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0645_3250",
+        "Y": 0,
+        "delta_bps": -21.386882896431985,
+        "side": "buy_down",
+        "entry_price": 0.8,
+        "exit_price": 1.0,
+        "pnl": 0.19999999999999996,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0700_3239",
+        "Y": 0,
+        "delta_bps": -13.397327696166343,
+        "side": "buy_down",
+        "entry_price": 0.87,
+        "exit_price": 1.0,
+        "pnl": 0.13,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0715_3234",
+        "Y": 0,
+        "delta_bps": -32.40627073707574,
+        "side": "buy_down",
+        "entry_price": 0.98,
+        "exit_price": 1.0,
+        "pnl": 0.020000000000000018,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0730_3218",
+        "Y": 0,
+        "delta_bps": -16.53297847511915,
+        "side": "buy_down",
+        "entry_price": 0.96,
+        "exit_price": 1.0,
+        "pnl": 0.040000000000000036,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0800_3220",
+        "Y": 1,
+        "delta_bps": 13.728323923840952,
+        "side": "buy_up",
+        "entry_price": 0.98,
+        "exit_price": 1.0,
+        "pnl": 0.020000000000000018,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0900_3217",
+        "Y": 1,
+        "delta_bps": 14.487157725355539,
+        "side": "buy_up",
+        "entry_price": 0.79,
+        "exit_price": 1.0,
+        "pnl": 0.20999999999999996,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0930_3225",
+        "Y": 0,
+        "delta_bps": -15.813262117842008,
+        "side": "buy_down",
+        "entry_price": 0.98,
+        "exit_price": 1.0,
+        "pnl": 0.020000000000000018,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_0945_3221",
+        "Y": 1,
+        "delta_bps": 10.369737009188224,
+        "side": "buy_up",
+        "entry_price": 0.84,
+        "exit_price": 1.0,
+        "pnl": 0.16000000000000003,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_1000_3222",
+        "Y": 1,
+        "delta_bps": 12.630568893857491,
+        "side": "buy_up",
+        "entry_price": 0.95,
+        "exit_price": 1.0,
+        "pnl": 0.050000000000000044,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_1100_3226",
+        "Y": 1,
+        "delta_bps": 30.253336436875312,
+        "side": "buy_up",
+        "entry_price": 0.99,
+        "exit_price": 1.0,
+        "pnl": 0.010000000000000009,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_1115_3235",
+        "Y": 1,
+        "delta_bps": 13.259557854016174,
+        "side": "buy_up",
+        "entry_price": 0.44,
+        "exit_price": 1.0,
+        "pnl": 0.56,
+        "correct_direction": true
+      },
+      {
+        "market_id": "20260106_1330_139",
+        "Y": 0,
+        "delta_bps": -15.172870045445574,
+        "side": "buy_down",
+        "entry_price": 0.82,
+        "exit_price": 1.0,
+        "pnl": 0.18000000000000005,
+        "correct_direction": true
+      }
+    ]
+  }
+}

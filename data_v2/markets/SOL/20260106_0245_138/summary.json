@@ -1,0 +1,15 @@
+{
+  "asset": "SOL",
+  "market_id": "20260106_0245_138",
+  "market_start": "2026-01-06T02:45:00+00:00",
+  "market_end": "2026-01-06T03:00:00+00:00",
+  "strike_price": 138,
+  "cl_records": 723,
+  "pm_records": 722,
+  "cl_unique_seconds": 723,
+  "pm_unique_seconds": 722,
+  "both_unique_seconds": 605,
+  "cl_coverage": 80.33333333333333,
+  "pm_coverage": 80.22222222222221,
+  "both_coverage": 67.22222222222223
+}

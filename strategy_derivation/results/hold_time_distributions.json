@@ -1,0 +1,36 @@
+{
+  "Lkjhgfdna": {
+    "n_round_trips": 4762,
+    "avg_hold_time": 128.0562788744225,
+    "median_hold_time": 100.0,
+    "p25_hold_time": 50.0,
+    "p75_hold_time": 174.0,
+    "min_hold_time": 0,
+    "max_hold_time": 648,
+    "hold_time_distribution": {
+      "0-10s": 230,
+      "10-60s": 1227,
+      "60-120s": 1358,
+      "120-300s": 1554,
+      "300-600s": 387,
+      "600-900s": 6
+    }
+  },
+  "tsaiTop": {
+    "n_round_trips": 115,
+    "avg_hold_time": 60.97391304347826,
+    "median_hold_time": 58.0,
+    "p25_hold_time": 56.0,
+    "p75_hold_time": 60.0,
+    "min_hold_time": 56,
+    "max_hold_time": 304,
+    "hold_time_distribution": {
+      "0-10s": 0,
+      "10-60s": 93,
+      "60-120s": 21,
+      "120-300s": 0,
+      "300-600s": 1,
+      "600-900s": 0
+    }
+  }
+}

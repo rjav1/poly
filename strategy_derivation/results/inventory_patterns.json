@@ -1,0 +1,68 @@
+{
+  "vidarx": {
+    "total_markets": 43,
+    "total_positions": 86,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 1.0,
+    "avg_reversion_score": 0.0,
+    "avg_net_position": 3070.741296383721,
+    "net_position_bias": "LONG",
+    "total_round_trips": 0,
+    "scalp_ratio": 0.0
+  },
+  "tsaiTop": {
+    "total_markets": 8,
+    "total_positions": 8,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 0.0,
+    "avg_reversion_score": 0.0013904338153503894,
+    "avg_net_position": 2441.209905375,
+    "net_position_bias": "LONG",
+    "total_round_trips": 115,
+    "scalp_ratio": 14.375
+  },
+  "Account88888": {
+    "total_markets": 41,
+    "total_positions": 82,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 1.0,
+    "avg_reversion_score": 0.0,
+    "avg_net_position": 43141.75679685365,
+    "net_position_bias": "LONG",
+    "total_round_trips": 0,
+    "scalp_ratio": 0.0
+  },
+  "PurpleThunderBicycleMountain": {
+    "total_markets": 29,
+    "total_positions": 58,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 1.0,
+    "avg_reversion_score": 0.0,
+    "avg_net_position": 28465.633563517244,
+    "net_position_bias": "LONG",
+    "total_round_trips": 0,
+    "scalp_ratio": 0.0
+  },
+  "Lkjhgfdna": {
+    "total_markets": 43,
+    "total_positions": 86,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 1.0,
+    "avg_reversion_score": 0.03494839227048141,
+    "avg_net_position": 223.68475106976751,
+    "net_position_bias": "LONG",
+    "total_round_trips": 4762,
+    "scalp_ratio": 55.372093023255815
+  },
+  "FLO782": {
+    "total_markets": 3,
+    "total_positions": 3,
+    "hold_to_expiry_ratio": 1.0,
+    "both_sides_ratio": 0.0,
+    "avg_reversion_score": 0.0,
+    "avg_net_position": 1166.6507026666668,
+    "net_position_bias": "LONG",
+    "total_round_trips": 0,
+    "scalp_ratio": 0.0
+  }
+}

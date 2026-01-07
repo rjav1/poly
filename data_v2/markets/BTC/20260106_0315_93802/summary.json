@@ -1,0 +1,15 @@
+{
+  "asset": "BTC",
+  "market_id": "20260106_0315_93802",
+  "market_start": "2026-01-06T03:15:00+00:00",
+  "market_end": "2026-01-06T03:30:00+00:00",
+  "strike_price": 93802,
+  "cl_records": 748,
+  "pm_records": 817,
+  "cl_unique_seconds": 748,
+  "pm_unique_seconds": 817,
+  "both_unique_seconds": 670,
+  "cl_coverage": 83.11111111111111,
+  "pm_coverage": 90.77777777777779,
+  "both_coverage": 74.44444444444444
+}

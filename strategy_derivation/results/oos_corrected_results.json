@@ -1,0 +1,21 @@
+{
+  "valid_markets": 36,
+  "excluded_markets": 0,
+  "train_markets": 25,
+  "test_markets": 11,
+  "train_signals": 47,
+  "test_signals": 31,
+  "train_trades": 43,
+  "test_trades": 31,
+  "train_pnl": 3.1590000000000003,
+  "test_pnl": 1.7700000000000005,
+  "train_t_stat": 3.2685448673275865,
+  "test_t_stat": 0.9366338048869817,
+  "degradation_pct": 71.34401261400495,
+  "frozen_params": {
+    "tau_max": 420,
+    "delta_threshold_bps": 10,
+    "hold_seconds": 120
+  },
+  "conclusion": "WEAK - high OOS degradation"
+}

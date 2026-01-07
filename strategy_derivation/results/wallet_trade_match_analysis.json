@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-01-06T19:37:04.847116",
+  "volume_markets_range": {
+    "start": "2026-01-06T16:30:00+00:00",
+    "end": "2026-01-06T19:30:00+00:00"
+  },
+  "total_matched_trades": 6479,
+  "match_stats_by_handle": {
+    "Account88888": {
+      "total_matched_trades": 4269,
+      "trades_at_valid_prices": 4155,
+      "trades_at_underround": 18,
+      "pct_at_underround": 0.4332129963898917,
+      "median_underround_at_trade": -0.010000000000000009
+    },
+    "PurpleThunderBicycleMountain": {
+      "total_matched_trades": 1681,
+      "trades_at_valid_prices": 1515,
+      "trades_at_underround": 10,
+      "pct_at_underround": 0.6600660066006601,
+      "median_underround_at_trade": -0.010000000000000009
+    },
+    "Lkjhgfdna": {
+      "total_matched_trades": 518,
+      "trades_at_valid_prices": 515,
+      "trades_at_underround": 0,
+      "pct_at_underround": 0.0,
+      "median_underround_at_trade": -0.010000000000000009
+    },
+    "tsaiTop": {
+      "total_matched_trades": 11,
+      "trades_at_valid_prices": 0,
+      "trades_at_underround": 0,
+      "pct_at_underround": 0,
+      "median_underround_at_trade": null
+    }
+  },
+  "paired_trade_analysis": {
+    "Account88888": {
+      "n_paired_seconds": 185,
+      "n_valid_pairs": 184,
+      "n_positive_edge": 96,
+      "pct_positive_edge": 51.891891891891895,
+      "median_realized_edge": 0.001430259817662649,
+      "mean_realized_edge": 0.0033205383812650643,
+      "p25_realized_edge": -0.011666690892882414,
+      "p75_realized_edge": 0.01781387823846492,
+      "total_matched_qty": 12670.802152,
+      "median_quote_underround": -0.010000000000000009,
+      "correlation_realized_vs_quote": 0.05165966777197894
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_paired_seconds": 8,
+      "n_valid_pairs": 8,
+      "n_positive_edge": 2,
+      "pct_positive_edge": 25.0,
+      "median_realized_edge": -0.02310157387608225,
+      "mean_realized_edge": -0.016481250098413308,
+      "p25_realized_edge": -0.043493749035315665,
+      "p75_realized_edge": 0.002702004876379893,
+      "total_matched_qty": 1466.828027,
+      "median_quote_underround": -0.010000000000000009,
+      "correlation_realized_vs_quote": -0.5065854814496228
+    },
+    "Lkjhgfdna": {
+      "n_paired_seconds": 6,
+      "n_valid_pairs": 6,
+      "n_positive_edge": 0,
+      "pct_positive_edge": 0.0,
+      "median_realized_edge": -0.03877251104416435,
+      "mean_realized_edge": -0.052149746492380133,
+      "p25_realized_edge": -0.056886252243268376,
+      "p75_realized_edge": -0.02999998055553077,
+      "total_matched_qty": 122.731315,
+      "median_quote_underround": -0.015000000000000013,
+      "correlation_realized_vs_quote": -0.2975034801928162
+    },
+    "tsaiTop": {
+      "n_paired_seconds": 0,
+      "n_positive_edge": 0,
+      "median_realized_edge": null,
+      "mean_realized_edge": null,
+      "total_matched_qty": 0
+    }
+  }
+}

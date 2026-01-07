@@ -1,0 +1,116 @@
+[
+  {
+    "check": "K is constant within each market",
+    "passed": "False",
+    "status": "FAIL",
+    "details": "K unique values per market: max=1, min=0"
+  },
+  {
+    "check": "K approximates CL price at t=0",
+    "passed": "True",
+    "status": "PASS",
+    "details": "K vs CL(t=0): mean=0.00bps, max=0.00bps"
+  },
+  {
+    "check": "K is NOT suspiciously close to CL(t=450)",
+    "passed": "False",
+    "status": "FAIL",
+    "details": "K vs CL(t=450): mean=9.30bps"
+  },
+  {
+    "check": "K is NOT suspiciously close to CL(t=899)",
+    "passed": "True",
+    "status": "PASS",
+    "details": "K vs CL(t=899): mean=13.06bps"
+  },
+  {
+    "check": "delta_bps matches (cl_mid - K) / K * 10000",
+    "passed": "True",
+    "status": "PASS",
+    "details": "Max difference: 0.000000 bps"
+  },
+  {
+    "check": "delta_bps not anomalously correlated with future CL",
+    "passed": "True",
+    "status": "PASS",
+    "details": "Mean correlation with CL(t+30): 0.764"
+  },
+  {
+    "check": "Does NOT use settlement column",
+    "passed": true,
+    "status": "PASS",
+    "details": "'settlement' found in code: False"
+  },
+  {
+    "check": "Does NOT use Y (outcome) column",
+    "passed": true,
+    "status": "PASS",
+    "details": "'Y' column access found: False"
+  },
+  {
+    "check": "Uses tau from dataset (not max_t - t)",
+    "passed": true,
+    "status": "PASS",
+    "details": "Uses tau: True, Uses max_t: True"
+  },
+  {
+    "check": "Only uses expected columns",
+    "passed": true,
+    "status": "PASS",
+    "details": "Columns accessed: ['delta_bps', 'cl_mid', 'tau', 't', 'momentum', 'cl_return_bps']"
+  },
+  {
+    "check": "Momentum computed from backward-looking pct_change + rolling",
+    "passed": true,
+    "status": "PASS",
+    "details": "pct_change: True, rolling: True"
+  },
+  {
+    "check": "Shift direction is correct (positive = staler)",
+    "passed": true,
+    "status": "PASS",
+    "details": "shift(positive) = staler data (CORRECT)"
+  },
+  {
+    "check": "All CL-related columns shifted",
+    "passed": true,
+    "status": "PASS",
+    "details": "Columns shifted: ['cl_mid', 'cl_bid', 'cl_ask', 'delta', 'delta_bps']"
+  },
+  {
+    "check": "K (strike) is NOT shifted",
+    "passed": true,
+    "status": "PASS",
+    "details": "K in shifted columns: False"
+  },
+  {
+    "check": "Shift(30) gives value from 30s earlier",
+    "passed": "False",
+    "status": "FAIL",
+    "details": "At t=50: shifted=nan, original_t20=nan"
+  },
+  {
+    "check": "Entry uses entry_t for price lookup",
+    "passed": true,
+    "status": "PASS",
+    "details": "entry_t and entry_price found in execution code"
+  },
+  {
+    "check": "Exit uses exit_t for price lookup",
+    "passed": true,
+    "status": "PASS",
+    "details": "exit_t and exit_price found in execution code"
+  },
+  {
+    "check": "No obvious future data access patterns",
+    "passed": true,
+    "status": "PASS",
+    "details": "Suspicious patterns found: None"
+  },
+  {
+    "check": "delta_bps autocorrelation at lag 30s",
+    "passed": true,
+    "status": "PASS",
+    "details": "Autocorr(30s) = 0.779 - HIGH"
+  }
+]

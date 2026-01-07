@@ -1,0 +1,148 @@
+{
+  "wallets_analyzed": 6,
+  "sklearn_available": true,
+  "universal_features": [
+    {
+      "feature": "cl_bid",
+      "n_wallets": 6,
+      "wallets": [
+        "tsaiTop",
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "FLO782",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.19563864457646016
+    },
+    {
+      "feature": "pm_down_best_bid",
+      "n_wallets": 6,
+      "wallets": [
+        "tsaiTop",
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "FLO782",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.11363209117633279
+    },
+    {
+      "feature": "cl_ask",
+      "n_wallets": 5,
+      "wallets": [
+        "tsaiTop",
+        "Lkjhgfdna",
+        "FLO782",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.28730028897620924
+    },
+    {
+      "feature": "pm_down_best_ask",
+      "n_wallets": 5,
+      "wallets": [
+        "tsaiTop",
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.04106347442863342
+    },
+    {
+      "feature": "cl_mid",
+      "n_wallets": 4,
+      "wallets": [
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.40021641921608736
+    },
+    {
+      "feature": "pm_up_best_ask",
+      "n_wallets": 4,
+      "wallets": [
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "tsaiTop",
+        "Account88888"
+      ],
+      "avg_importance": 0.11844466823526278
+    },
+    {
+      "feature": "pm_ffill",
+      "n_wallets": 4,
+      "wallets": [
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.11818051969811869
+    },
+    {
+      "feature": "pm_up_best_bid",
+      "n_wallets": 4,
+      "wallets": [
+        "FLO782",
+        "tsaiTop",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.10924428831380535
+    },
+    {
+      "feature": "pm_up_mid",
+      "n_wallets": 4,
+      "wallets": [
+        "FLO782",
+        "PurpleThunderBicycleMountain",
+        "tsaiTop",
+        "Account88888"
+      ],
+      "avg_importance": 0.10607682494653074
+    },
+    {
+      "feature": "delta",
+      "n_wallets": 4,
+      "wallets": [
+        "Lkjhgfdna",
+        "PurpleThunderBicycleMountain",
+        "vidarx",
+        "Account88888"
+      ],
+      "avg_importance": 0.09583926813481017
+    }
+  ],
+  "per_wallet_summary": {
+    "vidarx": {
+      "n_rules": 5,
+      "best_auc": 0.3290843989451741
+    },
+    "tsaiTop": {
+      "n_rules": 4,
+      "best_auc": 0.44386740345688436
+    },
+    "Account88888": {
+      "n_rules": 5,
+      "best_auc": 0.5700780825997162
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_rules": 5,
+      "best_auc": 0.5222430375183553
+    },
+    "Lkjhgfdna": {
+      "n_rules": 5,
+      "best_auc": 0.3425810131930364
+    },
+    "FLO782": {
+      "n_rules": 0,
+      "best_auc": 0.5
+    }
+  }
+}

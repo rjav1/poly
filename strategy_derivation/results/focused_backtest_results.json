@@ -1,0 +1,439 @@
+{
+  "complete_set_family": {
+    "best": {
+      "strategy": "complete_set_arb",
+      "params": {
+        "epsilon": 0.005,
+        "min_tau": 600,
+        "max_tau": 900,
+        "cooldown": 30,
+        "min_capacity": 0
+      },
+      "n_markets": 47,
+      "total_signals": 51,
+      "total_pnl": 0.7200000000000006,
+      "capacity_constrained_pnl": 0.16000000000000014,
+      "capacity_constrained_signals": 14,
+      "wins": 51,
+      "losses": 0,
+      "win_rate": 1.0,
+      "t_stat": 6.526546115351073,
+      "avg_pnl_per_signal": 0.014117647058823542
+    },
+    "top_10": [
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.005,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 30,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 51,
+        "total_pnl": 0.7200000000000006,
+        "capacity_constrained_pnl": 0.16000000000000014,
+        "capacity_constrained_signals": 14,
+        "wins": 51,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 6.526546115351073,
+        "avg_pnl_per_signal": 0.014117647058823542
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.01,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 30,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 51,
+        "total_pnl": 0.7200000000000006,
+        "capacity_constrained_pnl": 0.16000000000000014,
+        "capacity_constrained_signals": 14,
+        "wins": 51,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 6.526546115351073,
+        "avg_pnl_per_signal": 0.014117647058823542
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.005,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 60,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 46,
+        "total_pnl": 0.6300000000000006,
+        "capacity_constrained_pnl": 0.14000000000000012,
+        "capacity_constrained_signals": 12,
+        "wins": 46,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 6.478917551355608,
+        "avg_pnl_per_signal": 0.013695652173913055
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.01,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 60,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 46,
+        "total_pnl": 0.6300000000000006,
+        "capacity_constrained_pnl": 0.14000000000000012,
+        "capacity_constrained_signals": 12,
+        "wins": 46,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 6.478917551355608,
+        "avg_pnl_per_signal": 0.013695652173913055
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.005,
+          "min_tau": 300,
+          "max_tau": 900,
+          "cooldown": 30,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 109,
+        "total_pnl": 2.0000000000000013,
+        "capacity_constrained_pnl": 0.9400000000000004,
+        "capacity_constrained_signals": 34,
+        "wins": 109,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 4.000851335542259,
+        "avg_pnl_per_signal": 0.01834862385321102
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.01,
+          "min_tau": 300,
+          "max_tau": 900,
+          "cooldown": 30,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 109,
+        "total_pnl": 2.0000000000000013,
+        "capacity_constrained_pnl": 0.9400000000000004,
+        "capacity_constrained_signals": 34,
+        "wins": 109,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 4.000851335542259,
+        "avg_pnl_per_signal": 0.01834862385321102
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.005,
+          "min_tau": 300,
+          "max_tau": 900,
+          "cooldown": 60,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 95,
+        "total_pnl": 1.750000000000001,
+        "capacity_constrained_pnl": 0.8700000000000003,
+        "capacity_constrained_signals": 29,
+        "wins": 95,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.5936456484743666,
+        "avg_pnl_per_signal": 0.01842105263157896
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.01,
+          "min_tau": 300,
+          "max_tau": 900,
+          "cooldown": 60,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 95,
+        "total_pnl": 1.750000000000001,
+        "capacity_constrained_pnl": 0.8700000000000003,
+        "capacity_constrained_signals": 29,
+        "wins": 95,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.5936456484743666,
+        "avg_pnl_per_signal": 0.01842105263157896
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.015,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 30,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 14,
+        "total_pnl": 0.39000000000000035,
+        "capacity_constrained_pnl": 0.040000000000000036,
+        "capacity_constrained_signals": 2,
+        "wins": 14,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.5507656227828535,
+        "avg_pnl_per_signal": 0.027857142857142882
+      },
+      {
+        "strategy": "complete_set_arb",
+        "params": {
+          "epsilon": 0.015,
+          "min_tau": 600,
+          "max_tau": 900,
+          "cooldown": 60,
+          "min_capacity": 0
+        },
+        "n_markets": 47,
+        "total_signals": 14,
+        "total_pnl": 0.39000000000000035,
+        "capacity_constrained_pnl": 0.040000000000000036,
+        "capacity_constrained_signals": 2,
+        "wins": 14,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.5507656227828535,
+        "avg_pnl_per_signal": 0.027857142857142882
+      }
+    ]
+  },
+  "directional_family": {
+    "best": {
+      "strategy": "late_directional",
+      "params": {
+        "max_tau": 120,
+        "min_tau": 30,
+        "delta_threshold_bps": 15,
+        "cooldown": 60
+      },
+      "n_markets": 47,
+      "total_signals": 23,
+      "total_pnl": 0.27500000000000024,
+      "wins": 23,
+      "losses": 0,
+      "win_rate": 1.0,
+      "t_stat": 3.9627016285660437,
+      "direction_accuracy": 1.0,
+      "avg_pnl_per_signal": 0.011956521739130446
+    },
+    "top_10": [
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 120,
+          "min_tau": 30,
+          "delta_threshold_bps": 15,
+          "cooldown": 60
+        },
+        "n_markets": 47,
+        "total_signals": 23,
+        "total_pnl": 0.27500000000000024,
+        "wins": 23,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.9627016285660437,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.011956521739130446
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 30,
+          "delta_threshold_bps": 10,
+          "cooldown": 30
+        },
+        "n_markets": 47,
+        "total_signals": 213,
+        "total_pnl": 17.66,
+        "wins": 210,
+        "losses": 3,
+        "win_rate": 0.9859154929577465,
+        "t_stat": 3.9341364044589238,
+        "direction_accuracy": 0.9859154929577465,
+        "avg_pnl_per_signal": 0.08291079812206573
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 30,
+          "delta_threshold_bps": 15,
+          "cooldown": 120
+        },
+        "n_markets": 47,
+        "total_signals": 48,
+        "total_pnl": 4.44,
+        "wins": 48,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.906535433497705,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.09250000000000001
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 60,
+          "delta_threshold_bps": 15,
+          "cooldown": 120
+        },
+        "n_markets": 47,
+        "total_signals": 43,
+        "total_pnl": 4.385,
+        "wins": 43,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.8837048246811317,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.1019767441860465
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 60,
+          "delta_threshold_bps": 10,
+          "cooldown": 30
+        },
+        "n_markets": 47,
+        "total_signals": 197,
+        "total_pnl": 17.235,
+        "wins": 194,
+        "losses": 3,
+        "win_rate": 0.9847715736040609,
+        "t_stat": 3.8710975358926727,
+        "direction_accuracy": 0.9847715736040609,
+        "avg_pnl_per_signal": 0.08748730964467005
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 120,
+          "min_tau": 30,
+          "delta_threshold_bps": 15,
+          "cooldown": 30
+        },
+        "n_markets": 47,
+        "total_signals": 39,
+        "total_pnl": 0.4350000000000004,
+        "wins": 39,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.8450529104680595,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.011153846153846163
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 30,
+          "delta_threshold_bps": 15,
+          "cooldown": 60
+        },
+        "n_markets": 47,
+        "total_signals": 78,
+        "total_pnl": 5.66,
+        "wins": 78,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.840319674788595,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.07256410256410256
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 60,
+          "delta_threshold_bps": 15,
+          "cooldown": 60
+        },
+        "n_markets": 47,
+        "total_signals": 72,
+        "total_pnl": 5.595000000000001,
+        "wins": 72,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.814000821472645,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.07770833333333334
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 300,
+          "min_tau": 30,
+          "delta_threshold_bps": 10,
+          "cooldown": 120
+        },
+        "n_markets": 47,
+        "total_signals": 50,
+        "total_pnl": 4.815,
+        "wins": 50,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.752290760384464,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.09630000000000001
+      },
+      {
+        "strategy": "late_directional",
+        "params": {
+          "max_tau": 420,
+          "min_tau": 30,
+          "delta_threshold_bps": 15,
+          "cooldown": 30
+        },
+        "n_markets": 47,
+        "total_signals": 137,
+        "total_pnl": 8.320000000000002,
+        "wins": 137,
+        "losses": 0,
+        "win_rate": 1.0,
+        "t_stat": 3.620615368550337,
+        "direction_accuracy": 1.0,
+        "avg_pnl_per_signal": 0.06072992700729928
+      }
+    ]
+  },
+  "recommendations": {
+    "items": [
+      "Complete-set arb is a valid arbitrage strategy with guaranteed payoff",
+      "Complete-set arb passes statistical significance threshold",
+      "Late directional 100% win rate suspicious - need more data",
+      "Paper trade complete-set with epsilon=0.005",
+      "Investigate why late directional has 100% win rate"
+    ],
+    "complete_set_ready": true,
+    "directional_ready": false
+  }
+}

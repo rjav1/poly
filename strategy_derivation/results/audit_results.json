@@ -1,0 +1,82 @@
+{
+  "total_issues": 7,
+  "issues_by_type": {
+    "PLACEBO_LOGIC_ERROR": 4,
+    "WIN_RATE_SUSPICION": 1,
+    "PERMUTATION_TEST_INAPPROPRIATE": 2
+  },
+  "issues": [
+    {
+      "type": "PLACEBO_LOGIC_ERROR",
+      "hypothesis_id": "H6_underround_harvest",
+      "category": "PM_ONLY",
+      "test": "placebo_time_shift_30s",
+      "current_passed": "False",
+      "correct_passed": true,
+      "original_t_stat": 1.7208250578905855,
+      "shifted_t_stat": 1.7208250578905855,
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "recommendation": "PM-only strategies don't use CL data, so CL time-shift should have no effect. The current logic expects edge to DEGRADE, but for PM_ONLY it should PERSIST."
+    },
+    {
+      "type": "PLACEBO_LOGIC_ERROR",
+      "hypothesis_id": "H6_underround_harvest",
+      "category": "PM_ONLY",
+      "test": "placebo_time_shift_60s",
+      "current_passed": "False",
+      "correct_passed": true,
+      "original_t_stat": 1.7208250578905855,
+      "shifted_t_stat": 1.7208250578905855,
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "recommendation": "PM-only strategies don't use CL data, so CL time-shift should have no effect. The current logic expects edge to DEGRADE, but for PM_ONLY it should PERSIST."
+    },
+    {
+      "type": "PLACEBO_LOGIC_ERROR",
+      "hypothesis_id": "H9_early_inventory",
+      "category": "INVENTORY",
+      "test": "placebo_time_shift_30s",
+      "current_passed": "False",
+      "correct_passed": true,
+      "original_t_stat": 7.93576822630243,
+      "shifted_t_stat": 7.93576822630243,
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "recommendation": "PM-only strategies don't use CL data, so CL time-shift should have no effect. The current logic expects edge to DEGRADE, but for INVENTORY it should PERSIST."
+    },
+    {
+      "type": "PLACEBO_LOGIC_ERROR",
+      "hypothesis_id": "H9_early_inventory",
+      "category": "INVENTORY",
+      "test": "placebo_time_shift_60s",
+      "current_passed": "False",
+      "correct_passed": true,
+      "original_t_stat": 7.93576822630243,
+      "shifted_t_stat": 7.93576822630243,
+      "expected_behavior": "Edge should persist (no CL dependency)",
+      "recommendation": "PM-only strategies don't use CL data, so CL time-shift should have no effect. The current logic expects edge to DEGRADE, but for INVENTORY it should PERSIST."
+    },
+    {
+      "type": "WIN_RATE_SUSPICION",
+      "hypothesis_id": "H8_late_directional",
+      "category": "TIMING",
+      "win_rate": 1.0,
+      "concern": "Directional strategy shows 100% win rate. This is suspicious - directional trades should have losses when direction is wrong.",
+      "recommendation": "Audit PnL calculation in execute_signal(). Check if Y (outcome) is being used correctly. Verify losses are not being clipped with max(0, pnl)."
+    },
+    {
+      "type": "PERMUTATION_TEST_INAPPROPRIATE",
+      "hypothesis_id": "H6_underround_harvest",
+      "category": "PM_ONLY",
+      "pct_beaten": 1.0,
+      "concern": "Permuting 't' breaks market structure for underround strategies. When timing is randomized, the strategy finds underround at 'wrong' times, creating MORE signals (but meaningless ones).",
+      "recommendation": "For complete-set arb, permutation test is not appropriate. Consider: 1) Skip this test for PM_ONLY, or 2) Permute Y (outcome) instead."
+    },
+    {
+      "type": "PERMUTATION_TEST_INAPPROPRIATE",
+      "hypothesis_id": "H9_early_inventory",
+      "category": "INVENTORY",
+      "pct_beaten": 1.0,
+      "concern": "Permuting 't' breaks market structure for underround strategies. When timing is randomized, the strategy finds underround at 'wrong' times, creating MORE signals (but meaningless ones).",
+      "recommendation": "For complete-set arb, permutation test is not appropriate. Consider: 1) Skip this test for PM_ONLY, or 2) Permute Y (outcome) instead."
+    }
+  ]
+}

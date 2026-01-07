@@ -1,0 +1,166 @@
+{
+  "Strategy_A": {
+    "strategy_name": "UnderroundHarvester",
+    "description": "Buy both sides when sum_asks < 1 - epsilon, hold to expiry",
+    "inspired_by": [
+      "vidarx",
+      "PurpleThunderBicycleMountain"
+    ],
+    "parameters": {
+      "epsilon": {
+        "suggested": 0.0249,
+        "sweep_range": [
+          0.01,
+          0.02,
+          0.03,
+          0.04
+        ],
+        "description": "Minimum underround threshold to trigger entry"
+      },
+      "min_tau": {
+        "suggested": 60,
+        "sweep_range": [
+          30,
+          60,
+          120
+        ],
+        "description": "Minimum time to expiry (avoid last N seconds)"
+      },
+      "max_tau": {
+        "suggested": 840,
+        "sweep_range": [
+          600,
+          720,
+          840
+        ],
+        "description": "Maximum time to expiry (entry window start)"
+      }
+    },
+    "evidence": {
+      "vidarx_median_edge": 0.029999999999999805,
+      "vidarx_pct_positive": 0.8296529968454258,
+      "purple_median_edge": 0.024892020060727882,
+      "purple_pct_positive": 0.648023143683703
+    }
+  },
+  "Strategy_B": {
+    "strategy_name": "LateDirectionalTaker",
+    "description": "Take directional positions in last 5 minutes based on CL signal",
+    "inspired_by": [
+      "tsaiTop"
+    ],
+    "parameters": {
+      "tau_max": {
+        "suggested": 300,
+        "sweep_range": [
+          120,
+          180,
+          300,
+          420
+        ],
+        "description": "Only trade when tau <= tau_max (last N seconds)"
+      },
+      "delta_threshold_bps": {
+        "suggested": 10,
+        "sweep_range": [
+          5,
+          10,
+          15,
+          20
+        ],
+        "description": "Minimum |delta| in bps to trigger trade"
+      },
+      "hold_seconds": {
+        "suggested": 190,
+        "sweep_range": [
+          60,
+          120,
+          180,
+          240
+        ],
+        "description": "How long to hold position before exit"
+      },
+      "momentum_window": {
+        "suggested": 10,
+        "sweep_range": [
+          5,
+          10,
+          20,
+          30
+        ],
+        "description": "Window for CL momentum calculation (seconds)"
+      }
+    },
+    "evidence": {
+      "tsai_share_last_300s": 0.6320645905420992,
+      "tsai_median_tau": 159.0,
+      "tsai_median_hold": 190.0,
+      "tsai_pct_one_sided": 0.9620253164556962,
+      "tsai_matched_pnl": 1640.1242107731673
+    }
+  },
+  "Strategy_C": {
+    "strategy_name": "TwoSidedEarlyTiltLate",
+    "description": "Build matched inventory early, add net exposure late based on CL sign",
+    "inspired_by": [
+      "PurpleThunderBicycleMountain",
+      "Account88888"
+    ],
+    "parameters": {
+      "inventory_phase_end": {
+        "suggested": 300,
+        "sweep_range": [
+          180,
+          300,
+          420
+        ],
+        "description": "Stop building inventory when tau drops below this (seconds)"
+      },
+      "tilt_phase_start": {
+        "suggested": 180,
+        "sweep_range": [
+          120,
+          180,
+          240
+        ],
+        "description": "Start adding net exposure when tau drops below this (seconds)"
+      },
+      "inventory_epsilon": {
+        "suggested": 0.02,
+        "sweep_range": [
+          0.01,
+          0.02,
+          0.03
+        ],
+        "description": "Underround threshold for inventory building"
+      },
+      "tilt_delta_threshold_bps": {
+        "suggested": 15,
+        "sweep_range": [
+          10,
+          15,
+          20
+        ],
+        "description": "Minimum |delta| in bps to tilt"
+      },
+      "tilt_size_ratio": {
+        "suggested": 0.5,
+        "sweep_range": [
+          0.25,
+          0.5,
+          1.0
+        ],
+        "description": "Tilt position size as ratio of inventory"
+      }
+    },
+    "evidence": {
+      "purple_pct_both_outcomes": 0.9583875162548765,
+      "purple_share_last_300s": 0.41653263243236177,
+      "purple_share_last_120s": 0.11360872464791495,
+      "purple_median_tau": 361.0,
+      "account_pct_both_outcomes": 0.9961685823754789,
+      "account_share_last_300s": 0.2595782923573373,
+      "account_median_tau": 535.0
+    }
+  }
+}

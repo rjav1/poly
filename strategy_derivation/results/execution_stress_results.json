@@ -1,0 +1,124 @@
+{
+  "baseline": {
+    "t_stat": 3.086096564352086,
+    "total_pnl": 3.1590000000000003
+  },
+  "slippage_results": [
+    {
+      "slippage_cents": 0.0,
+      "error": "'mean_pnl_per_trade'"
+    },
+    {
+      "slippage_cents": 0.5,
+      "error": "'mean_pnl_per_trade'"
+    },
+    {
+      "slippage_cents": 1.0,
+      "error": "'mean_pnl_per_trade'"
+    },
+    {
+      "slippage_cents": 1.5,
+      "error": "'mean_pnl_per_trade'"
+    },
+    {
+      "slippage_cents": 2.0,
+      "error": "'mean_pnl_per_trade'"
+    },
+    {
+      "slippage_cents": 3.0,
+      "error": "'mean_pnl_per_trade'"
+    }
+  ],
+  "spread_results": [
+    {
+      "max_spread_cents": 2.0,
+      "rows_remaining": 21380,
+      "pct_remaining": 65.98765432098766,
+      "n_trades": 43,
+      "total_pnl": 3.609000000000001,
+      "t_stat": 3.7039914688593196
+    },
+    {
+      "max_spread_cents": 3.0,
+      "rows_remaining": 29466,
+      "pct_remaining": 90.94444444444446,
+      "n_trades": 43,
+      "total_pnl": 3.209,
+      "t_stat": 3.0651017513568304
+    },
+    {
+      "max_spread_cents": 5.0,
+      "rows_remaining": 30706,
+      "pct_remaining": 94.77160493827161,
+      "n_trades": 43,
+      "total_pnl": 3.1490000000000005,
+      "t_stat": 3.08724469075719
+    },
+    {
+      "max_spread_cents": 8.0,
+      "rows_remaining": 30855,
+      "pct_remaining": 95.23148148148148,
+      "n_trades": 43,
+      "total_pnl": 3.1590000000000003,
+      "t_stat": 3.0968988768985737
+    },
+    {
+      "max_spread_cents": 10.0,
+      "rows_remaining": 30880,
+      "pct_remaining": 95.30864197530863,
+      "n_trades": 43,
+      "total_pnl": 3.1590000000000003,
+      "t_stat": 3.0968988768985737
+    },
+    {
+      "max_spread_cents": 15.0,
+      "rows_remaining": 30895,
+      "pct_remaining": 95.35493827160494,
+      "n_trades": 43,
+      "total_pnl": 3.1590000000000003,
+      "t_stat": 3.0968988768985737
+    },
+    {
+      "max_spread_cents": 100.0,
+      "rows_remaining": 30907,
+      "pct_remaining": 95.39197530864197,
+      "n_trades": 43,
+      "total_pnl": 3.1590000000000003,
+      "t_stat": 3.0968988768985737
+    }
+  ],
+  "combined_results": {
+    "baseline": {
+      "t_stat": 3.086096564352086,
+      "total_pnl": 3.1590000000000003
+    },
+    "stress_tests": [
+      {
+        "name": "0.5c slippage",
+        "t_stat": 2.782779068056361,
+        "total_pnl": 2.729
+      },
+      {
+        "name": "1c slippage",
+        "t_stat": 2.433609447354574,
+        "total_pnl": 2.2989999999999995
+      },
+      {
+        "name": "2c slippage",
+        "t_stat": 1.6046033300390155,
+        "total_pnl": 1.4389999999999996
+      },
+      {
+        "name": "Spread < 5c only",
+        "t_stat": 3.08724469075719,
+        "total_pnl": 3.1490000000000005,
+        "rows_used": 30706
+      },
+      {
+        "name": "1c slip + 5c spread",
+        "t_stat": 2.42817687891328,
+        "total_pnl": 2.2889999999999997
+      }
+    ]
+  }
+}

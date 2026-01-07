@@ -1,0 +1,157 @@
+{
+  "timestamp": "2026-01-07T09:13:12.990404",
+  "n_markets": 25,
+  "n_rows": 22500,
+  "experiment_1_pnl_sign_robustness": {
+    "results": [
+      {
+        "experiment_name": "PnL_Sign_Robustness",
+        "variant": "L2_CONSERVATIVE",
+        "total_pnl": -158.84099999999995,
+        "t_stat": -7.161641648250767,
+        "n_fills": 4166,
+        "fill_rate": 0.2600174759705405,
+        "spread_captured": 16.992500000000017,
+        "adverse_selection": 9.977500000000003,
+        "parameters": {
+          "l2_mode": "conservative"
+        }
+      },
+      {
+        "experiment_name": "PnL_Sign_Robustness",
+        "variant": "L2_BASE",
+        "total_pnl": -158.84099999999995,
+        "t_stat": -7.161641648250767,
+        "n_fills": 4166,
+        "fill_rate": 0.2600174759705405,
+        "spread_captured": 16.992500000000017,
+        "adverse_selection": 9.977500000000003,
+        "parameters": {
+          "l2_mode": "base"
+        }
+      },
+      {
+        "experiment_name": "PnL_Sign_Robustness",
+        "variant": "L2_OPTIMISTIC",
+        "total_pnl": -158.84099999999995,
+        "t_stat": -7.161641648250767,
+        "n_fills": 4166,
+        "fill_rate": 0.2600174759705405,
+        "spread_captured": 16.992500000000017,
+        "adverse_selection": 9.977500000000003,
+        "parameters": {
+          "l2_mode": "optimistic"
+        }
+      }
+    ],
+    "analysis": {
+      "pnl_range": [
+        -158.84099999999995,
+        -158.84099999999995
+      ],
+      "pnl_range_abs": 0.0,
+      "sign_robust": true,
+      "conservative_base_agree": "True",
+      "all_positive": false,
+      "all_negative": true
+    }
+  },
+  "experiment_2_l1_vs_l2_quoting": {
+    "results": [
+      {
+        "experiment_name": "L1_vs_L2_Quoting",
+        "variant": "L1_QUOTING",
+        "total_pnl": -158.84099999999995,
+        "t_stat": -7.161641648250767,
+        "n_fills": 4166,
+        "fill_rate": 0.2600174759705405,
+        "spread_captured": 16.992500000000017,
+        "adverse_selection": 9.977500000000003,
+        "parameters": {
+          "quote_level": 1
+        }
+      },
+      {
+        "experiment_name": "L1_vs_L2_Quoting",
+        "variant": "L2_QUOTING",
+        "total_pnl": -96.67099999999998,
+        "t_stat": -3.8397724642416735,
+        "n_fills": 1393,
+        "fill_rate": 0.09827160493827161,
+        "spread_captured": 17.37250000000001,
+        "adverse_selection": 3.8175000000000003,
+        "parameters": {
+          "quote_level": 2
+        }
+      }
+    ],
+    "analysis": {
+      "l1_pnl": -158.84099999999995,
+      "l2_pnl": -96.67099999999998,
+      "pnl_delta": 62.16999999999997,
+      "l1_fill_rate": 0.2600174759705405,
+      "l2_fill_rate": 0.09827160493827161,
+      "fill_rate_delta": -0.16174587103226887,
+      "l1_as_total": 9.977500000000003,
+      "l2_as_total": 3.8175000000000003,
+      "as_delta": -6.160000000000002,
+      "l1_as_per_fill": 0.0023949831973115706,
+      "l2_as_per_fill": 0.0027404881550610197,
+      "l2_lower_as_per_fill": false,
+      "l2_viable": false
+    }
+  },
+  "experiment_3_imbalance_filter": {
+    "results": [
+      {
+        "experiment_name": "Imbalance_Filter",
+        "variant": "FILTER_OFF",
+        "total_pnl": -158.84099999999995,
+        "t_stat": -7.161641648250767,
+        "n_fills": 4166,
+        "fill_rate": 0.2600174759705405,
+        "spread_captured": 16.992500000000017,
+        "adverse_selection": 9.977500000000003,
+        "parameters": {
+          "imbalance_filter_enabled": false
+        }
+      },
+      {
+        "experiment_name": "Imbalance_Filter",
+        "variant": "FILTER_ON",
+        "total_pnl": -171.86400000000006,
+        "t_stat": -7.543254679346648,
+        "n_fills": 2515,
+        "fill_rate": 0.21873369281614194,
+        "spread_captured": 6.540000000000014,
+        "adverse_selection": 10.290000000000001,
+        "parameters": {
+          "imbalance_filter_enabled": true,
+          "imbalance_threshold": 0.3
+        }
+      }
+    ],
+    "analysis": {
+      "off_pnl": -158.84099999999995,
+      "on_pnl": -171.86400000000006,
+      "pnl_delta": -13.02300000000011,
+      "off_fills": 4166,
+      "on_fills": 2515,
+      "fill_reduction_pct": 39.630340854536726,
+      "off_as": 9.977500000000003,
+      "on_as": 10.290000000000001,
+      "as_reduction_pct": -3.132047105988455,
+      "off_as_per_fill": 0.0023949831973115706,
+      "on_as_per_fill": 0.0040914512922465215,
+      "filter_effective": false,
+      "filter_not_too_aggressive": true
+    }
+  },
+  "success_criteria": {
+    "pnl_sign_robust": "True",
+    "pnl_range_narrow": true,
+    "l2_quoting_viable": false,
+    "imbalance_filter_works": false
+  },
+  "overall_pass": "True"
+}

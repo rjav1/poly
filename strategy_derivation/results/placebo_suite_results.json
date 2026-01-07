@@ -1,0 +1,79 @@
+{
+  "shift_results": [
+    {
+      "shift_seconds": 0,
+      "n_trades": 43,
+      "n_markets": 36,
+      "total_pnl": 3.1590000000000003,
+      "mean_pnl_per_market": 0.08775000000000001,
+      "t_stat": 3.086096564352086,
+      "hit_rate": 0.6744186046511628
+    },
+    {
+      "shift_seconds": 5,
+      "n_trades": 43,
+      "n_markets": 24,
+      "total_pnl": 3.0870000000000006,
+      "mean_pnl_per_market": 0.12862500000000002,
+      "t_stat": 3.0395624149956846,
+      "hit_rate": 0.6744186046511628
+    },
+    {
+      "shift_seconds": 15,
+      "n_trades": 42,
+      "n_markets": 24,
+      "total_pnl": 2.418,
+      "mean_pnl_per_market": 0.10075,
+      "t_stat": 2.3807358389128646,
+      "hit_rate": 0.6666666666666666
+    },
+    {
+      "shift_seconds": 30,
+      "n_trades": 41,
+      "n_markets": 24,
+      "total_pnl": 2.5780000000000003,
+      "mean_pnl_per_market": 0.10741666666666667,
+      "t_stat": 2.869157553280654,
+      "hit_rate": 0.5853658536585366
+    },
+    {
+      "shift_seconds": 60,
+      "n_trades": 42,
+      "n_markets": 24,
+      "total_pnl": -1.0119999999999996,
+      "mean_pnl_per_market": -0.04216666666666665,
+      "t_stat": -1.0403876474941087,
+      "hit_rate": 0.4523809523809524
+    },
+    {
+      "shift_seconds": 120,
+      "n_trades": 43,
+      "n_markets": 24,
+      "total_pnl": -1.8009999999999993,
+      "mean_pnl_per_market": -0.07504166666666665,
+      "t_stat": -1.605741461118691,
+      "hit_rate": 0.4418604651162791
+    }
+  ],
+  "permutation_results": {
+    "original_t_stat": 3.086096564352086,
+    "permutation_mean": -0.300939891094806,
+    "permutation_std": 0.437197063029177,
+    "permutation_max": 0.7739802593923588,
+    "p_value": 0.0,
+    "n_permutations": 50
+  },
+  "sign_flip_results": {
+    "original_t_stat": 3.086096564352086,
+    "original_pnl": 3.1590000000000003,
+    "flipped_t_stat": -3.047891428820932,
+    "flipped_pnl": -3.4499999999999993,
+    "t_stat_change": -6.133987993173018,
+    "pnl_change": -6.609
+  },
+  "summary": {
+    "shift_decay_pct": 7.029560046089396,
+    "permutation_p_value": 0.0,
+    "sign_flip_t_change": -6.133987993173018
+  }
+}

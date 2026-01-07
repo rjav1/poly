@@ -1,0 +1,15 @@
+{
+  "asset": "XRP",
+  "market_id": "20260106_0315_2",
+  "market_start": "2026-01-06T03:15:00+00:00",
+  "market_end": "2026-01-06T03:30:00+00:00",
+  "strike_price": 2,
+  "cl_records": 542,
+  "pm_records": 650,
+  "cl_unique_seconds": 542,
+  "pm_unique_seconds": 650,
+  "both_unique_seconds": 487,
+  "cl_coverage": 60.22222222222222,
+  "pm_coverage": 72.22222222222221,
+  "both_coverage": 54.11111111111111
+}

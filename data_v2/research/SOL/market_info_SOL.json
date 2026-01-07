@@ -1,0 +1,31 @@
+[
+  {
+    "market_id": "20260106_1330_139",
+    "asset": "SOL",
+    "market_start": "2026-01-06T13:30:00+00:00",
+    "market_end": "2026-01-06T13:45:00+00:00",
+    "K": 139.064,
+    "settlement": 138.793,
+    "Y": 0,
+    "price_to_beat_from_folder": 139,
+    "k_source": "computed",
+    "k_offset_seconds": 0.0,
+    "settlement_offset_seconds": 1.0,
+    "has_exact_k": true,
+    "has_exact_settlement": false,
+    "cl_raw_rows": 890,
+    "pm_raw_rows": 781,
+    "cl_multi_obs_seconds": "0",
+    "pm_multi_obs_seconds": "0",
+    "cl_observed_seconds": 890,
+    "pm_observed_seconds": 781,
+    "both_observed_seconds": 772,
+    "either_observed_seconds": 899,
+    "cl_coverage_pct": 98.88888888888889,
+    "pm_coverage_pct": 86.77777777777777,
+    "both_coverage_pct": 85.77777777777777,
+    "either_coverage_pct": 99.8888888888889,
+    "cl_missing_seconds": 10,
+    "pm_missing_seconds": 119
+  }
+]

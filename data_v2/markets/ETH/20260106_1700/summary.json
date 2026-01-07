@@ -1,0 +1,15 @@
+{
+  "asset": "ETH",
+  "market_id": "20260106_1700",
+  "market_start": "2026-01-06T17:00:00+00:00",
+  "market_end": "2026-01-06T17:15:00+00:00",
+  "strike_price": null,
+  "cl_records": 1115,
+  "pm_records": 1123,
+  "cl_unique_seconds": 892,
+  "pm_unique_seconds": 883,
+  "both_unique_seconds": 875,
+  "cl_coverage": 99.11111111111111,
+  "pm_coverage": 98.11111111111111,
+  "both_coverage": 97.22222222222221
+}

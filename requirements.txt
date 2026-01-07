@@ -1,0 +1,27 @@
+# Polymarket Data Collection Pipeline
+# Install: pip install -r requirements.txt
+
+# Core dependencies
+requests>=2.31.0
+pandas>=2.0.0
+pyarrow>=14.0.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Browser automation for Chainlink frontend scraping
+playwright>=1.40.0
+
+# Date parsing
+python-dateutil>=2.8.0
+
+# Utilities
+python-dotenv>=1.0.0
+
+# CLI enhancements
+rich>=13.0.0
+plotly>=5.17.0
+
+# Optional: For SQLite storage (built-in)
+# sqlite3 is part of Python standard library

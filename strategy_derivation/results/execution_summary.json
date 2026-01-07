@@ -1,0 +1,163 @@
+{
+  "wallet_summaries": {
+    "vidarx": {
+      "n_trades": 15518,
+      "execution_type_pct": {
+        "MAKER": 0.49400695965974994,
+        "UNKNOWN": 0.46069081067147827,
+        "TAKER": 0.045302229668771746
+      },
+      "route_pct": {
+        "DIRECT": 0.5471710271942261,
+        "UNKNOWN": 0.4480603170511664,
+        "CONVERSION": 0.004768655754607553
+      },
+      "avg_aggressiveness": 0.4962746824606539,
+      "buy_aggressiveness": 0.4962746824606539,
+      "sell_aggressiveness": null,
+      "mm_like_ratio": 0.6109679082355973,
+      "primary_style": "MIXED_MAKER_BIAS"
+    },
+    "tsaiTop": {
+      "n_trades": 289,
+      "execution_type_pct": {
+        "MAKER": 0.5640138408304498,
+        "UNKNOWN": 0.3875432525951557,
+        "TAKER": 0.04844290657439446
+      },
+      "route_pct": {
+        "DIRECT": 0.6124567474048442,
+        "UNKNOWN": 0.3875432525951557
+      },
+      "avg_aggressiveness": 0.4204152249134948,
+      "buy_aggressiveness": 0.6295336787564767,
+      "sell_aggressiveness": 0.0,
+      "mm_like_ratio": 0.889273356401384,
+      "primary_style": "MIXED_MAKER_BIAS"
+    },
+    "Account88888": {
+      "n_trades": 97020,
+      "execution_type_pct": {
+        "MAKER": 0.5107297464440321,
+        "UNKNOWN": 0.4240981240981241,
+        "TAKER": 0.06517212945784374
+      },
+      "route_pct": {
+        "DIRECT": 0.5865285508142651,
+        "UNKNOWN": 0.4067099567099567,
+        "CONVERSION": 0.00676149247577819
+      },
+      "avg_aggressiveness": 0.4751515140921592,
+      "buy_aggressiveness": 0.4751515140921592,
+      "sell_aggressiveness": null,
+      "mm_like_ratio": 0.7584827870542157,
+      "primary_style": "MIXED_MAKER_BIAS"
+    },
+    "PurpleThunderBicycleMountain": {
+      "n_trades": 22208,
+      "execution_type_pct": {
+        "MAKER": 0.5872208213256485,
+        "UNKNOWN": 0.34528097982708933,
+        "TAKER": 0.06749819884726224
+      },
+      "route_pct": {
+        "DIRECT": 0.6705691642651297,
+        "UNKNOWN": 0.32173090778097985,
+        "CONVERSION": 0.00769992795389049
+      },
+      "avg_aggressiveness": 0.3862024347544834,
+      "buy_aggressiveness": 0.3862024347544834,
+      "sell_aggressiveness": null,
+      "mm_like_ratio": 0.674171469740634,
+      "primary_style": "MIXED_MAKER_BIAS"
+    },
+    "Lkjhgfdna": {
+      "n_trades": 6272,
+      "execution_type_pct": {
+        "MAKER": 0.5235969387755102,
+        "UNKNOWN": 0.3713329081632653,
+        "TAKER": 0.10507015306122448
+      },
+      "route_pct": {
+        "DIRECT": 0.6466836734693877,
+        "UNKNOWN": 0.3439094387755102,
+        "CONVERSION": 0.00940688775510204
+      },
+      "avg_aggressiveness": 0.45490213478568253,
+      "buy_aggressiveness": 0.45089192860588034,
+      "sell_aggressiveness": 0.45913308625978577,
+      "mm_like_ratio": 0.047193877551020405,
+      "primary_style": "MIXED_MAKER_BIAS"
+    },
+    "FLO782": {
+      "n_trades": 37,
+      "execution_type_pct": {
+        "MAKER": 0.7567567567567568,
+        "UNKNOWN": 0.24324324324324326
+      },
+      "route_pct": {
+        "DIRECT": 0.7567567567567568,
+        "UNKNOWN": 0.24324324324324326
+      },
+      "avg_aggressiveness": 0.2432433897906416,
+      "buy_aggressiveness": 0.2432433897906416,
+      "sell_aggressiveness": null,
+      "mm_like_ratio": 0.7837837837837838,
+      "primary_style": "PASSIVE_MAKER"
+    }
+  },
+  "conditional_analysis": {
+    "by_tau_bucket": {
+      "60-120": {
+        "n_trades": 5735,
+        "taker_pct": 0.05980819529206626,
+        "maker_pct": 0.4899738448125545,
+        "avg_aggressiveness": 0.4840619008070247
+      },
+      "120-300": {
+        "n_trades": 30546,
+        "taker_pct": 0.05873109408760558,
+        "maker_pct": 0.5407909382570549,
+        "avg_aggressiveness": 0.4423050167466292
+      },
+      "300-600": {
+        "n_trades": 46568,
+        "taker_pct": 0.05548874763786291,
+        "maker_pct": 0.5317385328981274,
+        "avg_aggressiveness": 0.4570447711912649
+      },
+      "600-900": {
+        "n_trades": 54700,
+        "taker_pct": 0.07804387568555758,
+        "maker_pct": 0.5097257769652651,
+        "avg_aggressiveness": 0.47557649068691904
+      },
+      "0-60": {
+        "n_trades": 3795,
+        "taker_pct": 0.05480895915678524,
+        "maker_pct": 0.463768115942029,
+        "avg_aggressiveness": 0.4680846633441959
+      }
+    },
+    "with_underround": {
+      "n_trades": 1268,
+      "taker_pct": 0.07886435331230283,
+      "avg_aggressiveness": 0.49768671943931825
+    },
+    "no_underround": {
+      "n_trades": 139633,
+      "taker_pct": 0.06515651744215192,
+      "avg_aggressiveness": 0.4619842983050015
+    },
+    "tight_spread": {
+      "n_trades": 90068,
+      "taker_pct": 0.06598347914908735,
+      "avg_aggressiveness": 0.46769095165456687
+    },
+    "wide_spread": {
+      "n_trades": 50833,
+      "taker_pct": 0.06403320677512639,
+      "avg_aggressiveness": 0.45276359160088564
+    }
+  }
+}

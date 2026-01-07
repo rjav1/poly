@@ -1,0 +1,29 @@
+{
+  "n_markets": 41,
+  "total_rows": 30807,
+  "monotonic": {
+    "up_asks_violation_pct": 0.0,
+    "up_bids_violation_pct": 0.0,
+    "down_asks_violation_pct": 0.0,
+    "down_bids_violation_pct": 0.0
+  },
+  "positive_sizes": {
+    "avg_negative_pct": 0.0,
+    "avg_zero_pct": 0.0,
+    "total_negatives": 0
+  },
+  "crossed_books": {
+    "avg_crossed_up_pct": 0.0,
+    "avg_crossed_down_pct": 0.0,
+    "total_crossed_up": 0,
+    "total_crossed_down": 0
+  },
+  "missing_levels": {
+    "up_asks_full_depth_pct": 88.63802361043051,
+    "down_asks_full_depth_pct": 88.0638622370926
+  },
+  "size_consistency": {
+    "avg_price_no_size_pct": 0.0,
+    "avg_size_no_price_pct": 0.0
+  }
+}
