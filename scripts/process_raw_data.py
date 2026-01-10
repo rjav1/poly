@@ -422,6 +422,7 @@ def create_market_folder(
     both_unique_seconds = cl_unique_seconds & pm_unique_seconds  # Intersection
     
     # Create summary with CORRECT coverage metrics
+    from datetime import datetime, timezone
     summary = {
         'asset': asset,
         'market_id': market['name'],
@@ -435,7 +436,8 @@ def create_market_folder(
         'both_unique_seconds': len(both_unique_seconds),
         'cl_coverage': len(cl_unique_seconds) / 900 * 100,
         'pm_coverage': len(pm_unique_seconds) / 900 * 100,
-        'both_coverage': len(both_unique_seconds) / 900 * 100
+        'both_coverage': len(both_unique_seconds) / 900 * 100,
+        'processed_at': datetime.now(timezone.utc).isoformat()  # Track when processed
     }
     
     summary_path = market_dir / "summary.json"
@@ -545,13 +547,15 @@ def process_asset(asset: str, raw_dir: Path, markets_dir: Path, min_coverage: fl
         summary_path = market_dir / "summary.json"
         
         # Skip if market already exists and has valid summary
+        # This prevents reprocessing already-processed raw data
         if summary_path.exists():
             try:
                 with open(summary_path) as f:
                     existing_summary = json.load(f)
                 # Check if it's a valid processed market (has coverage data)
                 if 'both_coverage' in existing_summary:
-                    print(f"    {market['name']}: [SKIP] Already processed (Both={existing_summary.get('both_coverage', 0):.1f}%)")
+                    processed_at = existing_summary.get('processed_at', 'unknown')
+                    print(f"    {market['name']}: [SKIP] Already processed (Both={existing_summary.get('both_coverage', 0):.1f}%, processed: {processed_at[:19] if processed_at != 'unknown' else 'unknown'})")
                     already_processed += 1
                     continue
             except (json.JSONDecodeError, KeyError):
